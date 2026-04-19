@@ -1811,11 +1811,13 @@ setTimeout(()=>{
   setTimeout(()=>sp.style.display='none',400);
   switchTab('home');
 },2100);
-</script> <script src="gs-data.js"></script>
+</script> 
+  <script src="gs-data.js"></script>
 <script src="english-data.js"></script>
   <script>
-  // Combine GS and English questions together
-quizData = [...gsQuestions, ...englishQuestions];
+  // This line connects the "Boxes" to your App
+  RAW.push(...gsQuestions);
+  ENG_RAW.push(...englishQuestions);
 </script>
 <!-- Quick Menu Modal -->
 <div id="quick-menu-overlay" onclick="hideQuickMenu()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:flex-end;justify-content:center;"></div>
