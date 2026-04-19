@@ -6,11 +6,3 @@ const gsQuestions = [
 ["In which of the following classical dance forms are the actors’ faces painted to symbolise the type of character they are playing?","Bharatanatyam","Odissi","Kathakali","Kathak","c","Kathakali makeup: Pacha (noble gods), Katti (anti-heroes), Thadi (bearded roles).","Art & Culture","Art & Culture"]
 ];
 
-// WE PUT ALL "EMPTY FOLDERS" HERE ONCE. 
-// This prevents the app from crashing.
-var OWS_RAW = []; 
-var SYN_RAW = [];
-var ANT_RAW = [];
-var HOM_RAW = [];
-var IDI_RAW = [];
-var SPL_RAW = [];
