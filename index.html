@@ -600,8 +600,7 @@ const HOM_MCQ = HOM_RAW.map((r,i)=>({
 // IDIOMS & PHRASES  →  IDs 24000–24999
 // HOW TO PASTE: replace the [...] below with your JSON array from extraction chat
 // ════════════════════════════════════════════════
-const IDI_RAW = [
-[];
+const IDI_RAW = [];
 const IDI_MCQ = IDI_RAW.map((r,i)=>({
   id: 24000+i,
   q:r[0].replace(/\s+/g,' ').trim(), a:r[1].replace(/\s+/g,' ').trim(),
@@ -1814,13 +1813,7 @@ setTimeout(()=>{
   switchTab('home');
 },2100);
 </script> 
-  <script src="gs-data.js"></script>
-<script src="english-data.js"></script>
-  <script>
-  // This line connects the "Boxes" to your App
-  RAW.push(...gsQuestions);
-  ENG_RAW.push(...englishQuestions);
-</script>
+
 <!-- Quick Menu Modal -->
 <div id="quick-menu-overlay" onclick="hideQuickMenu()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:flex-end;justify-content:center;"></div>
 <div id="quick-menu" style="display:none;position:fixed;bottom:70px;left:50%;transform:translateX(-50%);width:min(340px,92vw);background:#0d1e30;border:1px solid rgba(43,159,234,0.3);border-radius:18px;padding:18px;z-index:201;">
