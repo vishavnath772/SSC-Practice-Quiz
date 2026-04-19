@@ -1,32 +1,16 @@
 const gsQuestions = [
 ["Which of the following folk dances is performed by the fisherfolk of the Mithila region in Bihar?","Karma","Nrityakali","Kamala","Jiya","c","Kamala. Folk dances of Bihar : Karma, Kajri, Jhumar, Jharni, Jat Jatin, Jhumeri, Sohar Khelwana, Natua, Nachini, Jhijiya, Dhamar jogira, Krishi Nritya.","Art & Culture","Art & Culture"],
 ["Chad Laho is a dance-festival, primarily celebrated by which of the following tribes of Meghalaya?","Khasi","Garo","Jaintia","Hojang","c","Jaintia. Chad Laho dance festival is celebrated as a thanksgiving festival to God after the harvesting season. Other folk dances of Meghalaya and their Tribes: Ka Shad Suk Mynsiem (Khasis tribe), Beh-dien-khlam (Jaintias), Wangala (Garos), Chad Sukra (Jaintia).","Art & Culture","Art & Culture"],
-["Which of the following dances of Goa is performed to celebrate the victory of the Maratha warriors over the Portuguese ?","Ghodemodni","Zemmado","Morulem","Goff","a","Ghodemodni (Horse dance) celebrated in Thane, Sattari, and nearby villages, is a traditional event featuring warriors on decorated horses showing their skills in riding and martial arts.","Art & Culture","Art & Culture"],
-["Which of the following war dances is performed in Ngada festival and is performed by the tribes of Nagaland?","Jawara","Dalkhai","Rengma","Garadi","c","Rengma. Other popular dances of Nagaland include Modse, Aaluyattu. Jawara (Madhya Pradesh), Dalkhai (Odisha), Garadi (Puducherry).","Art & Culture","Art & Culture"],
-["In which of the following classical dance forms are the actors’ faces painted to symbolise the type of character they are playing?","Bharatanatyam","Odissi","Kathakali","Kathak","c","Kathakali makeup: Pacha (noble gods), Katti (anti-heroes), Thadi (bearded roles), Kari (evil), and Minukku (virtuous women /sages).","Art & Culture","Art & Culture"],
-["_________ dance is embedded in the stories from the epics Mahabharata, Ramayana and Puranas.","Kathakali","Kuchipudi","Sattriya","Odissi","a","Kathakali literally means \"story play.\" It is a classical dance form from Kerala.","Art & Culture","Art & Culture"],
-["Which of the following Indian tribal dances is prevalent in the Araku Valley near Visakhapatnam?","Dhimsa","Bagurumba","Jhumur","Bardo Chham","a","Dhimsa. Dances of Andhra Pradesh: Buttabommalu, Dappu Dance, Kolatam, Lambada, Veeranatyam, Koya Nrityam.","Art & Culture","Art & Culture"],
-["Which Indian classical dance form has composition in Meitei language?","Sattriya","Chhau","Manipuri","Bharatanatyam","c","Manipuri, the classical dance of Manipur, combines Pre-Vaishnavite and Vaishnavite traditions.","Art & Culture","Art & Culture"],
-["Which of the following dances is performed in Goa during the festival Ganesh Chaturthi?","Tarangmel","Dhalo","Fugdi","Dhangar","c","Fugdi. It is performed by women during festivals.","Art & Culture","Art & Culture"],
-["Which of the following dance forms emotes a play through dancing in which the song is customarily in Manipravala language ?","Kathak","Mohiniattam","Sattriya","Kuchipudi","b","Mohiniattam, a classical dance from Kerala, features graceful movements.","Art & Culture","Art & Culture"],
-["Mohiniyattam is associated with which of the following traditional dance styles?","Samapadam","Tribhanga","Chowk","Lasya style","d","Lasya style. Mohiniyattam : A graceful classical dance from Kerala.","Art & Culture","Art & Culture"],
-["Khuallam is a famous dance of:","Bihar","Andhra Pradesh","Mizoram","Uttar Pradesh","c","Mizoram. Khuallam (Dance of the Guests) is a dance usually performed in the ceremony called 'Khuangchawi'.","Art & Culture","Art & Culture"],
-["Tera Tali folk dance is primarily associated with which of the following states?","Rajasthan","Assam","Madhya Pradesh","Haryana","a","Rajasthan. Terah Tali Dance is performed in praise of the folk God Ramdevji.","Art & Culture","Art & Culture"],
-["Matki dance is the famous folk dance associated with which of the following states?","Punjab","Gujarat","Madhya Pradesh","Maharashtra","c","Madhya Pradesh. The \"Matki Dance,\" performed using a small pitcher.","Art & Culture","Art & Culture"],
-["Padayani’, a local dance form primarily performed in ________ to please Goddess Bhadrakali.","Assam","Kerala","Odisha","West Bengal","b","Kerala. Padayani literally means “row of warriors”.","Art & Culture","Art & Culture"],
-["In which of the following states of India is Hojagiri dance predominantly performed ?","Tripura","Kerala","Himachal Pradesh","Maharashtra","a","Tripura. The Hojagiri dance is performed during the Hojagiri Festival or Laxmi Puja.","Art & Culture","Art & Culture"],
-["In which of the following states is the Chu-Faat dance performed?","Haryana","Uttarakhand","West Bengal","Sikkim","d","Sikkim. Chu-Faat, meaning \"Snowy Range\" (Chu) and \"Worship\" (Faat).","Art & Culture","Art & Culture"],
-["‘Kuki dance’ is a folk dance of India that is predominantly performed in _____.","Nagaland","Karnataka","Uttar Pradesh","Rajasthan","a","Nagaland. Kuki dance is performed by the Kuki tribe in India.","Art & Culture","Art & Culture"],
-["Yakshagan is a folk dance of which of the following states?","Odisha","West Bengal","Madhya Pradesh","Karnataka","d","Karnataka. Yakshagana is a traditional folk dance form popular in Coastal districts.","Art & Culture","Art & Culture"],
-["Langvir Nritya is a folk dance from the state of ________","Gujarat","Uttar Pradesh","Uttarakhand","Haryana","c","Uttarakhand. Langvir Nritya is a dance form practiced by only men.","Art & Culture","Art & Culture"],
-["Which of the following dances developed in the monasteries of Assam?","Bharatanatyam","Kathak","Sattriya","Kuchipudi","c","Sattriya originated in the Sattra (monastery) as part of the neo-Vaishnavite movement.","Art & Culture","Art & Culture"],
-["'Chhau' is a popular dance of which of the following state ?","Gujarat","Haryana","Jharkhand","Kerala","c","Jharkhand. Chhau dance has martial and folk traditions.","Art & Culture","Art & Culture"],
-["Gugga is the famous ritualistic dance of ________, which is performed in the procession taken out in memory of Gugga Pir.","Uttar Pradesh","Jammu & Kashmir","Haryana","Puducherry","c","Haryana. Gugga dance - It is a religious dance performed by men.","Art & Culture","Art & Culture"],
-["‘Chang dance’ is popular in the state of:","Goa","Bihar","Rajasthan","Tripura","c","Rajasthan. The Chang dance is performed during the Hindu festival of Holi.","Art & Culture","Art & Culture"],
-["Giddha dance is a folk dance of which of the following states ?","Manipur","Punjab","Nagaland","Odisha","b","Punjab. Gidda is performed by women during social gatherings.","Art & Culture","Art & Culture"],
-["Gatka, a traditional fighting style of the Nihang Sikh warriors, used both for self- defence as well as a sport, has originated from which of the following states of India ?","Gujarat","Rajasthan","Bihar","Punjab","d","Punjab. Famous Martial Arts in India: Kalaripayattu (Kerala), Silambam (Tamil Nadu).","Sports","Sports"],
-["At which Olympics did Gagan Narang win a bronze medal?","London 2012","Rio 2016","Athens 2004","Beijing 2008","a","London 2012. Gagan Narang is an Indian sports shooter.","Sports","Sports"],
-["In which year did India make its Olympic debut in hockey?","1936","1932","1924","1928","d","1928. India made its Olympic debut in hockey in 1928 at the Amsterdam Olympics.","Sports","Sports"]
+["Which of the following dances of Goa is performed to celebrate the victory of the Maratha warriors over the Portuguese ?","Ghodemodni","Zemmado","Morulem","Goff","a","Ghodemodni (Horse dance) celebrated in Thane, Sattari, and nearby villages.","Art & Culture","Art & Culture"],
+["Which of the following war dances is performed in Ngada festival and is performed by the tribes of Nagaland?","Jawara","Dalkhai","Rengma","Garadi","c","Rengma. Other popular dances of Nagaland include Modse, Aaluyattu.","Art & Culture","Art & Culture"],
+["In which of the following classical dance forms are the actors’ faces painted to symbolise the type of character they are playing?","Bharatanatyam","Odissi","Kathakali","Kathak","c","Kathakali makeup: Pacha (noble gods), Katti (anti-heroes), Thadi (bearded roles).","Art & Culture","Art & Culture"]
 ];
 
-const OWS_RAW = [];
+// WE PUT ALL "EMPTY FOLDERS" HERE ONCE. 
+// This prevents the app from crashing.
+var OWS_RAW = []; 
+var SYN_RAW = [];
+var ANT_RAW = [];
+var HOM_RAW = [];
+var IDI_RAW = [];
+var SPL_RAW = [];
