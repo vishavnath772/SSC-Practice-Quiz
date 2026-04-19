@@ -1,4 +1,4 @@
-  const englishQuestions = [
+const englishQuestions = [
 ["Identify the misspelt word", "Sesquipedalian", "Anachronism", "Syzygy", "Kakishtocracy", "d", "**Kakistocracy**", "Spelling Check", "Spelling Check"],
 ["Spot the correct spelling of a word referring to the surgical removal of an appendix.", "Appendicectomy", "Appendectomy", "Appendecectomy", "Appendicetomy", "a", "**Appendicectomy**", "Spelling Check", "Spelling Check"],
 ["Identify the misspelt word", "Bureaucracy", "Acknowledge", "Privilege", "Seperate", "d", "**Separate**", "Spelling Check", "Spelling Check"],
