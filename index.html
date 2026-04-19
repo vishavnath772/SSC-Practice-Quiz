@@ -500,8 +500,8 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 // ══════════════════════════════════════════════════════
 // DATA
 // ══════════════════════════════════════════════════════
-const RAW = [];
-const ENG_RAW = [];
+const RAW = [...gsQuestions];
+const ENG_RAW = [...englishQuestions];
 const OWS_RAW = [];
 
 // Parse MCQs
@@ -1817,29 +1817,14 @@ setTimeout(()=>{
 // ══════════════════════════════════════════════════════
 // INIT
 // ══════════════════════════════════════════════════════
-function initApp() {
-  // 1. Fill the tanks with your external data
-  RAW.push(...gsQuestions);
-  ENG_RAW.push(...englishQuestions);
-
-  // 2. Load progress
-  loadG();
-
-  // 3. Hide splash screen
-  setTimeout(()=>{
-    const sp=document.getElementById('splash');
-    sp.classList.add('hide');
-    setTimeout(()=>sp.style.display='none',400);
-    switchTab('home');
-  },2100);
-}
-
-// Wait for the window to load before running everything
-window.onload = initApp;
+loadG();
+setTimeout(()=>{
+  const sp=document.getElementById('splash');
+  sp.classList.add('hide');
+  setTimeout(()=>sp.style.display='none',400);
+  switchTab('home');
+},2100);
 </script> 
-
-<script src="gs-data.js"></script>
-<script src="english-data.js"></script>
 
 <div id="quick-menu-overlay" onclick="hideQuickMenu()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:flex-end;justify-content:center;"></div>
 <div id="quick-menu" style="display:none;position:fixed;bottom:70px;left:50%;transform:translateX(-50%);width:min(340px,92vw);background:#0d1e30;border:1px solid rgba(43,159,234,0.3);border-radius:18px;padding:18px;z-index:201;">
