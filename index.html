@@ -493,12 +493,16 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
   </div>
 </div>
 
+<script src="gs-data.js"></script>
+<script src="english-data.js"></script>
+
 <script>
 // ══════════════════════════════════════════════════════
 // DATA
 // ══════════════════════════════════════════════════════
-const RAW = [];
-const ENG_RAW = [];
+const RAW = [...gsQuestions];
+const ENG_RAW = [...englishQuestions];
+const OWS_RAW = [];
 
 // Parse MCQs
 const ALL_MCQ = RAW.map((r,i)=>({
