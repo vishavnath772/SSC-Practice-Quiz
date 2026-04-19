@@ -498,10 +498,8 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 // DATA
 // ══════════════════════════════════════════════════════
 const RAW = [];
-
 const ENG_RAW = [];
-RAW.push(...gsQuestions);
-ENG_RAW.push(...englishQuestions);
+
 // Parse MCQs
 const ALL_MCQ = RAW.map((r,i)=>({
   id:i,
