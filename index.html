@@ -1813,27 +1813,12 @@ setTimeout(()=>{
 },2100);
 </script> 
 
-
-<div id="quick-menu-overlay" onclick="hideQuickMenu()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:flex-end;justify-content:center;"></div>
+<div id="quick-menu-overlay" onclick="hideQuickMenu()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;"></div>
 <div id="quick-menu" style="display:none;position:fixed;bottom:70px;left:50%;transform:translateX(-50%);width:min(340px,92vw);background:#0d1e30;border:1px solid rgba(43,159,234,0.3);border-radius:18px;padding:18px;z-index:201;">
   <div style="font-size:15px;font-weight:700;color:#e2e8f0;margin-bottom:14px;text-align:center;">⚡ Quick Practice</div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-    <button onclick="hideQuickMenu();startQuiz('random',null,'gs')"
-      style="background:linear-gradient(135deg,#1e3a5f,#162d4a);border:1px solid rgba(43,159,234,0.3);border-radius:12px;padding:14px 8px;color:#e2e8f0;font-size:13px;font-weight:600;cursor:pointer;">
-      📚 GS<br><span style="font-size:11px;color:#94a3b8;font-weight:400;">Random mix</span>
-    </button>
-    <button onclick="hideQuickMenu();startQuiz('random',null,'eng')"
-      style="background:linear-gradient(135deg,#1e3a5f,#162d4a);border:1px solid rgba(43,159,234,0.3);border-radius:12px;padding:14px 8px;color:#e2e8f0;font-size:13px;font-weight:600;cursor:pointer;">
-      📝 English<br><span style="font-size:11px;color:#94a3b8;font-weight:400;">Random mix</span>
-    </button>
-    <button onclick="hideQuickMenu();startQuiz('revision',null,'gs')"
-      style="background:linear-gradient(135deg,#2d1e3a,#201529);border:1px solid rgba(167,139,250,0.3);border-radius:12px;padding:14px 8px;color:#e2e8f0;font-size:13px;font-weight:600;cursor:pointer;">
-      🔁 GS Revision<br><span style="font-size:11px;color:#94a3b8;font-weight:400;">Wrong qs only</span>
-    </button>
-    <button onclick="hideQuickMenu();startQuiz('revision',null,'eng')"
-      style="background:linear-gradient(135deg,#2d1e3a,#201529);border:1px solid rgba(167,139,250,0.3);border-radius:12px;padding:14px 8px;color:#e2e8f0;font-size:13px;font-weight:600;cursor:pointer;">
-      🔁 Eng Revision<br><span style="font-size:11px;color:#94a3b8;font-weight:400;">Wrong qs only</span>
-    </button>
+    <button onclick="hideQuickMenu();startQuiz('random',null,'gs')" style="background:linear-gradient(135deg,#1e3a5f,#162d4a);border:1px solid rgba(43,159,234,0.3);border-radius:12px;padding:14px 8px;color:#e2e8f0;font-size:13px;font-weight:600;cursor:pointer;">📚 GS</button>
+    <button onclick="hideQuickMenu();startQuiz('random',null,'eng')" style="background:linear-gradient(135deg,#1e3a5f,#162d4a);border:1px solid rgba(43,159,234,0.3);border-radius:12px;padding:14px 8px;color:#e2e8f0;font-size:13px;font-weight:600;cursor:pointer;">📝 English</button>
   </div>
   <button onclick="hideQuickMenu()" style="width:100%;margin-top:10px;padding:10px;background:transparent;border:1px solid rgba(255,255,255,0.1);border-radius:10px;color:#64748b;font-size:13px;cursor:pointer;">Cancel</button>
 </div>
