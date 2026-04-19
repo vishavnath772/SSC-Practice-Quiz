@@ -1,4 +1,4 @@
-const gsQuestions = const gsQuestions = [
+const gsQuestions = [
   [
           "Cheraw dance belongs to which of the following states? Higher Secondary 26/06/2024 (Shift - 2)",
           "Nagaland",
