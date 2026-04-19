@@ -29,4 +29,4 @@ const gsQuestions = [
 ["In which year did India make its Olympic debut in hockey?","1936","1932","1924","1928","d","1928. India made its Olympic debut in hockey in 1928 at the Amsterdam Olympics.","Sports","Sports"]
 ];
 
-const OWS_RAW = []; // Keeps the app from crashing  ];
+const OWS_RAW = [];
