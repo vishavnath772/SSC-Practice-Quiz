@@ -500,7 +500,8 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 const RAW = [];
 
 const ENG_RAW = [];
-
+RAW.push(...gsQuestions);
+ENG_RAW.push(...englishQuestions);
 // Parse MCQs
 const ALL_MCQ = RAW.map((r,i)=>({
   id:i,
@@ -1812,6 +1813,8 @@ setTimeout(()=>{
 },2100);
   <script src="gs-data.js"></script>
 <script src="english-data.js"></script>
+  // Combine GS and English questions together
+quizData = [...gsQuestions, ...englishQuestions];
 </script>
 <!-- Quick Menu Modal -->
 <div id="quick-menu-overlay" onclick="hideQuickMenu()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:flex-end;justify-content:center;"></div>
