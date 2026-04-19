@@ -4,8 +4,7 @@ const englishQuestions = [
   ["The [seal] was carved into the wax to close the letter.", "The explorer watched a seal basking on the icy shore.", "The clerk examined the seal for any cracks.", "The nobleman pressed his ring into the soft seal.", "The messenger delivered the letter with the royal seal.", "a", "'seal' = a stamp/device used to authenticate or close something. In (a) seal = a marine animal.", "Homonyms", "Homonyms"]   
 ];
 
-// We add these empty lists so the app doesn't crash when looking for them
-const OWS_RAW = []; 
+// Empty folders for future data (DO NOT add OWS_RAW here)
 const SYN_RAW = [];
 const ANT_RAW = [];
 const HOM_RAW = [];
