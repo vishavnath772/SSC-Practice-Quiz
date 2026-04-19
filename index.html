@@ -551,41 +551,31 @@ const OWS_MCQ = OWS_RAW.map((r,i)=>({
 // SYNONYMS  →  IDs 21000–21999
 // HOW TO PASTE: replace the [...] below with your JSON array from extraction chat
 // ════════════════════════════════════════════════
-const SYN_RAW = [
-["DUMMY: Paste Synonyms JSON array here (copy full [...] from extraction chat)","Option A","Option B","Option C","Option D","a","**Jovial** — happy and cheerful | **Melancholy** — sad | **Irate** — angry | **Serene** — calm","Synonyms","Synonyms"]
-];
+var SYN_RAW = SYN_RAW || [];
 const SYN_MCQ = SYN_RAW.map((r,i)=>({
   id: 21000+i,
-  q:r[0].replace(/\s+/g,' ').trim(), a:r[1].replace(/\s+/g,' ').trim(),
-  b:r[2].replace(/\s+/g,' ').trim(), c:r[3].replace(/\s+/g,' ').trim(),
-  d:r[4].replace(/\s+/g,' ').trim(), ans:r[5],
-  fact:r[6].replace(/\s+/g,' ').trim(),
+  q:r[0], a:r[1], b:r[2], c:r[3], d:r[4], ans:r[5], fact:r[6],
   topic:r[7]||'Synonyms', sub:r[8]||r[7]||'Synonyms'
-})).filter(m=>m.q.length>5 && !m.q.startsWith('DUMMY'));
+})).filter(m=>m.q.length>5);
 
 // ════════════════════════════════════════════════
 // ANTONYMS  →  IDs 22000–22999
 // HOW TO PASTE: replace the [...] below with your JSON array from extraction chat
 // ════════════════════════════════════════════════
-const ANT_RAW = [
-["DUMMY: Paste Antonyms JSON array here (copy full [...] from extraction chat)","Option A","Option B","Option C","Option D","a","**Brave** — showing courage | **Coward** — lacking courage | **Bold** — confident | **Timid** — shy","Antonyms","Antonyms"]
-];
+var ANT_RAW = ANT_RAW || [];
 const ANT_MCQ = ANT_RAW.map((r,i)=>({
   id: 22000+i,
-  q:r[0].replace(/\s+/g,' ').trim(), a:r[1].replace(/\s+/g,' ').trim(),
-  b:r[2].replace(/\s+/g,' ').trim(), c:r[3].replace(/\s+/g,' ').trim(),
-  d:r[4].replace(/\s+/g,' ').trim(), ans:r[5],
-  fact:r[6].replace(/\s+/g,' ').trim(),
+  q:r[0], a:r[1], b:r[2], c:r[3], d:r[4], ans:r[5], fact:r[6],
   topic:r[7]||'Antonyms', sub:r[8]||r[7]||'Antonyms'
-})).filter(m=>m.q.length>5 && !m.q.startsWith('DUMMY'));
+})).filter(m=>m.q.length>5);
+
 
 // ════════════════════════════════════════════════
 // HOMONYMS  →  IDs 23000–23999
 // HOW TO PASTE: replace the [...] below with your JSON array from extraction chat
 // ════════════════════════════════════════════════
-const HOM_RAW = [
-["DUMMY: Paste Homonyms JSON array here (copy full [...] from extraction chat)","Option A","Option B","Option C","Option D","a","**Bare** — uncovered | **Bear** — to carry or tolerate | Note: same sound, different meaning","Homonyms","Homonyms"]
-];
+var HOM_RAW = HOM_RAW || [];
+  const HOM_RAW = [];
 const HOM_MCQ = HOM_RAW.map((r,i)=>({
   id: 23000+i,
   q:r[0].replace(/\s+/g,' ').trim(), a:r[1].replace(/\s+/g,' ').trim(),
@@ -613,9 +603,7 @@ const IDI_MCQ = IDI_RAW.map((r,i)=>({
 // SPELLING CHECK  →  IDs 25000–25999
 // HOW TO PASTE: replace the [...] below with your JSON array from extraction chat
 // ════════════════════════════════════════════════
-const SPL_RAW = [
-["DUMMY: Paste Spelling Check JSON array here (copy full [...] from extraction chat)","Option A","Option B","Option C","Option D","a","Correct: **Accommodate** — remember: double-c, double-m | Common wrong: Accomodate, Acommodate","Spelling Check","Spelling Check"]
-];
+const SPL_RAW = [];
 const SPL_MCQ = SPL_RAW.map((r,i)=>({
   id: 25000+i,
   q:r[0].replace(/\s+/g,' ').trim(), a:r[1].replace(/\s+/g,' ').trim(),
