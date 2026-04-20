@@ -6212,8 +6212,8 @@ const englishQuestions =[
       "mostly",
       "a",
       "utmost. 'Utmost' means extreme. The given sentence states that due to the fragility of the manuscript, the historian handled it with extreme care",
-      "Fill in the Blanks",
-      "Fill in the Blanks"
+      'Fill in the Blanks',
+      'Fill in the Blanks'
     ],
     [
       "The abstruse philosophical treatise delved _____ the very essence of existentialism.",
