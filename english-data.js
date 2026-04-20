@@ -34821,8 +34821,8 @@ const englishQuestions =[
     "To make a quick decision without thinking",
     "c",
     "**Bite the bullet** — to face a difficult or unpleasant situation with courage",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases & Phrases",
+    "Idioms & Phrases & Phrases"
   ],
   [
     "Bend over backwards",
@@ -34832,8 +34832,8 @@ const englishQuestions =[
     "To show extreme flexibility",
     "b",
     "**Bend over backwards** — to exert oneself greatly to help someone or achieve something",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To carry coals to Newcastle",
@@ -34843,8 +34843,8 @@ const englishQuestions =[
     "To engage in a difficult but rewarding endeavor",
     "b",
     "**To carry coals to Newcastle** — to do something pointless or superfluous",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To throw in the towel",
@@ -34854,8 +34854,8 @@ const englishQuestions =[
     "To give a gift",
     "b",
     "**To throw in the towel** — to admit defeat",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To have an ace up one's sleeve",
@@ -34865,8 +34865,8 @@ const englishQuestions =[
     "To wear a lucky charm during a competition",
     "b",
     "**To have an ace up one's sleeve** — to possess a hidden advantage or secret resource",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Lose one's nerve",
@@ -34876,8 +34876,8 @@ const englishQuestions =[
     "To relax after a period of stress",
     "b",
     "**Lose one's nerve** — to lose confidence and courage",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Beat around the bush",
@@ -34887,8 +34887,8 @@ const englishQuestions =[
     "To take unnecessary risks",
     "b",
     "**Beat around the bush** — to avoid talking about the main point",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To pay through the nose",
@@ -34898,8 +34898,8 @@ const englishQuestions =[
     "To pay in installments",
     "c",
     "**To pay through the nose** — to pay an excessively high price",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To carry the can",
@@ -34909,8 +34909,8 @@ const englishQuestions =[
     "To make a quick decision",
     "b",
     "**To carry the can** — to take responsibility for a mistake or failure",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Throw down the gauntlet",
@@ -34920,8 +34920,8 @@ const englishQuestions =[
     "To surrender gracefully",
     "c",
     "**Throw down the gauntlet** — to issue a challenge or dare someone",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Ride roughshod over",
@@ -34931,8 +34931,8 @@ const englishQuestions =[
     "To handle a matter with extreme caution",
     "a",
     "**Ride roughshod over** — to act with total disregard for others' feelings or rights",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Ride for a fall",
@@ -34942,8 +34942,8 @@ const englishQuestions =[
     "To move ahead with full confidence",
     "a",
     "**Ride for a fall** — to take unnecessary risks likely to end in failure",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To upset the applecart",
@@ -34953,8 +34953,8 @@ const englishQuestions =[
     "To make a pleasant surprise",
     "b",
     "**To upset the applecart** — to spoil a plan or disturb a situation",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Cry over spilt milk",
@@ -34964,8 +34964,8 @@ const englishQuestions =[
     "To complain without reason",
     "a",
     "**Cry over spilt milk** — to regret something that cannot be undone",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To send someone to Coventry",
@@ -34975,8 +34975,8 @@ const englishQuestions =[
     "To give someone a difficult task",
     "b",
     "**To send someone to Coventry** — to ostracise or deliberately ignore someone",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To dine with Duke Humphrey",
@@ -34986,8 +34986,8 @@ const englishQuestions =[
     "To share a meal in good company",
     "b",
     "**To dine with Duke Humphrey** — to go without food",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Cut the Gordian knot",
@@ -34997,8 +34997,8 @@ const englishQuestions =[
     "Create confusion",
     "b",
     "**Cut the Gordian knot** — to solve a difficult problem boldly",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To tilt at windmills (1)",
@@ -35008,8 +35008,8 @@ const englishQuestions =[
     "To exploit an opportunity cleverly",
     "a",
     "**To tilt at windmills** — to fight imaginary enemies / engage in a pointless or quixotic struggle",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To tilt at windmills (2)",
@@ -35019,8 +35019,8 @@ const englishQuestions =[
     "To cleverly overcome obstacles",
     "b",
     "**To tilt at windmills** — to engage in a pointless or quixotic struggle",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To throw one's hat into the ring",
@@ -35030,8 +35030,8 @@ const englishQuestions =[
     "To show disinterest",
     "b",
     "**To throw one's hat into the ring** — to enter a competition or election",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To turn over a new leaf",
@@ -35041,8 +35041,8 @@ const englishQuestions =[
     "To start afresh",
     "d",
     "**To turn over a new leaf** — to start afresh",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To look daggers at someone",
@@ -35052,8 +35052,8 @@ const englishQuestions =[
     "To examine something very closely",
     "c",
     "**To look daggers at someone** — to stare at someone with anger or hatred",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To send someone to Coventry (2)",
@@ -35063,8 +35063,8 @@ const englishQuestions =[
     "To dismiss someone from their position",
     "b",
     "**To send someone to Coventry** — to ostracize someone",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Achilles' heel (1)",
@@ -35074,8 +35074,8 @@ const englishQuestions =[
     "A point of no return",
     "c",
     "**Achilles' heel** — a hidden weakness or vulnerability",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Eat humble pie",
@@ -35085,8 +35085,8 @@ const englishQuestions =[
     "To show false modesty",
     "b",
     "**Eat humble pie** — to be forced to admit one's error and apologize humbly",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To run with the hare and hunt with the hounds",
@@ -35096,8 +35096,8 @@ const englishQuestions =[
     "To support the weaker side",
     "a",
     "**To run with the hare and hunt with the hounds** — to be friendly with both sides in a conflict",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Through thick and thin",
@@ -35107,8 +35107,8 @@ const englishQuestions =[
     "To alternate between periods of success and failure",
     "b",
     "**Through thick and thin** — to be loyal and supportive in all circumstances",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To give the go-by",
@@ -35118,8 +35118,8 @@ const englishQuestions =[
     "To support someone secretly",
     "a",
     "**To give the go-by** — to ignore or avoid someone or something deliberately",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To have cold feet",
@@ -35129,8 +35129,8 @@ const englishQuestions =[
     "To run away from danger",
     "b",
     "**To have cold feet** — to be apprehensive or nervous about doing something",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A nine days' wonder",
@@ -35140,8 +35140,8 @@ const englishQuestions =[
     "A spectacular event that happens once every nine years",
     "c",
     "**A nine days' wonder** — something that causes intense excitement or interest for a very short period",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Call the shots",
@@ -35151,8 +35151,8 @@ const englishQuestions =[
     "To ignore authority",
     "a",
     "**Call the shots** — to be in control and make important decisions",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Make no bones about",
@@ -35162,8 +35162,8 @@ const englishQuestions =[
     "To regret one's decisions",
     "a",
     "**Make no bones about** — to speak frankly and without hesitation",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Get on like a house on fire",
@@ -35173,8 +35173,8 @@ const englishQuestions =[
     "To avoid social interactions",
     "b",
     "**Get on like a house on fire** — to become very friendly very quickly",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Doing sterling work",
@@ -35184,8 +35184,8 @@ const englishQuestions =[
     "Working only for monetary gain",
     "b",
     "**Doing sterling work** — doing outstanding and valuable work",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To tuck one's tail",
@@ -35195,8 +35195,8 @@ const englishQuestions =[
     "To show defiance",
     "b",
     "**To tuck one's tail** — to retreat in fear or shame",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To have an axe to grind",
@@ -35206,8 +35206,8 @@ const englishQuestions =[
     "To prepare for a difficult task",
     "c",
     "**To have an axe to grind** — to have a selfish motive",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "At sixes and sevens",
@@ -35217,8 +35217,8 @@ const englishQuestions =[
     "Proud and arrogant",
     "a",
     "**At sixes and sevens** — in a state of confusion or disorder",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Mad as a March hare",
@@ -35228,8 +35228,8 @@ const englishQuestions =[
     "Excited but disciplined",
     "b",
     "**Mad as a March hare** — completely insane or unpredictable",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To take up the gauntlet",
@@ -35239,8 +35239,8 @@ const englishQuestions =[
     "To pick up a dropped item carefully",
     "c",
     "**To take up the gauntlet** — to accept a challenge or invitation to fight",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To have a chip on one's shoulder",
@@ -35250,8 +35250,8 @@ const englishQuestions =[
     "To feel angry or resentful about something that happened in the past",
     "d",
     "**To have a chip on one's shoulder** — to feel angry or resentful about something that happened in the past",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Throw one's weight about",
@@ -35261,8 +35261,8 @@ const englishQuestions =[
     "To work efficiently",
     "a",
     "**Throw one's weight about** — to act arrogantly or bossily",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Cut the mustard",
@@ -35272,8 +35272,8 @@ const englishQuestions =[
     "Meet the required standard",
     "d",
     "**Cut the mustard** — to meet the required standard",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To skate on thin ice",
@@ -35283,8 +35283,8 @@ const englishQuestions =[
     "To enjoy a winter sport safely",
     "b",
     "**To skate on thin ice** — to be in a risky or precarious situation",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "At one's wit's end",
@@ -35294,8 +35294,8 @@ const englishQuestions =[
     "To be on the verge of solving a complex problem",
     "b",
     "**At one's wit's end** — to be utterly perplexed and not know what to do next",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Be the low man on the totem pole",
@@ -35305,8 +35305,8 @@ const englishQuestions =[
     "To take responsibility for others' mistakes",
     "a",
     "**Be the low man on the totem pole** — to hold the least important or lowest position in a group",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Take silk",
@@ -35316,8 +35316,8 @@ const englishQuestions =[
     "Delay an important task",
     "a",
     "**Take silk** — to become a senior barrister or lawyer",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Play it by ear",
@@ -35327,8 +35327,8 @@ const englishQuestions =[
     "To ignore advice and do what one wants",
     "c",
     "**Play it by ear** — to decide how to deal with a situation as it develops rather than by having a fixed plan",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Come up trumps",
@@ -35338,8 +35338,8 @@ const englishQuestions =[
     "Avoid responsibility",
     "b",
     "**Come up trumps** — to succeed unexpectedly or achieve a desired result",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Shun someone",
@@ -35349,8 +35349,8 @@ const englishQuestions =[
     "Follow someone's advice strictly",
     "a",
     "**Shun someone** — to avoid or ignore someone deliberately",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Be the chaperone",
@@ -35360,8 +35360,8 @@ const englishQuestions =[
     "Avoid taking responsibility",
     "a",
     "**Be the chaperone** — to supervise or accompany young people in social situations",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Beat a dead horse",
@@ -35371,8 +35371,8 @@ const englishQuestions =[
     "To invest time in a failing project",
     "c",
     "**Beat a dead horse** — to dwell on a topic that is already resolved or futile",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "In the dark",
@@ -35382,8 +35382,8 @@ const englishQuestions =[
     "Hiding from everyone",
     "c",
     "**In the dark** — unaware of the true facts or details about something",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To open a Pandora's Box",
@@ -35393,8 +35393,8 @@ const englishQuestions =[
     "To discover ancient secrets",
     "a",
     "**To open a Pandora's Box** — to unleash a multitude of troubles",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A storm is brewing",
@@ -35404,8 +35404,8 @@ const englishQuestions =[
     "Calm and peace is prevailing",
     "b",
     "**A storm is brewing** — trouble or conflict is likely to happen soon",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To bite the hand that feeds you",
@@ -35415,8 +35415,8 @@ const englishQuestions =[
     "To struggle against oppression",
     "a",
     "**To bite the hand that feeds you** — to show ingratitude towards a benefactor",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Out of one's depth",
@@ -35426,8 +35426,8 @@ const englishQuestions =[
     "To lose consciousness",
     "c",
     "**Out of one's depth** — to be in a situation too difficult for one's abilities",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To throw dust in one's eyes",
@@ -35437,8 +35437,8 @@ const englishQuestions =[
     "To cause minor irritation",
     "c",
     "**To throw dust in one's eyes** — to confuse or mislead someone deliberately",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Break the bank",
@@ -35448,8 +35448,8 @@ const englishQuestions =[
     "Borrow from a bank",
     "a",
     "**Break the bank** — to spend all one's money",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Lay it on the line",
@@ -35459,8 +35459,8 @@ const englishQuestions =[
     "To hide the truth",
     "c",
     "**Lay it on the line** — to speak frankly and honestly",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Throw caution to the wind",
@@ -35470,8 +35470,8 @@ const englishQuestions =[
     "To sever all connections with friends",
     "b",
     "**Throw caution to the wind** — to do something without worrying about the risk or negative results",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Go back to square one",
@@ -35481,8 +35481,8 @@ const englishQuestions =[
     "To finalize a project",
     "a",
     "**Go back to square one** — to start over after a failure",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "In the nick of time",
@@ -35492,8 +35492,8 @@ const englishQuestions =[
     "Without any preparation",
     "c",
     "**In the nick of time** — just before it was too late",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To come clean",
@@ -35503,8 +35503,8 @@ const englishQuestions =[
     "To confess something especially something wrong",
     "d",
     "**To come clean** — to confess something especially something wrong",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To blow hot and cold",
@@ -35514,8 +35514,8 @@ const englishQuestions =[
     "To have a fluctuating fever",
     "b",
     "**To blow hot and cold** — to keep changing one's attitude or opinion",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To step up to the plate",
@@ -35525,8 +35525,8 @@ const englishQuestions =[
     "To begin a new game",
     "b",
     "**To step up to the plate** — to take responsibility and perform well when needed",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Under the weather",
@@ -35536,8 +35536,8 @@ const englishQuestions =[
     "He is traveling to another city",
     "a",
     "**Under the weather** — feeling unwell/sick",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Cut to the chase",
@@ -35547,8 +35547,8 @@ const englishQuestions =[
     "Speak vaguely",
     "a",
     "**Cut to the chase** — to avoid unnecessary details and get to the point",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Through thick and thin (2)",
@@ -35558,8 +35558,8 @@ const englishQuestions =[
     "To alternate between periods of success and failure",
     "b",
     "**Through thick and thin** — to be loyal and supportive in all circumstances",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Cut from the same cloth",
@@ -35569,8 +35569,8 @@ const englishQuestions =[
     "To work in the same profession",
     "b",
     "**Cut from the same cloth** — of the same nature",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To blackball someone",
@@ -35580,8 +35580,8 @@ const englishQuestions =[
     "To exclude someone from a group or society often by secret vote",
     "d",
     "**To blackball someone** — to exclude someone from a group or society often by secret vote",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Achilles' heel (2)",
@@ -35591,8 +35591,8 @@ const englishQuestions =[
     "A point of no return",
     "c",
     "**Achilles' heel** — a hidden weakness or vulnerability",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Be on the same page",
@@ -35602,8 +35602,8 @@ const englishQuestions =[
     "Reading something together",
     "b",
     "**Be on the same page** — having the same understanding",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Split one's sides",
@@ -35613,8 +35613,8 @@ const englishQuestions =[
     "To overeat",
     "c",
     "**Split one's sides** — to roar with laughter",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Bite the _____ (complete the idiom)",
@@ -35624,8 +35624,8 @@ const englishQuestions =[
     "bean",
     "a",
     "**Bite the bullet** — to face a difficult situation with courage and determination",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Sitting on the _____ (complete the idiom)",
@@ -35635,8 +35635,8 @@ const englishQuestions =[
     "fence",
     "d",
     "**Sitting on the fence** — to refuse to take sides in a dispute",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Be in apple-pie order",
@@ -35646,8 +35646,8 @@ const englishQuestions =[
     "Be perfectly arranged and tidy",
     "d",
     "**Be in apple-pie order** — to be perfectly arranged and tidy",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To get someone's goat",
@@ -35657,8 +35657,8 @@ const englishQuestions =[
     "To have affection for somebody",
     "b",
     "**To get someone's goat** — to irritate someone",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Cut from the same cloth (EBP)",
@@ -35668,8 +35668,8 @@ const englishQuestions =[
     "To have the same origin",
     "a",
     "**Cut from the same cloth** — to have very similar qualities",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Complete the dialogue: Person B says 'You are just getting ______.' (nervous about speech)",
@@ -35679,8 +35679,8 @@ const englishQuestions =[
     "cold foot",
     "b",
     "**Cold feet** — feeling nervous or lack of confidence",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The team decided to pull out all the stops for their upcoming presentation",
@@ -35690,8 +35690,8 @@ const englishQuestions =[
     "Wait patiently for a more favourable time",
     "a",
     "**Pull out all the stops** — to do everything to make something successful",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A lot of people are still _____ over the GDP issue",
@@ -35701,8 +35701,8 @@ const englishQuestions =[
     "by the fence",
     "c",
     "**Sitting on the fence** — to refuse to support or oppose a decision",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Person B: 'I don't like clubs. It is _____.'",
@@ -35712,8 +35712,8 @@ const englishQuestions =[
     "not my cup of tea",
     "d",
     "**Not my cup of tea** — not an activity that someone likes",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "He goes hard with one and all",
@@ -35723,8 +35723,8 @@ const englishQuestions =[
     "To be unreliable",
     "c",
     "**Goes hard** — to be difficult",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Extreme inflation has made it difficult to _____",
@@ -35734,8 +35734,8 @@ const englishQuestions =[
     "keep body and soul together",
     "d",
     "**Keep body and soul together** — to get enough food and money to survive",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Unless sales improve the company will be in a critical position in which failure seems imminent",
@@ -35745,8 +35745,8 @@ const englishQuestions =[
     "up against the wall",
     "d",
     "**Up against the wall** — in a critical position in which failure seems imminent",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Your guess is as good as mine",
@@ -35756,8 +35756,8 @@ const englishQuestions =[
     "To be superstitious",
     "b",
     "**Your guess is as good as mine** — to have no idea of the answer",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Loose cannon",
@@ -35767,8 +35767,8 @@ const englishQuestions =[
     "Someone who is well known and respected in society",
     "b",
     "**Loose cannon** — someone who is unpredictable and liable to cause problems",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Diamond in the rough",
@@ -35778,8 +35778,8 @@ const englishQuestions =[
     "An unsophisticated person with potential",
     "d",
     "**Diamond in the rough** — an unsophisticated person with potential",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The sergeant ordered the soldiers to be armed to the teeth",
@@ -35789,8 +35789,8 @@ const englishQuestions =[
     "Well-equipped or prepared",
     "d",
     "**Armed to the teeth** — well-equipped or prepared",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The winner's performance was head and shoulders above all other participants'",
@@ -35800,8 +35800,8 @@ const englishQuestions =[
     "Much better than others",
     "d",
     "**Head and shoulders above** — much better than others",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Made his mark",
@@ -35811,8 +35811,8 @@ const englishQuestions =[
     "To take a stand",
     "b",
     "**Made his mark** — to distinguish oneself",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Milk of human kindness",
@@ -35822,8 +35822,8 @@ const englishQuestions =[
     "Victory",
     "a",
     "**Milk of human kindness** — compassion",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Today's managers' meeting has given me a lot to think about",
@@ -35833,8 +35833,8 @@ const englishQuestions =[
     "food for thought",
     "d",
     "**Food for thought** — a lot to think about",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Lack of funds is the main obstacle for the company's growth",
@@ -35844,8 +35844,8 @@ const englishQuestions =[
     "storm in the teacup",
     "c",
     "**Stumbling block** — an obstacle",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Call it a day",
@@ -35855,8 +35855,8 @@ const englishQuestions =[
     "Involve many people for a simple job",
     "b",
     "**Call it a day** — to stop working on something",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To show the white feather",
@@ -35866,8 +35866,8 @@ const englishQuestions =[
     "To act bravely",
     "a",
     "**To show the white feather** — to act cowardly",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Bheem has been shown as someone who eats in large quantity",
@@ -35877,8 +35877,8 @@ const englishQuestions =[
     "chews the fat",
     "b",
     "**Eats like a horse** — eats in large quantity",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The comedian's jokes were so funny that the audience was laughing uncontrollably",
@@ -35888,8 +35888,8 @@ const englishQuestions =[
     "in bits and pieces",
     "c",
     "**In stitches** — laughing uncontrollably",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Sushant looked blue in the face after the marathon",
@@ -35899,8 +35899,8 @@ const englishQuestions =[
     "good",
     "c",
     "**Blue in the face** — exhausted",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Like a bat out of hell",
@@ -35910,8 +35910,8 @@ const englishQuestions =[
     "Impossible",
     "a",
     "**Like a bat out of hell** — very fast and wildly",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "I need to confirm by hearing it directly from the person involved",
@@ -35921,8 +35921,8 @@ const englishQuestions =[
     "bearing a grudge",
     "a",
     "**Straight from the horse's mouth** — directly from the person involved",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Most women are facing the same problem when it comes to job satisfaction because of pay parity",
@@ -35932,8 +35932,8 @@ const englishQuestions =[
     "in the same boat",
     "d",
     "**In the same boat** — facing the same problem",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Hold someone's feet to the fire",
@@ -35943,8 +35943,8 @@ const englishQuestions =[
     "Insist that someone fulfil their promises or obligations",
     "d",
     "**Hold someone's feet to the fire** — to insist that someone fulfil their promises or obligations",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "We hear the judges from their ________ that only CNG buses should run in Delhi",
@@ -35954,8 +35954,8 @@ const englishQuestions =[
     "square meal",
     "b",
     "**Ivory tower** — a place or situation where you are separated from the problems and practical aspects of normal life",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Like a dying duck in a thunderstorm",
@@ -35965,8 +35965,8 @@ const englishQuestions =[
     "Harmful or vigilant",
     "b",
     "**Like a dying duck in a thunderstorm** — dejected or hopeless",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A square peg in a round hole",
@@ -35976,8 +35976,8 @@ const englishQuestions =[
     "A person who does not fit the job",
     "d",
     "**A square peg in a round hole** — a person who does not fit the job",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Baker's Dozen",
@@ -35987,8 +35987,8 @@ const englishQuestions =[
     "When shopkeepers put something extra",
     "b",
     "**Baker's Dozen** — one unit extra with one dozen",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Hanging by a thread",
@@ -35998,8 +35998,8 @@ const englishQuestions =[
     "To avoid danger or trouble",
     "a",
     "**Hanging by a thread** — to be perilously close to failing dying or resulting in a bad outcome",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "We often go camping but I have never been to that particular part of town or country before",
@@ -36009,8 +36009,8 @@ const englishQuestions =[
     "risk one's neck",
     "a",
     "**Neck of the woods** — a particular part of town or country",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To look black",
@@ -36020,8 +36020,8 @@ const englishQuestions =[
     "To cry bitterly",
     "b",
     "**To look black** — to seem unfavourable",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "After the long and tedious project Sarah felt like she was at the limit of her patience",
@@ -36031,8 +36031,8 @@ const englishQuestions =[
     "finishing line",
     "a",
     "**End of her rope** — limit of her patience",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "That's great! You keep everything under your ____________",
@@ -36042,8 +36042,8 @@ const englishQuestions =[
     "hands",
     "b",
     "**Under your thumb** — completely under your influence or control",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The salesman informed the customers that they could drop a line",
@@ -36053,8 +36053,8 @@ const englishQuestions =[
     "come back with the items",
     "a",
     "**Drop a line** — to send a brief letter",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To have bigger fish to fry",
@@ -36064,8 +36064,8 @@ const englishQuestions =[
     "To have bigger things to take care of than the menial task at hand",
     "d",
     "**To have bigger fish to fry** — to have bigger things to take care of than the menial task at hand",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Break a leg",
@@ -36075,8 +36075,8 @@ const englishQuestions =[
     "Wish someone good luck before a performance",
     "d",
     "**Break a leg** — wish someone good luck before a performance",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Raju's job seemed bad at first because of low salary but resulted in something good happening later",
@@ -36086,8 +36086,8 @@ const englishQuestions =[
     "a gift in disguise",
     "b",
     "**A blessing in disguise** — bad at first but resulted in something good happening later",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Fatima was at her wits' end trying to decide on a serene place for spending the holidays",
@@ -36097,8 +36097,8 @@ const englishQuestions =[
     "So worried confused or annoyed that she insulted others for no reason",
     "a",
     "**At her wits' end** — so worried confused or annoyed that she does not know what to do next",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Which idiom means 'to steal from a shop'?",
@@ -36108,8 +36108,8 @@ const englishQuestions =[
     "Black sheep",
     "c",
     "**Five-finger discount** — to steal from a shop",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "On the ball",
@@ -36119,8 +36119,8 @@ const englishQuestions =[
     "Aware of any changes or developments but doing nothing",
     "c",
     "**On the ball** — aware of any changes or developments and quick to react to them",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "I'm _____ about whether to accept the job offer or continue freelancing",
@@ -36130,8 +36130,8 @@ const englishQuestions =[
     "up in arms",
     "a",
     "**On the fence** — not able to decide something",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Your so-called friend has cooked your goose",
@@ -36141,8 +36141,8 @@ const englishQuestions =[
     "To interfere with disrupt or ruin something for someone",
     "d",
     "**Cooked your goose** — to interfere with disrupt or ruin something for someone",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Care a hang",
@@ -36152,8 +36152,8 @@ const englishQuestions =[
     "Showing no interest",
     "d",
     "**Care a hang** — showing no interest",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To tell others secret information only for enjoyment is not a good practice",
@@ -36163,8 +36163,8 @@ const englishQuestions =[
     "spill the beans",
     "d",
     "**Spill the beans** — to tell others secret information",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The doctors tried very hard to save his mother but they were unsuccessful",
@@ -36174,8 +36174,8 @@ const englishQuestions =[
     "ran like clockwork",
     "c",
     "**Moved heaven and earth** — tried very hard",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Hit the nail on the head",
@@ -36185,8 +36185,8 @@ const englishQuestions =[
     "They hit a nail with a hammer",
     "b",
     "**Hit the nail on the head** — to have accurately identified or explained something",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To read between the lines",
@@ -36196,8 +36196,8 @@ const englishQuestions =[
     "To understand more than what the words suggest",
     "d",
     "**To read between the lines** — to understand more than what the words suggest",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Jump the gun",
@@ -36207,8 +36207,8 @@ const englishQuestions =[
     "To do something too soon and too quickly",
     "d",
     "**Jump the gun** — to do something too soon and too quickly",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A dime a dozen",
@@ -36218,8 +36218,8 @@ const englishQuestions =[
     "A fair trade",
     "b",
     "**A dime a dozen** — something common and not special",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Nobody's fool",
@@ -36229,8 +36229,8 @@ const englishQuestions =[
     "All are fools",
     "a",
     "**Nobody's fool** — not easily deceived",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The renowned publisher decided to withdraw a book as the arguments presented were ____________",
@@ -36240,8 +36240,8 @@ const englishQuestions =[
     "under the rose",
     "c",
     "**Beside the mark** — something is irrelevant or not to the point",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "In my new office all employees were different so I felt like a fish out of water",
@@ -36251,8 +36251,8 @@ const englishQuestions =[
     "Disappointed",
     "a",
     "**Fish out of water** — uncomfortable",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "When life gives you lemons make lemonade",
@@ -36262,8 +36262,8 @@ const englishQuestions =[
     "Make the best out of difficult situations",
     "d",
     "**When life gives you lemons make lemonade** — make the best out of difficult situations",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Turned a deaf ear to",
@@ -36273,8 +36273,8 @@ const englishQuestions =[
     "Rebuked",
     "a",
     "**Turned a deaf ear to** — disregarded",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "All his friends admired him because he was a straight shooter",
@@ -36284,8 +36284,8 @@ const englishQuestions =[
     "A thoroughly upright straightforward person",
     "d",
     "**Straight shooter** — a thoroughly upright straightforward person",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "My uncle lives in New York so I only see him once in a blue moon",
@@ -36295,8 +36295,8 @@ const englishQuestions =[
     "Very often",
     "a",
     "**Once in a blue moon** — not very often",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Radhika stood by Monica's side through thick and thin",
@@ -36306,8 +36306,8 @@ const englishQuestions =[
     "In the moments when Monica couldn't complete some simple tasks",
     "c",
     "**Through thick and thin** — under all conditions no matter how challenging or difficult",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "We were thankful if we could keep the wolf from the door",
@@ -36317,8 +36317,8 @@ const englishQuestions =[
     "Encourage starvation",
     "a",
     "**Keep the wolf from the door** — to avoid starvation",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "My cousin works day and night to achieve success in life",
@@ -36328,8 +36328,8 @@ const englishQuestions =[
     "a handful",
     "b",
     "**Around the clock** — day and night",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To bring to light",
@@ -36339,8 +36339,8 @@ const englishQuestions =[
     "To disengage",
     "c",
     "**To bring to light** — to disclose",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Rina pulled a long face since her husband had not bought her a diamond necklace on their anniversary",
@@ -36350,8 +36350,8 @@ const englishQuestions =[
     "To be electrified",
     "c",
     "**Pulled a long face** — to look saddened",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Easy does it",
@@ -36361,8 +36361,8 @@ const englishQuestions =[
     "Used to tell someone to do something horridly",
     "c",
     "**Easy does it** — used to tell someone to do something slowly and carefully",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "I thought Sadhna would always stick by me but when I got into trouble she turned out to be a/an _________",
@@ -36372,8 +36372,8 @@ const englishQuestions =[
     "white elephant",
     "c",
     "**Fair-weather friend** — a person who is dependable in good times but not in times of trouble",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "His PhD degree seems to be (Penelope's web)",
@@ -36383,8 +36383,8 @@ const englishQuestions =[
     "An endless task",
     "d",
     "**Penelope's web** — an endless task",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "On cloud nine",
@@ -36394,8 +36394,8 @@ const englishQuestions =[
     "Being very high",
     "b",
     "**On cloud nine** — being very delighted",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A bitter pill",
@@ -36405,8 +36405,8 @@ const englishQuestions =[
     "Getting furious easily",
     "a",
     "**A bitter pill** — facing a distressing situation",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Creature of habit",
@@ -36416,8 +36416,8 @@ const englishQuestions =[
     "One who does same thing in the same way",
     "d",
     "**Creature of habit** — one who does the same thing in the same way",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Hit the roof",
@@ -36427,8 +36427,8 @@ const englishQuestions =[
     "To play joyfully",
     "b",
     "**Hit the roof** — to become very angry",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Henpecked husbands",
@@ -36438,8 +36438,8 @@ const englishQuestions =[
     "Dominating husbands",
     "c",
     "**Henpecked** — oppressed husband",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "At a low ebb",
@@ -36449,8 +36449,8 @@ const englishQuestions =[
     "In an unemployed mode",
     "a",
     "**At a low ebb** — in a depressed or weak state",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Off and on",
@@ -36460,8 +36460,8 @@ const englishQuestions =[
     "Object to",
     "a",
     "**Off and on** — now and then",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Left out in the cold",
@@ -36471,8 +36471,8 @@ const englishQuestions =[
     "To be extremely negative",
     "c",
     "**Left out in the cold** — to be ignored",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Break the ice",
@@ -36482,8 +36482,8 @@ const englishQuestions =[
     "To say or do something that makes people feel more relaxed especially at the beginning of a meeting or party",
     "d",
     "**Break the ice** — to say or do something that makes people feel more relaxed especially at the beginning of a meeting or party",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A jaundiced eye",
@@ -36493,8 +36493,8 @@ const englishQuestions =[
     "Good will",
     "c",
     "**Jaundiced eye** — resentment",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A time when money might unexpectedly be needed",
@@ -36504,8 +36504,8 @@ const englishQuestions =[
     "A rap over the knuckles",
     "a",
     "**A rainy day** — a time when money might unexpectedly be needed",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Instead of confusing others let us call a spade a spade in front of the audience",
@@ -36515,8 +36515,8 @@ const englishQuestions =[
     "Be at strife",
     "c",
     "**Call a spade a spade** — to speak truthfully",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "After months of dedication I finally completed the marathon. I can really ________ for this accomplishment",
@@ -36526,8 +36526,8 @@ const englishQuestions =[
     "pat myself on the back",
     "d",
     "**Pat myself on the back** — to praise myself for doing something good",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The leader of the Legislative Assembly won hearts through his maiden speech",
@@ -36537,8 +36537,8 @@ const englishQuestions =[
     "logical speech",
     "c",
     "**Maiden speech** — first speech",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The entire speech of the revivalist fell flat with the crowd",
@@ -36548,8 +36548,8 @@ const englishQuestions =[
     "had no effect on",
     "d",
     "**Fell flat** — had no effect on",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "My brother always received the lion's share of every meal",
@@ -36559,8 +36559,8 @@ const englishQuestions =[
     "the major portion",
     "d",
     "**The lion's share** — the major portion",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "We all have to pull our socks up for the upcoming Board exam",
@@ -36570,8 +36570,8 @@ const englishQuestions =[
     "revive interest in old matters",
     "b",
     "**Pull our socks up** — to work harder than before",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Due to her impoverished state most of her relatives treated her with contempt",
@@ -36581,8 +36581,8 @@ const englishQuestions =[
     "Gave a wide space to her",
     "b",
     "**Turned up their nose at** — treated with contempt",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Let the dust settle",
@@ -36592,8 +36592,8 @@ const englishQuestions =[
     "To wait for a situation to become clear or certain",
     "d",
     "**Let the dust settle** — to wait for a situation to become clear or certain",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Ranveer never has the habit of making a beeline for his academic activities",
@@ -36603,8 +36603,8 @@ const englishQuestions =[
     "immediately responding to things",
     "c",
     "**Making a beeline** — going straight and quick",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "These small protests of employees were just the tip of the iceberg",
@@ -36614,8 +36614,8 @@ const englishQuestions =[
     "A small noticeable part of a problem the total size of which is really much greater",
     "d",
     "**Tip of the iceberg** — a small noticeable part of a problem the total size of which is really much greater",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Bincy's mother kept her cards close to her chest",
@@ -36625,8 +36625,8 @@ const englishQuestions =[
     "Kept her plans and thoughts hidden",
     "d",
     "**Kept her cards close to her chest** — kept her plans and thoughts hidden",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Lucy's conceited conduct has left her high and dry",
@@ -36636,8 +36636,8 @@ const englishQuestions =[
     "Surrounded by people",
     "a",
     "**High and dry** — helpless",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The realtors of the new venture sold plots like hot cakes",
@@ -36647,8 +36647,8 @@ const englishQuestions =[
     "Sold quickly and in large number",
     "d",
     "**Sold like hot cakes** — sold quickly and in large number",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Black and white",
@@ -36658,8 +36658,8 @@ const englishQuestions =[
     "A false invention",
     "a",
     "**Black and white** — in writing",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "At one's fingertips",
@@ -36669,8 +36669,8 @@ const englishQuestions =[
     "To be unaware of something",
     "c",
     "**At one's fingertips** — to have complete knowledge",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Teja followed his friend's advice so now he is in deep water",
@@ -36680,8 +36680,8 @@ const englishQuestions =[
     "In dilemma",
     "a",
     "**In deep water** — in trouble",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Blowing smoke",
@@ -36691,8 +36691,8 @@ const englishQuestions =[
     "To hide something",
     "b",
     "**Blowing smoke** — to lie to perplex others",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The arrival of Pragati in the house brought disharmony among the family members",
@@ -36702,8 +36702,8 @@ const englishQuestions =[
     "Tenterhooks",
     "c",
     "**Rift in the lute** — disharmony",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Cost an arm and a leg",
@@ -36713,8 +36713,8 @@ const englishQuestions =[
     "To be very expensive",
     "d",
     "**Cost an arm and a leg** — to be very expensive",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Put in mind",
@@ -36724,8 +36724,8 @@ const englishQuestions =[
     "To remind",
     "d",
     "**Put in mind** — to remind",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Dog eat dog",
@@ -36735,8 +36735,8 @@ const englishQuestions =[
     "Ruthlessly competitive",
     "d",
     "**Dog eat dog** — ruthlessly competitive",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Slip your mind",
@@ -36746,8 +36746,8 @@ const englishQuestions =[
     "Think about something for a short time",
     "b",
     "**Slip your mind** — to forget about something",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Lose heart",
@@ -36757,8 +36757,8 @@ const englishQuestions =[
     "To get success by believing in yourself",
     "c",
     "**Lose heart** — to stop believing that you can succeed",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "It feels like I made a promise of more than my ability when I promised to complete this worksheet in one day",
@@ -36768,8 +36768,8 @@ const englishQuestions =[
     "burnt a hole in my pocket",
     "a",
     "**Bit off more than I could chew** — made a promise of more than my ability",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "On its last legs",
@@ -36779,8 +36779,8 @@ const englishQuestions =[
     "Slow movement",
     "b",
     "**On its last legs** — in a bad condition",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Last resort",
@@ -36790,8 +36790,8 @@ const englishQuestions =[
     "Last hotel on the way",
     "c",
     "**Last resort** — last course of action",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Have a bee in your bonnet",
@@ -36801,8 +36801,8 @@ const englishQuestions =[
     "Having a cruel intention or grudge against someone",
     "c",
     "**Have a bee in your bonnet** — to be preoccupied or obsessed with something",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Stick to one's guns",
@@ -36812,8 +36812,8 @@ const englishQuestions =[
     "To remain faithful to",
     "d",
     "**Stick to one's guns** — to remain faithful to",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Best thing since sliced bread",
@@ -36823,8 +36823,8 @@ const englishQuestions =[
     "Breaking news",
     "b",
     "**Best thing since sliced bread** — extremely good interesting",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Delivering that furniture to the tenth floor is incredibly foolish and next to impossible",
@@ -36834,8 +36834,8 @@ const englishQuestions =[
     "like going between the bark and the tree",
     "c",
     "**Like nailing jelly to the tree** — extremely difficult or nearly impossible to achieve",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Vishnu and Vignesh are always like two peas in a pod",
@@ -36845,8 +36845,8 @@ const englishQuestions =[
     "Happy and compassionate",
     "b",
     "**Like two peas in a pod** — very similar to each other",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Independence Day is considered as a red-letter day in the history of India",
@@ -36856,8 +36856,8 @@ const englishQuestions =[
     "Unimportant day",
     "c",
     "**Red-letter day** — a memorable day",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Prakash could not make up his mind about what to do with the project",
@@ -36867,8 +36867,8 @@ const englishQuestions =[
     "Abandon",
     "b",
     "**Make up his mind** — to decide",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "You can best identify the fair weather friends at the time of adversity",
@@ -36878,8 +36878,8 @@ const englishQuestions =[
     "Friends who bring good rain",
     "a",
     "**Fair weather friends** — friend only at the time of prosperity",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "I can't begin to talk on this situation right now; I am still wrapping my head around it",
@@ -36889,8 +36889,8 @@ const englishQuestions =[
     "Ignoring something completely",
     "a",
     "**Wrapping my head around it** — understanding something complicated",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A bolt from the blue",
@@ -36900,8 +36900,8 @@ const englishQuestions =[
     "A spontaneous but expected event",
     "a",
     "**A bolt from the blue** — a sudden and unexpected event",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Walk a tightrope",
@@ -36911,8 +36911,8 @@ const englishQuestions =[
     "To be tensed about something",
     "a",
     "**Walk a tightrope** — to act carefully in a difficult situation",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Bag and baggage",
@@ -36922,8 +36922,8 @@ const englishQuestions =[
     "With all goods",
     "d",
     "**Bag and baggage** — with all goods",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The United Nations is working to eliminate the vicious cycle of poverty",
@@ -36933,8 +36933,8 @@ const englishQuestions =[
     "The barrier of poverty",
     "a",
     "**Vicious cycle** — one problem causes another",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "When I got an opportunity to start a new business Ravikanth queered my pitch",
@@ -36944,8 +36944,8 @@ const englishQuestions =[
     "Supported me with money",
     "a",
     "**Queered my pitch** — ruined my plan",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Bells and whistles",
@@ -36955,8 +36955,8 @@ const englishQuestions =[
     "Attractive but unnecessary features added to products",
     "d",
     "**Bells and whistles** — attractive but unnecessary features added to products",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Which idiom means 'going to sleep'?",
@@ -36966,8 +36966,8 @@ const englishQuestions =[
     "Keep an ear to the ground",
     "a",
     "**Hit the sack** — going to sleep",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Where the shoe pinches",
@@ -36977,8 +36977,8 @@ const englishQuestions =[
     "Where the difficulty lies",
     "d",
     "**Where the shoe pinches** — where the difficulty lies",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A wild goose chase",
@@ -36988,8 +36988,8 @@ const englishQuestions =[
     "Ideal seeking",
     "c",
     "**A wild goose chase** — a fruitless search",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "An old head on young shoulders",
@@ -36999,8 +36999,8 @@ const englishQuestions =[
     "A young person who looks old",
     "b",
     "**An old head on young shoulders** — a young person who acts or speaks like an older person",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "He got medals time after time by following the instructions of his mentor",
@@ -37010,8 +37010,8 @@ const englishQuestions =[
     "Rarely",
     "a",
     "**Time after time** — repeatedly",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Dog in the manger - which sentence best represents the idiom?",
@@ -37021,8 +37021,8 @@ const englishQuestions =[
     "You are here just because you have recognised your hidden potential",
     "b",
     "**Dog in the manger** — a person who prevents others from having something they cannot use",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Going through a sticky patch",
@@ -37032,8 +37032,8 @@ const englishQuestions =[
     "Try to paste something unsuccessfully",
     "a",
     "**Going through a sticky patch** — to experience a bad period in life",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "A sting in the tail",
@@ -37043,8 +37043,8 @@ const englishQuestions =[
     "An unexpected typically unpleasant or problematic end to something",
     "d",
     "**A sting in the tail** — an unexpected typically unpleasant or problematic end to something",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "I know Covid has made you terribly ill but the good thing is that you have developed immunity",
@@ -37054,8 +37054,8 @@ const englishQuestions =[
     "the silver spoon",
     "a",
     "**The silver lining in the cloud** — a positive aspect or hopeful side of a difficult situation",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Out of the frying pan and into the fire",
@@ -37065,8 +37065,8 @@ const englishQuestions =[
     "Things going from bad to worse",
     "d",
     "**Out of the frying pan and into the fire** — things going from bad to worse",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Every piece of furniture in her house is in apple-pie order",
@@ -37076,8 +37076,8 @@ const englishQuestions =[
     "Painted in light colours",
     "c",
     "**Apple-pie order** — very neatly arranged",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To throw dust in one's eyes (EBP)",
@@ -37087,8 +37087,8 @@ const englishQuestions =[
     "To make someone blind forever",
     "b",
     "**To throw dust in one's eyes** — to mislead someone by tricks",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "After many years of rivalry the two schools decided to _______ and participate in a National Event together",
@@ -37098,8 +37098,8 @@ const englishQuestions =[
     "bell the cat",
     "c",
     "**Bury the hatchet** — to make peace or end a conflict",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "By leaps and bounds",
@@ -37109,8 +37109,8 @@ const englishQuestions =[
     "Normally",
     "b",
     "**By leaps and bounds** — rapidly",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Yeoman's service",
@@ -37120,8 +37120,8 @@ const englishQuestions =[
     "A thankless and tedious job",
     "c",
     "**Yeoman's service** — excellent work done",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Skating on thin ice - which sentence correctly uses this idiom?",
@@ -37131,8 +37131,8 @@ const englishQuestions =[
     "She was on thin ice while trying to balance on a tightrope",
     "a",
     "**Skating on thin ice** — doing something risky which may have serious consequences",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Be in seventh heaven",
@@ -37142,8 +37142,8 @@ const englishQuestions =[
     "To avoid talking about what's important",
     "b",
     "**Be in seventh heaven** — to be in a state of extreme happiness",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "After the Pandemic his business crumbled and he is in a difficult situation",
@@ -37153,8 +37153,8 @@ const englishQuestions =[
     "Pull the last straw",
     "a",
     "**Be in a tight corner** — in a difficult situation",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "At the drop of a hat",
@@ -37164,8 +37164,8 @@ const englishQuestions =[
     "Consecutively",
     "b",
     "**At the drop of a hat** — immediately",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Go down in flames",
@@ -37175,8 +37175,8 @@ const englishQuestions =[
     "To burn down completely",
     "c",
     "**Go down in flames** — to fail spectacularly",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "I will always stand by my friend",
@@ -37186,8 +37186,8 @@ const englishQuestions =[
     "Be in a queue",
     "a",
     "**Stand by** — to support in a difficult situation",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Only those having blue blood can dethrone the evil autocrat",
@@ -37197,8 +37197,8 @@ const englishQuestions =[
     "Aristocratic lineage",
     "d",
     "**Blue blood** — aristocratic lineage",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "An elephant in the room",
@@ -37208,8 +37208,8 @@ const englishQuestions =[
     "Someone begins to suspect",
     "a",
     "**An elephant in the room** — there is an obvious problem",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "The players like the coach because he is honest realistic and practical in dealing with them",
@@ -37219,8 +37219,8 @@ const englishQuestions =[
     "by and large",
     "b",
     "**Down to earth** — realistic and practical",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "I invited them to my anniversary dinner but they decided to politely decline with the implication that they may come at a later date",
@@ -37230,8 +37230,8 @@ const englishQuestions =[
     "Call it a day",
     "b",
     "**To take a rain check** — to politely decline with the implication of coming at a later date",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "It is important to take this opportunity to make a name for yourself - beat around the bush",
@@ -37241,8 +37241,8 @@ const englishQuestions =[
     "strike while the iron is hot",
     "d",
     "**Strike while the iron is hot** — to make use of an opportunity immediately",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "He is very strict with his students but good-natured",
@@ -37252,8 +37252,8 @@ const englishQuestions =[
     "his eyes are bigger than his stomach",
     "b",
     "**His heart is in the right place** — good-natured",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "When I went to Egypt and lost my wallet and passport I was _______",
@@ -37263,8 +37263,8 @@ const englishQuestions =[
     "up in a creek without a paddle",
     "d",
     "**Up in a creek without a paddle** — in a difficult situation with no clear way out",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "To leave no stone unturned",
@@ -37274,8 +37274,8 @@ const englishQuestions =[
     "To do everything possible to achieve something",
     "d",
     "**To leave no stone unturned** — to do everything possible to achieve something",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "John was always _______ about becoming a millionaire without doing any hard work",
@@ -37285,8 +37285,8 @@ const englishQuestions =[
     "a storm in a tea cup",
     "a",
     "**Building castles in the air** — thinking of some impossible task",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "It's Christmas and everything looks beautiful. Life is wonderful and pleasant",
@@ -37296,8 +37296,8 @@ const englishQuestions =[
     "I'm up in the air",
     "c",
     "**Bowl of cherries** — wonderful and pleasant",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "Beat around the bush",
@@ -37307,8 +37307,8 @@ const englishQuestions =[
     "To avoid talking about what is important",
     "d",
     "**Beat around the bush** — to avoid talking about what is important",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "We need to make sure that criminals get more from the authorities than a very mild punishment",
@@ -37318,8 +37318,8 @@ const englishQuestions =[
     "a slap on the wrist",
     "d",
     "**A slap on the wrist** — a very mild punishment",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "She continued with her endeavour demonstrating that she has nerves of steel",
@@ -37329,8 +37329,8 @@ const englishQuestions =[
     "Relentless determination",
     "c",
     "**Nerves of steel** — an absence of fear or anxiety",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ],
   [
     "In life there will be many situations where you have to choose between the devil and the deep blue sea",
@@ -37340,8 +37340,8 @@ const englishQuestions =[
     "To choose wisely",
     "a",
     "**Between the devil and the deep blue sea** — to be in a dilemma to choose",
-    "Idioms",
-    "Idioms"
+    "Idioms & Phrases",
+    "Idioms & Phrases"
   ]
 ];
 
