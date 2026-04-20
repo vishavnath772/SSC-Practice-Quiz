@@ -1,4 +1,4 @@
-const englishQuestions =[
+var englishQuestions =[ 
   [
     "A word or phrase that reads the same backwards as forwards'.",
     "Anagram",
