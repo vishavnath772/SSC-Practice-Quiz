@@ -21107,7 +21107,7 @@ const englishQuestions =[
       "Sentence Improvement"
     ],
     [
-      "But what of the young people [whom are part of the] i [cricket crowds, some of who are presumably born in England] ? a",
+      "But what of the young people [whom are part of the] i [cricket crowds, some of who are presumably born in England] ?",
       "who are part of the cricket crowds, some of who are",
       "No improvement",
       "whom are part of the cricket crowds, some of whom are",
@@ -21124,19 +21124,19 @@ const englishQuestions =[
       "noticeably falling",
       "noticeably falls",
       "b",
-      "No improvement.. The given sentence is grammatically correct. i",
+      "No improvement.. The given sentence is grammatically correct",
       "Sentence Improvement",
       "Sentence Improvement"
     ],
     [
-      "Dad said that, [\"She would have been a great sister if she] [was just a bit more careful"
+      "Dad said that, (\"She would have been a great sister if she) (was just a bit more careful)"
     ],
-    ", \"No improvement",
-    "that, \"She would have been a great sister if she were just a bit",
-    "\"She would have been a great sister if she were just a bit",
-    "\"She would have been a greatest sister if she was just a bit",
+    "No improvement",
+    "She would have been a great sister if she were just a bit",
+    "She would have been a great sister if she were just a bit",
+    "She would have been a greatest sister if she was just a bit",
     "c",
-    "'If + Subject i+ Plural Verb' is the correct. grammatical structure faor the given sentence",
+    "If + Subject + Plural Verb is correct. grammatical structure for the given sentence",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -21147,12 +21147,12 @@ const englishQuestions =[
     "No improvement",
     "have been steady",
     "a",
-    "The given sentence needs an adverb(steadily) to. B modify the verb(increasing) and not an adjective(steady). e",
+    "The given sentence needs an adverb(steadily) to. B modify the verb(increasing) and not an adjective(steady)",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
   [
-    "Edward II is [tragic than] some other plays by the dramatist",
+    "Edward is [tragic than] some other plays by the dramatist",
     "as least tragic as",
     "No substitution required",
     "the most tragic",
