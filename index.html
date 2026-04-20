@@ -511,34 +511,6 @@ const ENG_MCQ = ENG_RAW.map((r,i)=>({
   id:10000+i, q:r[0], a:r[1], b:r[2], c:r[3], d:r[4], ans:r[5], fact:r[6], topic:r[7]||'English', sub:r[8]||'English'
 }));
 
-// Safety for English Categories
-if(typeof OWS_RAW === 'undefined') var OWS_RAW = [];
-if(typeof SYN_RAW === 'undefined') var SYN_RAW = [];
-if(typeof ANT_RAW === 'undefined') var ANT_RAW = [];
-if(typeof HOM_RAW === 'undefined') var HOM_RAW = [];
-if(typeof IDI_RAW === 'undefined') var IDI_RAW = [];
-if(typeof SPL_RAW === 'undefined') var SPL_RAW = [];
-
-const OWS_MCQ = OWS_RAW.map((r,i)=>({ id:20000+i, q:r[0], a:r[1], b:r[2], c:r[3], d:r[4], ans:r[5], fact:r[6], topic:'OWS', sub:'OWS' }));
-const ALL_ENG_MCQ = [...ENG_MCQ, ...OWS_MCQ];
-
-const ENG_TOPIC_ORDER = [
-  { section: '📝 English Grammar', topics: [
-    {name:'Spot the Error',       subs:[]},
-    {name:'Sentence Improvement', subs:[]},
-    {name:'Narration',            subs:[]},
-    {name:'Active & Passive Voice', subs:[]},
-    {name:'Fill in the Blanks',   subs:[]},
-  ]},
-  { section: '📖 Vocabulary', topics: [
-    {name:'One Word Substitution',subs:[]},
-    {name:'Synonyms',            subs:[]},
-    {name:'Antonyms',            subs:[]},
-    {name:'Homonyms',            subs:[]},
-    {name:'Idioms & Phrases',    subs:[]},
-    {name:'Spelling Check',      subs:[]},
-  ]},
-];
 
 const ENG_TOPIC_ICONS = {
   'Spot the Error':'🔍', 'Sentence Improvement':'✏️', 'Narration':'💬',
