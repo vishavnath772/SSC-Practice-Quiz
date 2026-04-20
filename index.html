@@ -493,70 +493,32 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
   </div>
 </div>
 
+<<!-- DATA LINKS -->
 <script src="gs-data.js"></script>
 <script src="english-data.js"></script>
 
 <script>
 // ══════════════════════════════════════════════════════
-// DATA PARSING (Fixed logic)
+// DATA INITIALIZATION
 // ══════════════════════════════════════════════════════
 const RAW = (typeof gsQuestions !== 'undefined') ? gsQuestions : [];
-const ENG_RAW = (typeof englishQuestions !== 'undefined') ? englishQuestions : [];
-
-// ================= GS PARSE =================
 const ALL_MCQ = RAW.map((r,i)=>({
-  id: i,
-  q: r[0],
-  a: r[1],
-  b: r[2],
-  c: r[3],
-  d: r[4],
-  ans: r[5],
-  fact: r[6],
-  topic: r[7],      // MUST exist in data
-  sub: r[8]
+  id:i, q:r[0], a:r[1], b:r[2], c:r[3], d:r[4], ans:r[5], fact:r[6], topic:r[7]||'GS', sub:r[8]||'GS'
 }));
-
-// ================= ENGLISH PARSE =================
-const ENG_MCQ = ENG_RAW.map((r,i)=>({
-  id: 10000 + i,
-  q: r[0],
-  a: r[1],
-  b: r[2],
-  c: r[3],
-  d: r[4],
-  ans: r[5],
-  fact: r[6],
-  topic: r[7],     // MUST exist in data
-  sub: r[8]
+  // English Data Mapping logic
+const mapEng = (arr, startId, topicName) => arr.map((r,i)=>({
+  id:startId+i, q:r[0], a:r[1], b:r[2], c:r[3], d:r[4], ans:r[5], fact:r[6], topic:topicName, sub:topicName
 }));
-
-// ================= MERGE =================
-const ALL_DATA = [...ALL_MCQ, ...ENG_MCQ];
-
-// =====================================================
-// EXISTING LOGIC (UNCHANGED)
-// =====================================================
-
-// Example topic filter (your existing function should use this logic already)
-function getQuestionsByTopic(topic) {
-  return ALL_DATA.filter(q => q.topic === topic);
-}
-
-// Example random mode
-function getRandomQuestions() {
-  return shuffle([...ALL_DATA]);
-}
-
-// Shuffle helper (keep yours if already present)
-function shuffle(arr) {
-  return arr.sort(() => Math.random() - 0.5);
-}
-
-// Debug check (remove later)
-console.log("GS Loaded:", ALL_MCQ.length);
-console.log("ENG Loaded:", ENG_MCQ.length);
-console.log("TOTAL:", ALL_DATA.length);
+  
+const ALL_ENG_MCQ = [
+  ...(typeof englishQuestions !== 'undefined' ? mapEng(englishQuestions, 10000, 'Grammar') : []),
+  ...(typeof OWS_RAW !== 'undefined' ? mapEng(OWS_RAW, 20000, 'One Word Substitution') : []),
+  ...(typeof SYN_RAW !== 'undefined' ? mapEng(SYN_RAW, 30000, 'Synonyms') : []),
+  ...(typeof ANT_RAW !== 'undefined' ? mapEng(ANT_RAW, 40000, 'Antonyms') : []),
+  ...(typeof HOM_RAW !== 'undefined' ? mapEng(HOM_RAW, 50000, 'Homonyms') : []),
+  ...(typeof IDI_RAW !== 'undefined' ? mapEng(IDI_RAW, 60000, 'Idioms & Phrases') : []),
+  ...(typeof SPL_RAW !== 'undefined' ? mapEng(SPL_RAW, 70000, 'Spelling Check') : [])
+];
 
 
 const ENG_TOPIC_ICONS = {
