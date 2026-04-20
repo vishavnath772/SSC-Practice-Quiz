@@ -501,33 +501,62 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 // DATA PARSING (Fixed logic)
 // ══════════════════════════════════════════════════════
 const RAW = (typeof gsQuestions !== 'undefined') ? gsQuestions : [];
-const ENG_RAW = englishQuestions || [];
+const ENG_RAW = (typeof englishQuestions !== 'undefined') ? englishQuestions : [];
 
+// ================= GS PARSE =================
 const ALL_MCQ = RAW.map((r,i)=>({
-  id:i,
-  q:r[0],
-  a:r[1],
-  b:r[2],
-  c:r[3],
-  d:r[4],
-  ans:r[5],
-  fact:r[6],
-  topic:r[7],
-  sub:r[8]
+  id: i,
+  q: r[0],
+  a: r[1],
+  b: r[2],
+  c: r[3],
+  d: r[4],
+  ans: r[5],
+  fact: r[6],
+  topic: r[7],      // MUST exist in data
+  sub: r[8]
 }));
 
+// ================= ENGLISH PARSE =================
 const ENG_MCQ = ENG_RAW.map((r,i)=>({
-  id:10000+i,
-  q:r[0],
-  a:r[1],
-  b:r[2],
-  c:r[3],
-  d:r[4],
-  ans:r[5],
-  fact:r[6],
-  topic:r[7],   // ✅ NO fallback
-  sub:r[8]
+  id: 10000 + i,
+  q: r[0],
+  a: r[1],
+  b: r[2],
+  c: r[3],
+  d: r[4],
+  ans: r[5],
+  fact: r[6],
+  topic: r[7],     // MUST exist in data
+  sub: r[8]
 }));
+
+// ================= MERGE =================
+const ALL_DATA = [...ALL_MCQ, ...ENG_MCQ];
+
+// =====================================================
+// EXISTING LOGIC (UNCHANGED)
+// =====================================================
+
+// Example topic filter (your existing function should use this logic already)
+function getQuestionsByTopic(topic) {
+  return ALL_DATA.filter(q => q.topic === topic);
+}
+
+// Example random mode
+function getRandomQuestions() {
+  return shuffle([...ALL_DATA]);
+}
+
+// Shuffle helper (keep yours if already present)
+function shuffle(arr) {
+  return arr.sort(() => Math.random() - 0.5);
+}
+
+// Debug check (remove later)
+console.log("GS Loaded:", ALL_MCQ.length);
+console.log("ENG Loaded:", ENG_MCQ.length);
+console.log("TOTAL:", ALL_DATA.length);
 
 
 const ENG_TOPIC_ICONS = {
