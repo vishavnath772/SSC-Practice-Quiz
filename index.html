@@ -501,14 +501,32 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 // DATA PARSING (Fixed logic)
 // ══════════════════════════════════════════════════════
 const RAW = (typeof gsQuestions !== 'undefined') ? gsQuestions : [];
-const ENG_RAW = (typeof englishQuestions !== 'undefined') ? englishQuestions : [];
+const ENG_RAW = englishQuestions || [];
 
 const ALL_MCQ = RAW.map((r,i)=>({
-  id:i, q:r[0], a:r[1], b:r[2], c:r[3], d:r[4], ans:r[5], fact:r[6], topic:r[7]||'GS', sub:r[8]||'GS'
+  id:i,
+  q:r[0],
+  a:r[1],
+  b:r[2],
+  c:r[3],
+  d:r[4],
+  ans:r[5],
+  fact:r[6],
+  topic:r[7],
+  sub:r[8]
 }));
 
 const ENG_MCQ = ENG_RAW.map((r,i)=>({
-  id:10000+i, q:r[0], a:r[1], b:r[2], c:r[3], d:r[4], ans:r[5], fact:r[6], topic:r[7]||'English', sub:r[8]||'English'
+  id:10000+i,
+  q:r[0],
+  a:r[1],
+  b:r[2],
+  c:r[3],
+  d:r[4],
+  ans:r[5],
+  fact:r[6],
+  topic:r[7],   // ✅ NO fallback
+  sub:r[8]
 }));
 
 
