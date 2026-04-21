@@ -13974,7 +13974,7 @@ const ENG_RAW = [
       "Active & Passive Voice"
     ],
     [
-      "She remarked, \"I visited that museum last week.\"",
+      "She remarked I visited that museum last week.",
       "She remarked that she had visited that museum the previous",
       "She remarked that I had visited that museum last week.",
       "She remarked that she visited that museum the previous",
@@ -13985,7 +13985,7 @@ const ENG_RAW = [
       "Narration"
     ],
     [
-      "She said to them, \"Will you be attending the conference?\"",
+      "She said to them Will you be attending the conference?",
       "She asked them if they would be attending the conference.",
       "She asked them will they be attending the conference.",
       "She asked them whether they will be attending",
