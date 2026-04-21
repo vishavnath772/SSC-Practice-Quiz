@@ -1,4 +1,4 @@
-const ENG_RAW[ 
+const ENG_RAW = [
   [
     "A word or phrase that reads the same backwards as forwards'.",
     "Anagram",
