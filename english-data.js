@@ -38192,13 +38192,3 @@ const ENG_RAW[
     "Idioms & Phrases"
   ]
 ];
-
-
-// WE PUT THE ENGLISH CATEGORIES HERE
-// Even if they are empty [], they must exist so the app doesn't crash.
-var OWS_RAW = []; 
-var SYN_RAW = [];
-var ANT_RAW = [];
-var HOM_RAW = [];
-var IDI_RAW = [];
-var SPL_RAW = [];
