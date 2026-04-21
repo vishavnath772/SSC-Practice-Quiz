@@ -493,33 +493,64 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
   </div>
 </div>
 
-<<!-- DATA LINKS -->
-<script src="gs-data.js"></script>
-<script src="english-data.js"></script>
-
+  <script src="gs-data.js"></script>
+<script src="eng-data.js"></script>
+  
 <script>
 // ══════════════════════════════════════════════════════
-// DATA INITIALIZATION
+// DATA
 // ══════════════════════════════════════════════════════
-const RAW = (typeof gsQuestions !== 'undefined') ? gsQuestions : [];
+// Parse GS MCQs
 const ALL_MCQ = RAW.map((r,i)=>({
-  id:i, q:r[0], a:r[1], b:r[2], c:r[3], d:r[4], ans:r[5], fact:r[6], topic:r[7]||'GS', sub:r[8]||'GS'
-}));
-  // English Data Mapping logic
-const mapEng = (arr, startId, topicName) => arr.map((r,i)=>({
-  id:startId+i, q:r[0], a:r[1], b:r[2], c:r[3], d:r[4], ans:r[5], fact:r[6], topic:topicName, sub:topicName
-}));
-  
-const ALL_ENG_MCQ = [
-  ...(typeof englishQuestions !== 'undefined' ? mapEng(englishQuestions, 10000, 'Grammar') : []),
-  ...(typeof OWS_RAW !== 'undefined' ? mapEng(OWS_RAW, 20000, 'One Word Substitution') : []),
-  ...(typeof SYN_RAW !== 'undefined' ? mapEng(SYN_RAW, 30000, 'Synonyms') : []),
-  ...(typeof ANT_RAW !== 'undefined' ? mapEng(ANT_RAW, 40000, 'Antonyms') : []),
-  ...(typeof HOM_RAW !== 'undefined' ? mapEng(HOM_RAW, 50000, 'Homonyms') : []),
-  ...(typeof IDI_RAW !== 'undefined' ? mapEng(IDI_RAW, 60000, 'Idioms & Phrases') : []),
-  ...(typeof SPL_RAW !== 'undefined' ? mapEng(SPL_RAW, 70000, 'Spelling Check') : [])
-];
+  id:i,
+  q:  (r[0] || '').replace(/\s+/g,' ').trim(),
+  a:  (r[1] || '').replace(/\s+/g,' ').trim(),
+  b:  (r[2] || '').replace(/\s+/g,' ').trim(),
+  c:  (r[3] || '').replace(/\s+/g,' ').trim(),
+  d:  (r[4] || '').replace(/\s+/g,' ').trim(),
+  ans:(r[5] || '').replace(/\s+/g, '').trim().toLowerCase(),
+  fact:(r[6] || '').replace(/\s+/g,' ').trim(),
+  topic:r[7]||'General Studies',
+  sub: r[8]||r[7]||'General Studies'
+})).filter(m=>m.q.length>15 && m.a.length>0 && m.b.length>0);
 
+const ALL_TOPICS = [...new Set(ALL_MCQ.map(m=>m.topic))].sort();
+
+// Parse English MCQs (Fixed variable name to ALL_ENG_MCQ)
+const ALL_ENG_MCQ = ENG_RAW.map((r,i)=>({
+  id: 10000+i, // Gives English questions unique IDs so they don't clash with GS
+  q:  (r[0] || '').replace(/\s+/g,' ').trim(),
+  a:  (r[1] || '').replace(/\s+/g,' ').trim(),
+  b:  (r[2] || '').replace(/\s+/g,' ').trim(),
+  c:  (r[3] || '').replace(/\s+/g,' ').trim(),
+  d:  (r[4] || '').replace(/\s+/g,' ').trim(),
+  ans:(r[5] || '').replace(/\s+/g, '').trim().toLowerCase(),
+  fact:(r[6] || '').replace(/\s+/g,' ').trim(),
+  topic:r[7]||'English',
+  sub: r[8]||r[7]||'English'
+})).filter(m=>m.q.length>8 && m.a.length>0 && m.b.length>0);
+
+// Fixed: Renamed to ENG_TOPICS so it doesn't crash with ALL_TOPICS
+const ENG_TOPICS = [...new Set(ALL_ENG_MCQ.map(m=>m.topic))].sort();
+
+
+const ENG_TOPIC_ORDER = [
+  { section: '📝 English Grammar', topics: [
+    {name:'Spot the Error',      subs:[]},
+    {name:'Sentence Improvement',subs:[]},
+    {name:'Narration',           subs:[]},
+    {name:'Active & Passive Voice', subs:[]},
+    {name:'Fill in the Blanks',  subs:[]},
+  ]},
+  { section: '📖 Vocabulary', topics: [
+    {name:'One Word Substitution',subs:[]},
+    {name:'Synonyms',            subs:[]},
+    {name:'Antonyms',            subs:[]},
+    {name:'Homonyms',            subs:[]},
+    {name:'Idioms & Phrases',    subs:[]},
+    {name:'Spelling Check',      subs:[]},
+  ]},
+];
 
 const ENG_TOPIC_ICONS = {
   'Spot the Error':'🔍', 'Sentence Improvement':'✏️', 'Narration':'💬',
@@ -1279,20 +1310,7 @@ function renderEngHome(){
         accText=pct+'%';
         accClass=pct>=70?'acc-good':pct>=45?'acc-mid':'acc-bad';
       }
-      if(count===0){
-        // Not yet loaded — show as coming soon, greyed out, not clickable
-        html+=`<div>
-        <div class="topic-card" style="opacity:0.38;pointer-events:none;">
-          <div class="tc-serial">${serial++}.</div>
-          <div class="tc-icon">${icon}</div>
-          <div class="tc-name">${t}</div>
-          <div class="tc-meta">
-            <div class="tc-count" style="color:#f59e0b;">Coming soon</div>
-            <div class="tc-acc acc-none">—</div>
-          </div>
-        </div></div>`;
-        return;
-      }
+
       html+=`<div>
         <div class="topic-card" onclick="startQuiz('topic','${t}','eng')">
           <div class="tc-serial">${serial++}.</div>
@@ -1665,9 +1683,8 @@ setTimeout(()=>{
   setTimeout(()=>sp.style.display='none',400);
   switchTab('home');
 },2100);
-</script> 
-
-
+</script>
+<!-- Quick Menu Modal -->
 <div id="quick-menu-overlay" onclick="hideQuickMenu()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:200;align-items:flex-end;justify-content:center;"></div>
 <div id="quick-menu" style="display:none;position:fixed;bottom:70px;left:50%;transform:translateX(-50%);width:min(340px,92vw);background:#0d1e30;border:1px solid rgba(43,159,234,0.3);border-radius:18px;padding:18px;z-index:201;">
   <div style="font-size:15px;font-weight:700;color:#e2e8f0;margin-bottom:14px;text-align:center;">⚡ Quick Practice</div>
