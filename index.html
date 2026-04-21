@@ -516,9 +516,9 @@ const ALL_MCQ = RAW.map((r,i)=>({
 
 const ALL_TOPICS = [...new Set(ALL_MCQ.map(m=>m.topic))].sort();
 
-// Parse English MCQs (Fixed variable name to ALL_ENG_MCQ)
+// Parse English MCQs
 const ALL_ENG_MCQ = ENG_RAW.map((r,i)=>({
-  id: 10000+i, // Gives English questions unique IDs so they don't clash with GS
+  id: 10000+i,
   q:  (r[0] || '').replace(/\s+/g,' ').trim(),
   a:  (r[1] || '').replace(/\s+/g,' ').trim(),
   b:  (r[2] || '').replace(/\s+/g,' ').trim(),
@@ -526,13 +526,14 @@ const ALL_ENG_MCQ = ENG_RAW.map((r,i)=>({
   d:  (r[4] || '').replace(/\s+/g,' ').trim(),
   ans:(r[5] || '').replace(/\s+/g, '').trim().toLowerCase(),
   fact:(r[6] || '').replace(/\s+/g,' ').trim(),
-  topic:r[7]||'English',
-  sub: r[8]||r[7]||'English'
+  
+  // ADDED .trim() HERE to fix the missing topics bug!
+  topic: (r[7] || 'English').trim(),
+  sub:   (r[8] || r[7] || 'English').trim()
+  
 })).filter(m=>m.q.length>8 && m.a.length>0 && m.b.length>0);
 
-// Fixed: Renamed to ENG_TOPICS so it doesn't crash with ALL_TOPICS
 const ENG_TOPICS = [...new Set(ALL_ENG_MCQ.map(m=>m.topic))].sort();
-
 
 const ENG_TOPIC_ORDER = [
   { section: '📝 English Grammar', topics: [
