@@ -1,4 +1,4 @@
-const gsQuestions = [
+const RAW = [
 [
 		"Which of the following folk dances is performed by the fisherfolk of the Mithila region in Bihar?",
 		"Karma",
