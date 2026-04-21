@@ -517,18 +517,44 @@ const ALL_MCQ = RAW.map((r, i) => ({
 const ALL_TOPICS = [...new Set(ALL_MCQ.map(m => m.topic))].sort();
 
 // Parse English MCQs
-const ALL_ENG_MCQ = ENG_RAW.map((r, i) => ({
-  id: 10000 + i,
-  q:    String(r[0] || '').replace(/\s+/g, ' ').trim(),
-  a:    String(r[1] || '').replace(/\s+/g, ' ').trim(),
-  b:    String(r[2] || '').replace(/\s+/g, ' ').trim(),
-  c:    String(r[3] || '').replace(/\s+/g, ' ').trim(),
-  d:    String(r[4] || '').replace(/\s+/g, ' ').trim(),
-  ans:  String(r[5] || '').replace(/\s+/g, '').trim().toLowerCase(),
-  fact: String(r[6] || '').replace(/\s+/g, ' ').trim(),
-  topic: String(r[7] || 'English').trim(),
-  sub:   String(r[8] || r[7] || 'English').trim()
-})).filter(m => m.q.length > 8 && m.a.length > 0 && m.b.length > 0);
+const ALL_ENG_MCQ = ENG_RAW.map((r, i) => {
+  // 1. Scrub invisible line breaks and spaces from the raw topic
+  let cleanRaw = String(r[7] || 'English').replace(/\s+/g, ' ').trim();
+  let rawTopic = cleanRaw.toLowerCase();
+  
+  // 2. The Magic Translation Dictionary
+  const topicFixer = {
+    'spot the error': 'Spot the Error',
+    'sentence improvement': 'Sentence Improvement',
+    'narration': 'Narration',
+    'active & passive': 'Active & Passive Voice',
+    'active & passive voice': 'Active & Passive Voice',
+    'fill in the blanks': 'Fill in the Blanks',
+    'one word substitution': 'One Word Substitution',
+    'synonyms': 'Synonyms',
+    'antonyms': 'Antonyms',
+    'homonyms': 'Homonyms',
+    'idioms & phrases': 'Idioms & Phrases',
+    'spelling check': 'Spelling Check'
+  };
+
+  // 3. Match the dictionary, or keep the scrubbed text
+  let perfectTopic = topicFixer[rawTopic] || cleanRaw;
+
+  return {
+    id: 10000 + i,
+    q:    String(r[0] || '').replace(/\s+/g, ' ').trim(),
+    a:    String(r[1] || '').replace(/\s+/g, ' ').trim(),
+    b:    String(r[2] || '').replace(/\s+/g, ' ').trim(),
+    c:    String(r[3] || '').replace(/\s+/g, ' ').trim(),
+    d:    String(r[4] || '').replace(/\s+/g, ' ').trim(),
+    ans:  String(r[5] || '').replace(/\s+/g, '').trim().toLowerCase(),
+    fact: String(r[6] || '').replace(/\s+/g, ' ').trim(),
+    topic: perfectTopic,
+    sub:   String(r[8] || perfectTopic).trim()
+  };
+// 4. LOWERED the filter length to 3 so short questions don't get deleted!
+}).filter(m => m.q.length > 3 && m.a.length > 0 && m.b.length > 0);
 
 const ENG_TOPICS = [...new Set(ALL_ENG_MCQ.map(m => m.topic))].sort();
 
