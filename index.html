@@ -336,7 +336,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 <!-- SPLASH -->
 <div id="splash">
   <div class="sp-icon">🎯</div>
-  <div class="sp-title">Pinnacle GS Quiz</div>
+  <div class="sp-title">Pinnacle Practice Quiz</div>
   <div class="sp-sub">SSC · CHSL · MTS · CGL</div>
   <div class="sp-bar"><div class="sp-fill"></div></div>
 </div>
@@ -348,7 +348,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
       <div class="home-brand-icon">📚</div>
       <div class="home-brand-text">
         <div class="ht1">Pinnacle GS Quiz</div>
-        <div class="ht2">800+ MCQs from Official PDF</div>
+        <div class="ht2" id="gs-count-lbl">Loading...</div>
       </div>
     </div>
     <div class="home-day-card">
@@ -361,7 +361,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
       </div>
       <div class="day-prog-bar"><div class="day-prog-fill" id="day-fill" style="width:0%"></div></div>
       <div class="day-prog-meta">
-        <span class="dpm" id="day-goal-lbl">🎯 Daily goal: 20 questions</span>
+        <span class="dpm" id="day-goal-lbl">🎯 Daily goal: 25 questions</span>
         <span class="dpm" id="day-pct" style="color:var(--yellow)">0%</span>
       </div>
     </div>
@@ -399,7 +399,23 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
           <div class="l1">English Practice 📖</div>
           <div class="l2" id="eng-done-text">0 questions done today</div>
         </div>
-        <button class="start-btn" onclick="startQuiz('random','eng')">Start ▶</button>
+        <button class="start-btn" onclick="startQuiz('random',null,'eng')">Start ▶</button>
+      </div>
+      <div class="day-prog-bar"><div class="day-prog-fill" id="eng-day-fill" style="width:0%"></div></div>
+      <div class="day-prog-meta">
+        <span class="dpm" id="eng-goal-lbl">🎯 Daily goal: 25 questions</span>
+        <span class="dpm" id="eng-day-pct" style="color:var(--yellow)">0%</span>
+      </div>
+    </div>
+    <div id="eng-revision-banner-wrap" style="display:none;margin-top:10px;">
+      <div class="sec-label">⚠️ Revision Queue</div>
+      <div class="revision-banner" onclick="startQuiz('revision',null,'eng')">
+        <div class="rev-icon">🔄</div>
+        <div class="rev-text">
+          <div class="r1" id="eng-rev-count-txt">Questions to revise</div>
+          <div class="r2">Spaced repetition • practice again</div>
+        </div>
+        <div class="rev-arrow">›</div>
       </div>
     </div>
   </div>
@@ -759,6 +775,7 @@ function loadG(){
       G.topicStats = d.topicStats || {};
       const today  = new Date().toDateString();
       if(G.todayDate !== today){ G.todayDone = 0; G.todayDate = today; }
+      if(G.engTodayDate !== today){ G.engTodayDone = 0; G.engTodayDate = today; }
       // Also write to IndexedDB silently (keep it in sync)
       idbSet(G);
       return; // got data, done
@@ -773,6 +790,7 @@ function loadG(){
       G.topicStats = d.topicStats || {};
       const today  = new Date().toDateString();
       if(G.todayDate !== today){ G.todayDone = 0; G.todayDate = today; }
+      if(G.engTodayDate !== today){ G.engTodayDone = 0; G.engTodayDate = today; }
       // Restore back into localStorage too
       try{ localStorage.setItem('pgq2_state', JSON.stringify(G)); }catch(e){}
       // Refresh UI now that data is loaded
@@ -1038,7 +1056,12 @@ function handleAnswer(idx, chosen){
 
   // ── Global stats (increment FIRST so wrongAt is stamped correctly) ──
   G.totalDone++;
-  G.todayDone++;
+  if(S.dataset==='eng'){
+    G.engTodayDone = (G.engTodayDone||0) + 1;
+    G.engTodayDate = new Date().toDateString();
+  } else {
+    G.todayDone++;
+  }
   G.todayDate=new Date().toDateString();
   if(isCorrect) G.totalCorrect++;
   if(S.bestStreak>G.bestStreak) G.bestStreak=S.bestStreak;
@@ -1193,6 +1216,8 @@ function toggleSubPanel(cardId, panelId){
 // HOME RENDER
 // ══════════════════════════════════════════════════════
 function renderHome(){
+  const gsTopicCount = ALL_TOPICS.length;
+  document.getElementById('gs-count-lbl').textContent = ALL_MCQ.length + ' MCQs • ' + gsTopicCount + ' topics loaded';
   const goal=20, done=G.todayDone;
   document.getElementById('today-text').textContent=`${done} question${done!==1?'s':''} done today`;
   document.getElementById('day-fill').style.width=Math.min(done/goal*100,100)+'%';
@@ -1234,11 +1259,12 @@ function renderHome(){
       const count = topicCounts[t] || 0;
       const icon  = TOPIC_ICONS[t] || '📖';
       const ts    = G.topicStats[t];
+      const totalForTopic = topicCounts[t] || 1;
       let accClass='acc-none', accText='New';
       if(ts && ts.done>0){
-        const pct=Math.round(ts.correct/ts.done*100);
-        accText=pct+'%';
-        accClass = pct>=70?'acc-good':pct>=45?'acc-mid':'acc-bad';
+        const progressPct = Math.round(ts.done / totalForTopic * 100);
+        accText = progressPct + '%';
+        accClass = progressPct>=60?'acc-good':progressPct>=25?'acc-mid':'acc-bad';
       }
 
       const hasSubs = subs.length > 0;
@@ -1308,11 +1334,23 @@ function renderEngHome(){
     totalMCQs + ' MCQs • ' + loadedTopics + ' topic' + (loadedTopics!==1?'s':'') + ' loaded';
 
   // Update done text
-  const engDone = Object.entries(G.topicStats)
-    .filter(([t])=>ENG_TOPIC_ORDER.flatMap(s=>s.topics.map(tt=>tt.name)).includes(t))
-    .reduce((sum,[,v])=>sum+v.done, 0);
+  const engTodayDone = G.engTodayDone || 0;
+  const engGoal = 20;
   document.getElementById('eng-done-text').textContent =
-    engDone + ' question' + (engDone!==1?'s':'') + ' attempted';
+    engTodayDone + ' question' + (engTodayDone!==1?'s':'') + ' done today';
+  document.getElementById('eng-day-fill').style.width = Math.min(engTodayDone/engGoal*100,100)+'%';
+  document.getElementById('eng-day-pct').textContent = Math.min(Math.round(engTodayDone/engGoal*100),100)+'%';
+  if(engTodayDone>=engGoal) document.getElementById('eng-goal-lbl').textContent='🏆 Daily goal reached!';
+  // English revision queue
+  const engWrong = G.wrongQueue.filter(w=>ALL_ENG_MCQ.some(m=>m.id===w.id));
+  const engRevWrap = document.getElementById('eng-revision-banner-wrap');
+  if(engWrong.length>0){
+    engRevWrap.style.display='block';
+    const almostDone = engWrong.filter(w=>(w.correctStreak||0)===1).length;
+    let revTxt = engWrong.length + ' wrong question' + (engWrong.length!==1?'s':'');
+    if(almostDone>0) revTxt += ' • ' + almostDone + ' need 1 more correct';
+    document.getElementById('eng-rev-count-txt').textContent = revTxt;
+  } else { engRevWrap.style.display='none'; }
 
   // Build topic grid
   const grid = document.getElementById('eng-topic-grid');
@@ -1334,11 +1372,12 @@ function renderEngHome(){
       const count = topicCounts[t]||0;
       const icon  = ENG_ICONS[t]||'📖';
       const ts    = G.topicStats[t];
+      const totalForTopic = topicCounts[t] || 1;
       let accClass='acc-none', accText='New';
       if(ts&&ts.done>0){
-        const pct=Math.round(ts.correct/ts.done*100);
-        accText=pct+'%';
-        accClass=pct>=70?'acc-good':pct>=45?'acc-mid':'acc-bad';
+        const progressPct=Math.round(ts.done/totalForTopic*100);
+        accText=progressPct+'%';
+        accClass=progressPct>=60?'acc-good':progressPct>=25?'acc-mid':'acc-bad';
       }
 
       html+=`<div>
@@ -1660,9 +1699,7 @@ function importBackup(event){
       const data = JSON.parse(e.target.result);
 
       // Basic validation
-      if(typeof data.totalDone === 'undefined' && typeof data.totalCorrect === 'undefined'){
-        showBackupToast('Invalid backup file — please select a valid my_quiz_backup.json', 'error');
-        return;
+     if(typeof data.totalDone === 'undefined' || typeof data.totalCorrect === 'undefined' || typeof data.wrongQueue === 'undefined' || typeof data.topicStats === 'undefined'){
       }
 
       // Remove metadata keys before saving
