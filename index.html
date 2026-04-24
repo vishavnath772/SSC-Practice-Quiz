@@ -117,6 +117,21 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .rev-text .r2{font-size:12px;color:var(--sub);margin-top:2px;}
 .rev-arrow{font-size:18px;color:var(--yellow);margin-left:auto;}
 
+/* ── MOCK TEST BANNER ── */
+.mock-banner{background:linear-gradient(135deg,#0d1f35,#1a2d45);border:1.5px solid rgba(43,159,234,0.45);border-radius:14px;padding:14px;cursor:pointer;margin-bottom:10px;transition:transform 0.15s;}
+.mock-banner:active{transform:scale(0.98);}
+.mock-banner-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.mock-banner-icon{font-size:28px;}
+.mock-banner-text .mb1{font-size:14px;font-weight:800;color:var(--blue);}
+.mock-banner-text .mb2{font-size:11px;color:var(--sub);margin-top:2px;}
+.mock-banner-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;}
+.mbs{background:rgba(0,0,0,0.25);border-radius:8px;padding:6px 4px;text-align:center;border:1px solid rgba(43,159,234,0.15);}
+.mbs-num{font-size:13px;font-weight:800;color:var(--blue);}
+.mbs-lbl{font-size:9px;color:var(--sub);margin-top:1px;text-transform:uppercase;}
+/* Mock countdown bar in quiz header */
+.mock-timer-bar{height:3px;background:var(--border);border-radius:2px;overflow:hidden;margin-bottom:6px;}
+.mock-timer-fill{height:100%;border-radius:2px;transition:width 1s linear,background 2s;}
+
 /* Topic grid — 2-column card layout */
 .topic-section-header{font-size:11px;font-weight:700;color:var(--sub2);text-transform:uppercase;letter-spacing:0.8px;padding:14px 2px 6px;display:flex;align-items:center;gap:6px;}
 .topic-list{display:grid;grid-template-columns:1fr 1fr;gap:9px;}
@@ -367,15 +382,19 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
     </div>
   </div>
   <div class="home-body">
-    <div id="revision-banner-wrap" style="display:none">
-      <div class="sec-label">⚠️ Revision Queue</div>
-      <div class="revision-banner" onclick="startQuiz('revision')">
-        <div class="rev-icon">🔄</div>
-        <div class="rev-text">
-          <div class="r1" id="rev-count-txt">Questions to revise</div>
-          <div class="r2">Spaced repetition • practice again</div>
+    <div class="sec-label">🎯 Mock Test</div>
+    <div class="mock-banner" onclick="startQuiz('mock')">
+      <div class="mock-banner-top">
+        <div class="mock-banner-icon">🎯</div>
+        <div class="mock-banner-text">
+          <div class="mb1">SSC CGL Mock Test</div>
+          <div class="mb2">25 Questions • 10 Min • +2 Correct / −0.50 Wrong</div>
         </div>
-        <div class="rev-arrow">›</div>
+      </div>
+      <div class="mock-banner-stats">
+        <div class="mbs"><div class="mbs-num" id="mock-attempts">0</div><div class="mbs-lbl">Attempts</div></div>
+        <div class="mbs"><div class="mbs-num" id="mock-best">—</div><div class="mbs-lbl">Best</div></div>
+        <div class="mbs"><div class="mbs-num" id="mock-avg">—</div><div class="mbs-lbl">Avg Score</div></div>
       </div>
     </div>
     <div class="sec-label">📂 Practice by Topic</div>
@@ -407,19 +426,24 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
         <span class="dpm" id="eng-day-pct" style="color:var(--yellow)">0%</span>
       </div>
     </div>
-    <div id="eng-revision-banner-wrap" style="display:none;margin-top:10px;">
-      <div class="sec-label">⚠️ Revision Queue</div>
-      <div class="revision-banner" onclick="startQuiz('revision',null,'eng')">
-        <div class="rev-icon">🔄</div>
-        <div class="rev-text">
-          <div class="r1" id="eng-rev-count-txt">Questions to revise</div>
-          <div class="r2">Spaced repetition • practice again</div>
+  </div>
+  <div class="home-body">
+    <div class="sec-label">🎯 Mock Test</div>
+    <div class="mock-banner" onclick="startQuiz('engmock')">
+      <div class="mock-banner-top">
+        <div class="mock-banner-icon">📝</div>
+        <div class="mock-banner-text">
+          <div class="mb1">SSC English Mock Test</div>
+          <div class="mb2">25 Questions • 10 Min • +2 Correct / −0.50 Wrong</div>
         </div>
-        <div class="rev-arrow">›</div>
+      </div>
+      <div class="mock-banner-stats">
+        <div class="mbs"><div class="mbs-num" id="eng-mock-attempts">0</div><div class="mbs-lbl">Attempts</div></div>
+        <div class="mbs"><div class="mbs-num" id="eng-mock-best">—</div><div class="mbs-lbl">Best</div></div>
+        <div class="mbs"><div class="mbs-num" id="eng-mock-avg">—</div><div class="mbs-lbl">Avg Score</div></div>
       </div>
     </div>
-  </div>
-  <div class="topic-scroll">
+    <div class="sec-label">📂 Practice by Topic</div>
     <div class="topic-grid" id="eng-topic-grid"></div>
   </div>
 </div>
@@ -436,8 +460,9 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
       <div class="qhs"><div class="qhs-num qhs-g" id="qs-correct">0</div><div class="qhs-lbl">Correct</div></div>
       <div class="qhs"><div class="qhs-num qhs-r" id="qs-wrong">0</div><div class="qhs-lbl">Wrong</div></div>
       <div class="qhs"><div class="qhs-num qhs-b" id="qs-acc">0%</div><div class="qhs-lbl">Accuracy</div></div>
-      <div class="qhs"><div class="qhs-num qhs-y" id="qs-timer">—</div><div class="qhs-lbl">Avg/Ques</div></div>
+      <div class="qhs" id="qs-4th-box"><div class="qhs-num qhs-y" id="qs-timer">—</div><div class="qhs-lbl" id="qs-4th-lbl">Avg/Ques</div></div>
     </div>
+    <div class="mock-timer-bar" id="mock-timer-bar" style="display:none"><div class="mock-timer-fill" id="mock-timer-fill" style="width:100%;background:var(--green)"></div></div>
   </div>
   <div id="feed"></div>
 </div>
@@ -461,6 +486,8 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
       </div>
       <div class="oa-bar"><div class="oa-fill" id="oa-fill" style="width:0%"></div></div>
     </div>
+    <div class="sec-label">🎯 Wrong Questions Pending</div>
+    <div style="background:var(--card);border-radius:14px;padding:14px;margin-bottom:14px;border:1px solid var(--border);" id="wrong-questions-card"></div>
     <div class="sec-label">📈 Performance (Last 7 Days)</div>
     <div class="perf-graph-card">
       <div class="pg-header">
@@ -692,6 +719,7 @@ let G = {
   topicStats:{},   // {topic: {done, correct}}
   engStats:{},     // {topic: {done, correct}} for English
   dailyLog:[],     // [{date, done, correct}] last 30 days
+  mockHistory:[],  // [{date, score, max, correct, wrong, timeSec, topicBreakdown}]
 };
 
 let S = {  // session
@@ -700,7 +728,9 @@ let S = {  // session
   streak:0, bestStreak:0,
   mode:'random', topic:null,
   feedCount:0,    // bubbles rendered
-  sessionWrong:[]
+  sessionWrong:[],
+  isMock:false, mockScore:0,
+  mockTimerInterval:null, mockSecondsLeft:600
 };
 
 // ══════════════════════════════════════════════════════
@@ -832,6 +862,67 @@ function getTopicWeight(topic){
   return 0.5 + (1 - acc) * 2.5;
 }
 
+// ── MOCK TEST: SSC-CGL weighted 25-question builder ──
+const MOCK_DISTRIBUTION = [
+  {topic:'Science & Biology', count:5},
+  {topic:'History',           count:4},
+  {topic:'Polity & Constitution', count:4},
+  {topic:'Geography',         count:4},
+  {topic:'Economy',           count:3},
+  {topic:'Art & Culture',     count:2},
+  {topic:'Miscellaneous GK',  count:2},
+  {topic:'Books & Authors',   count:1},
+];
+function buildMockQueue(){
+  const seenSet = new Set(G.seenIds);
+  const result = [];
+  MOCK_DISTRIBUTION.forEach(({topic, count})=>{
+    let pool = ALL_MCQ.filter(m=>m.topic===topic);
+    if(!pool.length) return;
+    let fresh = shuffle(pool.filter(m=>!seenSet.has(m.id)));
+    if(fresh.length < count) fresh = shuffle(pool);
+    result.push(...fresh.slice(0, count));
+  });
+  if(result.length < 25){
+    const usedIds = new Set(result.map(q=>q.id));
+    const filler = shuffle(ALL_MCQ.filter(q=>!usedIds.has(q.id)));
+    result.push(...filler.slice(0, 25 - result.length));
+  }
+  return shuffle(result).slice(0, 25);
+}
+
+// ── ENGLISH MOCK TEST: SSC weighted 25-question builder ──
+const ENG_MOCK_DISTRIBUTION = [
+  {topic:'Spot the Error',         count:5},
+  {topic:'Sentence Improvement',   count:4},
+  {topic:'One Word Substitution',  count:4},
+  {topic:'Synonyms',               count:3},
+  {topic:'Antonyms',               count:3},
+  {topic:'Idioms & Phrases',       count:3},
+  {topic:'Fill in the Blanks',     count:2},
+  {topic:'Narration',              count:1},
+  {topic:'Active & Passive Voice', count:1},
+  {topic:'Spelling Check',         count:1},
+  {topic:'Homonyms',               count:1},
+];
+function buildEngMockQueue(){
+  const seenSet = new Set(G.seenIds);
+  const result  = [];
+  ENG_MOCK_DISTRIBUTION.forEach(({topic, count})=>{
+    let pool = ALL_ENG_MCQ.filter(m=>m.topic===topic);
+    if(!pool.length) return;
+    let fresh = shuffle(pool.filter(m=>!seenSet.has(m.id)));
+    if(fresh.length < count) fresh = shuffle(pool);
+    result.push(...fresh.slice(0, count));
+  });
+  if(result.length < 25){
+    const usedIds = new Set(result.map(q=>q.id));
+    const filler  = shuffle(ALL_ENG_MCQ.filter(q=>!usedIds.has(q.id)));
+    result.push(...filler.slice(0, 25 - result.length));
+  }
+  return shuffle(result).slice(0, 25);
+}
+
 function buildQueue(mode, topic=null, dataset='gs'){
   const POOL = (dataset==='eng') ? ALL_ENG_MCQ : ALL_MCQ;
   // 'sub' mode: filter by sub-topic field
@@ -885,21 +976,79 @@ function buildQueue(mode, topic=null, dataset='gs'){
 // QUIZ FLOW
 // ══════════════════════════════════════════════════════
 function startQuiz(mode, topic=null, dataset='gs'){
-  S = { queue:buildQueue(mode,topic,dataset), dataset, idx:0, correct:0, wrong:0,
+  const isMock    = (mode === 'mock');
+  const isEngMock = (mode === 'engmock');
+  let queue;
+  if(isMock)         queue = buildMockQueue();
+  else if(isEngMock) queue = buildEngMockQueue();
+  else               queue = buildQueue(mode, topic, dataset);
+
+  S = { queue,
+        dataset: isMock ? 'gs' : isEngMock ? 'eng' : dataset,
+        idx:0, correct:0, wrong:0,
         streak:0, bestStreak:0, mode, topic, feedCount:0, sessionWrong:[],
-        startTime: Date.now(), totalAnswerMs:0, questionShownAt: Date.now(), currentTimer:null };
+        startTime: Date.now(), totalAnswerMs:0, questionShownAt: Date.now(),
+        currentTimer:null,
+        isMock: isMock || isEngMock, isEngMock, mockScore:0,
+        mockTimerInterval:null, mockSecondsLeft: 10*60
+      };
   if(!S.queue.length){ alert('No questions available!'); return; }
-  
+
   document.getElementById('feed').innerHTML='';
-  // Set header title — show short sub name for sub mode
-  const headerTitle = mode==='sub' ? (topic||'').replace(/^[^—]+—\s*/,'') : (topic||'General Studies');
+  const headerTitle = isMock    ? '🎯 GS Mock Test'
+                    : isEngMock ? '📝 English Mock Test'
+                    : mode==='sub' ? (topic||'').replace(/^[^—]+—\s*/,'')
+                    : (topic||'General Studies');
   document.getElementById('qh-topic').textContent = headerTitle;
-  // topic name shown in each question bubble pill too
-  document.getElementById('qh-badge').textContent = 'Q 0';
+  document.getElementById('qh-badge').textContent = (isMock||isEngMock) ? '⏱ 10:00' : 'Q 0';
+
+  // 4th stat box: swap label for mock
+  document.getElementById('qs-4th-lbl').textContent = isMock ? 'Score' : 'Avg/Ques';
+  document.getElementById('qs-timer').textContent   = isMock ? '0/50' : '—';
+  document.getElementById('qs-timer').className     = isMock ? 'qhs-num qhs-b' : 'qhs-num qhs-y';
+
+  // Mock countdown bar
+  const bar  = document.getElementById('mock-timer-bar');
+  const fill = document.getElementById('mock-timer-fill');
+  if(isMock || isEngMock){
+    bar.style.display = 'block';
+    fill.style.width  = '100%';
+    fill.style.background = 'var(--green)';
+    startMockCountdown();
+  } else {
+    bar.style.display = 'none';
+    if(S.mockTimerInterval){ clearInterval(S.mockTimerInterval); }
+  }
+
   updateQStats();
-  
   switchTab('quiz');
   appendNextQuestion();
+}
+
+function startMockCountdown(){
+  if(S.mockTimerInterval) clearInterval(S.mockTimerInterval);
+  const TOTAL = 10 * 60;
+  S.mockSecondsLeft = TOTAL;
+  const fill  = document.getElementById('mock-timer-fill');
+  const badge = document.getElementById('qh-badge');
+  S.mockTimerInterval = setInterval(()=>{
+    S.mockSecondsLeft--;
+    const pct = (S.mockSecondsLeft / TOTAL) * 100;
+    if(fill){
+      fill.style.width = pct + '%';
+      fill.style.background = pct > 50 ? 'var(--green)' : pct > 20 ? 'var(--yellow)' : 'var(--red)';
+    }
+    const m = Math.floor(S.mockSecondsLeft / 60);
+    const s = String(S.mockSecondsLeft % 60).padStart(2,'0');
+    if(badge) badge.textContent = `⏱ ${m}:${s}`;
+    if(S.mockSecondsLeft <= 0){
+      clearInterval(S.mockTimerInterval);
+      S.mockTimerInterval = null;
+      S.idx = S.queue.length;
+      answering = false;
+      appendNextQuestion();
+    }
+  }, 1000);
 }
 
 function appendNextQuestion(){
@@ -1105,6 +1254,7 @@ function handleAnswer(idx, chosen){
 
   saveG();
   updateQStats();
+  updateQuickMenuCounts();
 
   // Always show fact (green tint on correct, blue on wrong)
   const fb = document.getElementById(`fact-${idx}`);
@@ -1125,18 +1275,24 @@ function updateQStats(){
   document.getElementById('qs-wrong').textContent   = S.wrong;
   document.getElementById('qs-acc').textContent     = done ? Math.round(S.correct/done*100)+'%' : '0%';
 
-  // Avg time per question
   const timerEl = document.getElementById('qs-timer');
-  if(timerEl){
+  if(!timerEl) return;
+
+  if(S.isMock){
+    const mockScore = parseFloat(((S.correct * 2) - (S.wrong * 0.5)).toFixed(1));
+    S.mockScore = mockScore;
+    timerEl.textContent = mockScore + '/50';
+    timerEl.className = mockScore >= 35 ? 'qhs-num qhs-g'
+                      : mockScore >= 25 ? 'qhs-num qhs-y'
+                      : 'qhs-num qhs-r';
+  } else {
     if(done === 0){
       timerEl.textContent = '—';
     } else {
       const avgSec = Math.round(S.totalAnswerMs / done / 1000);
       if(avgSec === 0){
-        // All answers within reading window — show neutral
         timerEl.textContent = '⏳ fast';
       } else {
-        // avgSec here is time ABOVE 15s baseline
         const emoji = avgSec <= 10 ? '🚀' : avgSec <= 20 ? '🙂' : '🐢';
         timerEl.textContent = avgSec + 's ' + emoji;
       }
@@ -1145,38 +1301,154 @@ function updateQStats(){
 }
 
 function appendSessionEnd(){
-  const feed = document.getElementById('feed');
-  const done = S.correct+S.wrong;
-  const pct = done ? Math.round(S.correct/done*100) : 0;
-  let emoji='😅', title='Keep Going!';
-  if(pct>=90){emoji='🏆';title='Outstanding!';}
-  else if(pct>=70){emoji='🎉';title='Great Job!';}
-  else if(pct>=50){emoji='😊';title='Good Effort!';}
+  // Stop mock timer if running
+  if(S.mockTimerInterval){ clearInterval(S.mockTimerInterval); S.mockTimerInterval=null; }
+  document.getElementById('mock-timer-bar').style.display='none';
 
-  const div = document.createElement('div');
-  div.className='session-end-card';
-  const avgSec = done>0 ? Math.round(S.totalAnswerMs/done/1000) : 0;
-  const tEmoji = avgSec<7?'🚀':avgSec<=15?'🙂':'🐢';
-  div.innerHTML=`
-    <div class="sec-emoji">${emoji}</div>
-    <div class="sec-title">${title}</div>
-    <div class="sec-sub">Session complete • ${done} questions answered</div>
-    <div class="sec-score-row">
-      <div class="sec-score"><div class="sec-score-num qhs-g">${S.correct}</div><div class="sec-score-lbl">Correct</div></div>
-      <div class="sec-score"><div class="sec-score-num qhs-r">${S.wrong}</div><div class="sec-score-lbl">Wrong</div></div>
-      <div class="sec-score"><div class="sec-score-num qhs-b">${pct}%</div><div class="sec-score-lbl">Accuracy</div></div>
-      <div class="sec-score"><div class="sec-score-num qhs-y">${avgSec}s ${tEmoji}</div><div class="sec-score-lbl">Avg/Ques</div></div>
-    </div>
-    <div class="sec-btn-row">
-      <button class="sec-btn btn-p" onclick="startQuiz('${S.mode}','${S.topic||''}')">🔄 Again</button>
-      <button class="sec-btn btn-s" onclick="switchTab('home')">🏠 Home</button>
-    </div>
-  `;
-  feed.appendChild(div);
-  setTimeout(()=>div.scrollIntoView({behavior:'smooth',block:'start'}),80);
+  const feed = document.getElementById('feed');
+  const done = S.correct + S.wrong;
+  const notAttempted = S.isMock ? (25 - done) : 0;
+
+  if(S.isMock){
+    // ── MOCK SCORECARD (GS or English) ──
+    const finalScore = parseFloat(((S.correct * 2) - (S.wrong * 0.5)).toFixed(2));
+    const timeTaken  = 600 - S.mockSecondsLeft;
+    const mm = Math.floor(timeTaken/60);
+    const ss = String(timeTaken % 60).padStart(2,'0');
+
+    let grade='D', gradeColor='var(--red)', emoji='😅', title='Keep Practising!';
+    if(finalScore>=45){grade='A+';gradeColor='var(--green)';emoji='🏆';title='Outstanding!';}
+    else if(finalScore>=40){grade='A';gradeColor='var(--green)';emoji='🎉';title='Excellent!';}
+    else if(finalScore>=35){grade='B';gradeColor='var(--yellow)';emoji='😊';title='Good Job!';}
+    else if(finalScore>=30){grade='C';gradeColor='var(--yellow)';emoji='🙂';title='Above Cutoff!';}
+    else if(finalScore>=25){grade='D';gradeColor='var(--red)';emoji='😐';title='Below Cutoff';}
+
+    // Topic-wise breakdown
+    const topicBreakdown = {};
+    const wrongIds = new Set(S.sessionWrong.map(w=>w.id));
+    S.queue.slice(0, done).forEach(q=>{
+      const t = q.topic || (S.isEngMock ? 'English' : 'General Studies');
+      if(!topicBreakdown[t]) topicBreakdown[t]={correct:0,total:0};
+      topicBreakdown[t].total++;
+      if(!wrongIds.has(q.id)) topicBreakdown[t].correct++;
+    });
+
+    // Save to correct history bucket
+    const histKey = S.isEngMock ? 'engMockHistory' : 'mockHistory';
+    G[histKey] = G[histKey] || [];
+    G[histKey].push({
+      date: new Date().toISOString(),
+      score: finalScore, max: 50,
+      correct: S.correct, wrong: S.wrong, notAttempted,
+      timeSec: timeTaken, topicBreakdown
+    });
+    if(G[histKey].length > 50) G[histKey] = G[histKey].slice(-50);
+    saveG();
+
+    const hist = G[histKey];
+    const bestScore = Math.max(...hist.map(m=>m.score));
+    const avgScore  = (hist.reduce((s,m)=>s+m.score,0)/hist.length).toFixed(1);
+
+    // Pick correct icon set for breakdown rows
+    const ENG_MOCK_ICONS = {
+      'Spot the Error':'🔍','Sentence Improvement':'✏️','Narration':'💬',
+      'Active & Passive Voice':'🔄','Fill in the Blanks':'📝',
+      'One Word Substitution':'💡','Synonyms':'≈','Antonyms':'↔',
+      'Homonyms':'👯','Idioms & Phrases':'🗣️','Spelling Check':'🔤'
+    };
+    const iconMap = S.isEngMock ? ENG_MOCK_ICONS : TOPIC_ICONS;
+
+    const tbRows = Object.entries(topicBreakdown).map(([t,v])=>{
+      const icon = iconMap[t]||'📖';
+      const col  = v.correct===v.total ? 'var(--green)' : v.correct===0 ? 'var(--red)' : 'var(--yellow)';
+      return `<div style="display:flex;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid var(--border);">
+        <span>${icon}</span>
+        <span style="flex:1;font-size:11px;color:var(--sub)">${t}</span>
+        <span style="font-size:12px;font-weight:700;color:${col}">${v.correct}/${v.total}</span>
+      </div>`;
+    }).join('');
+
+    const mockLabel  = S.isEngMock ? 'SSC English Mock' : 'SSC CGL Pattern';
+    const retryCall  = S.isEngMock ? `startQuiz('engmock')` : `startQuiz('mock')`;
+    const homeTab    = S.isEngMock ? `switchTab('eng')` : `switchTab('home')`;
+
+    const div = document.createElement('div');
+    div.className='session-end-card';
+    div.innerHTML=`
+      <div class="sec-emoji">${emoji}</div>
+      <div class="sec-title">${title}</div>
+      <div class="sec-sub">Mock Test Complete • ${mockLabel}</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin:12px 0 14px;">
+        <div style="font-size:48px;font-weight:900;color:var(--blue);line-height:1">${finalScore}</div>
+        <div style="text-align:left;">
+          <div style="font-size:12px;color:var(--sub)">out of 50</div>
+          <div style="font-size:20px;font-weight:800;color:${gradeColor}">Grade ${grade}</div>
+          <div style="font-size:10px;color:var(--sub2)">SSC cutoff ~30/50</div>
+        </div>
+      </div>
+      <div class="sec-score-row" style="grid-template-columns:repeat(4,1fr);margin-bottom:12px;">
+        <div class="sec-score"><div class="sec-score-num qhs-g">+${(S.correct*2).toFixed(0)}</div><div class="sec-score-lbl">${S.correct} Correct</div></div>
+        <div class="sec-score"><div class="sec-score-num qhs-r">-${(S.wrong*0.5).toFixed(1)}</div><div class="sec-score-lbl">${S.wrong} Wrong</div></div>
+        <div class="sec-score"><div class="sec-score-num qhs-y">${notAttempted}</div><div class="sec-score-lbl">Skipped</div></div>
+        <div class="sec-score"><div class="sec-score-num qhs-b">${mm}:${ss}</div><div class="sec-score-lbl">Time</div></div>
+      </div>
+      <div style="background:var(--card2);border-radius:10px;padding:10px 12px;margin-bottom:10px;border:1px solid var(--border);">
+        <div style="font-size:10px;font-weight:700;color:var(--sub2);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:6px;">📊 Topic Breakdown</div>
+        ${tbRows || '<div style="font-size:12px;color:var(--sub);padding:4px 0">No questions answered</div>'}
+      </div>
+      <div style="display:flex;gap:8px;background:var(--card2);border-radius:10px;padding:8px 10px;margin-bottom:12px;border:1px solid var(--border);">
+        <div style="flex:1;text-align:center;"><div style="font-size:15px;font-weight:800;color:var(--blue)">${hist.length}</div><div style="font-size:9px;color:var(--sub);text-transform:uppercase">Attempts</div></div>
+        <div style="flex:1;text-align:center;"><div style="font-size:15px;font-weight:800;color:var(--green)">${bestScore}/50</div><div style="font-size:9px;color:var(--sub);text-transform:uppercase">Best</div></div>
+        <div style="flex:1;text-align:center;"><div style="font-size:15px;font-weight:800;color:var(--yellow)">${avgScore}</div><div style="font-size:9px;color:var(--sub);text-transform:uppercase">Avg</div></div>
+      </div>
+      <div class="sec-btn-row">
+        <button class="sec-btn btn-p" onclick="${retryCall}">🔄 Retry Mock</button>
+        <button class="sec-btn btn-s" onclick="${homeTab}">🏠 Home</button>
+      </div>
+    `;
+    feed.appendChild(div);
+    setTimeout(()=>div.scrollIntoView({behavior:'smooth',block:'start'}),80);
+
+  } else {
+    // ── NORMAL SESSION END (unchanged) ──
+    const pct = done ? Math.round(S.correct/done*100) : 0;
+    let emoji='😅', title='Keep Going!';
+    if(pct>=90){emoji='🏆';title='Outstanding!';}
+    else if(pct>=70){emoji='🎉';title='Great Job!';}
+    else if(pct>=50){emoji='😊';title='Good Effort!';}
+    const div = document.createElement('div');
+    div.className='session-end-card';
+    const avgSec = done>0 ? Math.round(S.totalAnswerMs/done/1000) : 0;
+    const tEmoji = avgSec<7?'🚀':avgSec<=15?'🙂':'🐢';
+    div.innerHTML=`
+      <div class="sec-emoji">${emoji}</div>
+      <div class="sec-title">${title}</div>
+      <div class="sec-sub">Session complete • ${done} questions answered</div>
+      <div class="sec-score-row">
+        <div class="sec-score"><div class="sec-score-num qhs-g">${S.correct}</div><div class="sec-score-lbl">Correct</div></div>
+        <div class="sec-score"><div class="sec-score-num qhs-r">${S.wrong}</div><div class="sec-score-lbl">Wrong</div></div>
+        <div class="sec-score"><div class="sec-score-num qhs-b">${pct}%</div><div class="sec-score-lbl">Accuracy</div></div>
+        <div class="sec-score"><div class="sec-score-num qhs-y">${avgSec}s ${tEmoji}</div><div class="sec-score-lbl">Avg/Ques</div></div>
+      </div>
+      <div class="sec-btn-row">
+        <button class="sec-btn btn-p" onclick="startQuiz('${S.mode}','${S.topic||''}')">🔄 Again</button>
+        <button class="sec-btn btn-s" onclick="switchTab('home')">🏠 Home</button>
+      </div>
+    `;
+    feed.appendChild(div);
+    setTimeout(()=>div.scrollIntoView({behavior:'smooth',block:'start'}),80);
+  }
+}
+
+function updateQuickMenuCounts(){
+  const gsWrong = G.wrongQueue.filter(w=>ALL_MCQ.some(m=>m.id===w.id)).length;
+  const engWrong = G.wrongQueue.filter(w=>ALL_ENG_MCQ.some(m=>m.id===w.id)).length;
+  document.getElementById('qm-gs-wrong').textContent = gsWrong || '—';
+  document.getElementById('qm-eng-wrong').textContent = engWrong || '—';
 }
 
 function showQuickMenu(){
+  updateQuickMenuCounts();
   document.getElementById('quick-menu-overlay').style.display='block';
   document.getElementById('quick-menu').style.display='block';
   document.getElementById('nav-quiz').classList.add('active');
@@ -1224,18 +1496,18 @@ function renderHome(){
   document.getElementById('day-pct').textContent=Math.min(Math.round(done/goal*100),100)+'%';
   if(done>=goal) document.getElementById('day-goal-lbl').textContent='🏆 Daily goal reached!';
 
-  // Revision banner
-  const dueCount = G.wrongQueue.filter(w=>G.totalDone-w.wrongAt>=40).length;
-  const revWrap = document.getElementById('revision-banner-wrap');
-  if(G.wrongQueue.length>0){
-    revWrap.style.display='block';
-    // Show: X wrong questions, Y almost mastered (streak=1)
-    const almostDone = G.wrongQueue.filter(w=>(w.correctStreak||0)===1).length;
-    const needWork   = G.wrongQueue.filter(w=>(w.correctStreak||0)===0).length;
-    let revTxt = `${G.wrongQueue.length} wrong question${G.wrongQueue.length!==1?'s':''}`;
-    if(almostDone>0) revTxt += ` • ${almostDone} need 1 more correct`;
-    document.getElementById('rev-count-txt').textContent = revTxt;
-  }else{ revWrap.style.display='none'; }
+  // Mock Test banner stats
+  const mh = G.mockHistory || [];
+  document.getElementById('mock-attempts').textContent = mh.length;
+  if(mh.length > 0){
+    const best = Math.max(...mh.map(m=>m.score));
+    const avg  = (mh.reduce((s,m)=>s+m.score,0)/mh.length).toFixed(1);
+    document.getElementById('mock-best').textContent = best + '/50';
+    document.getElementById('mock-avg').textContent  = avg;
+  } else {
+    document.getElementById('mock-best').textContent = '—';
+    document.getElementById('mock-avg').textContent  = '—';
+  }
 
   // Topic grid with expandable sub-sections
   const grid = document.getElementById('topic-grid');
@@ -1341,16 +1613,19 @@ function renderEngHome(){
   document.getElementById('eng-day-fill').style.width = Math.min(engTodayDone/engGoal*100,100)+'%';
   document.getElementById('eng-day-pct').textContent = Math.min(Math.round(engTodayDone/engGoal*100),100)+'%';
   if(engTodayDone>=engGoal) document.getElementById('eng-goal-lbl').textContent='🏆 Daily goal reached!';
-  // English revision queue
-  const engWrong = G.wrongQueue.filter(w=>ALL_ENG_MCQ.some(m=>m.id===w.id));
-  const engRevWrap = document.getElementById('eng-revision-banner-wrap');
-  if(engWrong.length>0){
-    engRevWrap.style.display='block';
-    const almostDone = engWrong.filter(w=>(w.correctStreak||0)===1).length;
-    let revTxt = engWrong.length + ' wrong question' + (engWrong.length!==1?'s':'');
-    if(almostDone>0) revTxt += ' • ' + almostDone + ' need 1 more correct';
-    document.getElementById('eng-rev-count-txt').textContent = revTxt;
-  } else { engRevWrap.style.display='none'; }
+
+  // English Mock banner stats
+  const emh = G.engMockHistory || [];
+  document.getElementById('eng-mock-attempts').textContent = emh.length;
+  if(emh.length > 0){
+    const best = Math.max(...emh.map(m=>m.score));
+    const avg  = (emh.reduce((s,m)=>s+m.score,0)/emh.length).toFixed(1);
+    document.getElementById('eng-mock-best').textContent = best + '/50';
+    document.getElementById('eng-mock-avg').textContent  = avg;
+  } else {
+    document.getElementById('eng-mock-best').textContent = '—';
+    document.getElementById('eng-mock-avg').textContent  = '—';
+  }
 
   // Build topic grid
   const grid = document.getElementById('eng-topic-grid');
@@ -1504,6 +1779,9 @@ function renderStats(){
   fill.style.width=pct+'%';
   fill.style.background=pct>=70?'linear-gradient(90deg,var(--green),#5fff8a)':pct>=45?'linear-gradient(90deg,var(--yellow),#ffd166)':'linear-gradient(90deg,var(--red),#ff7a73)';
 
+  // Render wrong questions card
+  renderWrongQuestionsCard();
+
   // Topic accuracy — weakest first
   // Build flat list: main topics + all sub-topics that have been attempted
   const list = document.getElementById('topic-acc-list');
@@ -1569,6 +1847,85 @@ function renderStats(){
       ${d.done>0?'<div class="tac-start-btn">Practice this topic →</div>':''}
     </div>`;
   }).join('');
+}
+
+// ══════════════════════════════════════════════════════
+// WRONG QUESTIONS CARD RENDERER
+// ══════════════════════════════════════════════════════
+function renderWrongQuestionsCard(){
+  const wrongList = document.getElementById('wrong-questions-card');
+  if(!wrongList) return;
+
+  const allWrong = [...G.wrongQueue];
+  if(allWrong.length === 0){
+    wrongList.innerHTML = `<div style="padding:20px;text-align:center;color:var(--sub);font-size:13px;">✨ No wrong questions! Keep practising to stay sharp.</div>`;
+    return;
+  }
+
+  // Count by main topic (using q.topic)
+  const byTopic = {};
+  allWrong.forEach(w=>{
+    const q = ALL_MCQ.find(m=>m.id===w.id) || ALL_ENG_MCQ.find(m=>m.id===w.id);
+    if(!q) return;
+    const t = q.topic;
+    if(!byTopic[t]) byTopic[t]={total:0, needsOneMore:0};
+    byTopic[t].total++;
+    if((w.correctStreak||0)===1) byTopic[t].needsOneMore++;
+  });
+
+  // Summary counts
+  const totalWrong = allWrong.length;
+  const needsTwoMore = allWrong.filter(w=>(w.correctStreak||0)===0).length;
+  const needsOneMore = allWrong.filter(w=>(w.correctStreak||0)===1).length;
+
+  // Build topic rows sorted by count (highest first)
+  const topicRows = Object.entries(byTopic)
+    .sort((a,b)=>b[1].total - a[1].total)
+    .map(([topic, counts])=>{
+      const icon = TOPIC_ICONS[topic] || ENG_TOPIC_ICONS[topic] || '📖';
+      return `<div style="display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:0.5px solid var(--border);">
+        <span style="font-size:14px;flex-shrink:0;">${icon}</span>
+        <div style="flex:1;">
+          <div style="font-size:13px;font-weight:700;color:var(--text);">${escH(topic)}</div>
+          <div style="font-size:11px;color:var(--sub);margin-top:1px;">${counts.total} wrong • ${counts.needsOneMore} need 1 more</div>
+        </div>
+        <button onclick="startQuiz('topic','${topic}')" style="font-size:11px;padding:4px 10px;background:rgba(43,159,234,0.08);color:var(--blue);border:1px solid rgba(43,159,234,0.3);border-radius:8px;cursor:pointer;font-weight:600;-webkit-tap-highlight-color:transparent;transition:all 0.15s;">Practice</button>
+      </div>`;
+    }).join('');
+
+  wrongList.innerHTML = `
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:1rem;">
+      <span style="font-size:18px;">🎯</span>
+      <div>
+        <h4 style="font-size:14px;font-weight:700;margin:0;color:var(--text);">Wrong Questions Pending</h4>
+        <p style="font-size:12px;color:var(--sub);margin:2px 0 0;">Practice until you get 2 correct in a row to graduate</p>
+      </div>
+    </div>
+
+    <div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:1rem;border:1px solid var(--border);display:flex;justify-content:space-around;">
+      <div style="text-align:center;">
+        <div style="font-size:10px;color:var(--sub2);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;font-weight:700;">Total Wrong</div>
+        <div style="font-size:20px;font-weight:800;color:var(--blue);">${totalWrong}</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:10px;color:var(--sub2);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;font-weight:700;">Need 2x Correct</div>
+        <div style="font-size:20px;font-weight:800;color:var(--yellow);">${needsTwoMore}</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-size:10px;color:var(--sub2);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;font-weight:700;">Almost Done</div>
+        <div style="font-size:20px;font-weight:800;color:var(--green);">${needsOneMore}</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom:1rem;">
+      <div style="font-size:11px;font-weight:700;color:var(--sub2);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:8px;">📊 By Topic</div>
+      ${topicRows}
+    </div>
+
+    <div style="text-align:center;font-size:11px;color:var(--sub);padding-top:1rem;border-top:1px solid var(--border);margin-top:1rem;padding-top:1rem;">
+      💡 All wrong questions (from topics, random, or mocks) appear here automatically
+    </div>
+  `;
 }
 
 // ══════════════════════════════════════════════════════
@@ -1758,13 +2115,17 @@ const _wait = Math.max(0, _splashMinMs - _elapsed);
 setTimeout(_dismissSplash, _wait);
 
 // --- ADD THESE LINES HERE ---
+window.startMockCountdown = startMockCountdown;
 window.startQuiz = startQuiz;
+window.buildEngMockQueue = buildEngMockQueue;
 window.switchTab = switchTab;
 window.exitQuiz = exitQuiz;
 window.toggleSubPanel = toggleSubPanel;
 window.handleAnswer = handleAnswer;
 window.showQuickMenu = showQuickMenu;
 window.hideQuickMenu = hideQuickMenu;
+window.updateQuickMenuCounts = updateQuickMenuCounts;
+window.renderWrongQuestionsCard = renderWrongQuestionsCard;
 window.exportBackup = exportBackup;
 window.importBackup = importBackup;
 // ----------------------------
@@ -1786,11 +2147,11 @@ window.importBackup = importBackup;
     </button>
     <button onclick="hideQuickMenu();startQuiz('revision',null,'gs')"
       style="background:linear-gradient(135deg,#2d1e3a,#201529);border:1px solid rgba(167,139,250,0.3);border-radius:12px;padding:14px 8px;color:#e2e8f0;font-size:13px;font-weight:600;cursor:pointer;">
-      🔁 GS Revision<br><span style="font-size:11px;color:#94a3b8;font-weight:400;">Wrong qs only</span>
+      🔁 GS Revision<br><span style="font-size:11px;color:#94a3b8;font-weight:400;"><strong id="qm-gs-wrong" style="color:#fbbf24;">—</strong> wrong</span>
     </button>
     <button onclick="hideQuickMenu();startQuiz('revision',null,'eng')"
       style="background:linear-gradient(135deg,#2d1e3a,#201529);border:1px solid rgba(167,139,250,0.3);border-radius:12px;padding:14px 8px;color:#e2e8f0;font-size:13px;font-weight:600;cursor:pointer;">
-      🔁 Eng Revision<br><span style="font-size:11px;color:#94a3b8;font-weight:400;">Wrong qs only</span>
+      🔁 Eng Revision<br><span style="font-size:11px;color:#94a3b8;font-weight:400;"><strong id="qm-eng-wrong" style="color:#fbbf24;">—</strong> wrong</span>
     </button>
   </div>
   <button onclick="hideQuickMenu()" style="width:100%;margin-top:10px;padding:10px;background:transparent;border:1px solid rgba(255,255,255,0.1);border-radius:10px;color:#64748b;font-size:13px;cursor:pointer;">Cancel</button>
