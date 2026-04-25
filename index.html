@@ -280,56 +280,41 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 .btn-s{background:var(--card2);color:var(--text);border:1px solid var(--border);}
 
 /* ═══════════════════════════════════════
-   STATS SCREEN
+   STATS SCREEN — redesigned
 ═══════════════════════════════════════ */
 #stats-screen{background:var(--bg);}
-.stats-header{padding:18px 16px 14px;border-bottom:1px solid var(--border);background:var(--card);}
-.sh-title{font-size:18px;font-weight:800;margin-bottom:14px;}
-.sh-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
-.sh-cell{background:var(--bg);border-radius:11px;padding:10px;text-align:center;border:1px solid var(--border);}
-.sh-num{font-size:20px;font-weight:800;}
-.sh-lbl{font-size:9px;color:var(--sub);text-transform:uppercase;letter-spacing:0.4px;margin-top:2px;}
 
-.stats-body{padding:12px 14px;}
-.overall-acc{background:var(--card);border-radius:14px;padding:14px;margin-bottom:14px;border:1px solid var(--border);}
-.oa-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
-.oa-label{font-size:13px;font-weight:600;}
-.oa-pct{font-size:20px;font-weight:800;color:var(--blue);}
-.oa-bar{height:8px;background:var(--border);border-radius:4px;overflow:hidden;}
-.oa-fill{height:100%;border-radius:4px;transition:width 0.8s ease;}
+/* top 4-stat bar */
+.stat-card{background:var(--card);border:0.5px solid var(--border);border-radius:10px;padding:10px 4px;text-align:center;flex:1;}
+.stat-num{font-size:18px;font-weight:700;}
+.stat-lbl{font-size:11px;color:var(--sub);margin-top:2px;}
 
-/* Topic accuracy list */
-.topic-acc-list{display:flex;flex-direction:column;gap:8px;}
-.tac-card{background:var(--card);border-radius:13px;padding:13px 14px;border:1px solid var(--border);cursor:pointer;transition:border-color 0.15s;}
-.tac-card:active{border-color:var(--blue);}
-.tac-card.weak-1{border-left:3px solid var(--red);}
-.tac-card.weak-2{border-left:3px solid var(--yellow);}
-.tac-card.strong{border-left:3px solid var(--green);}
-.tac-card.untouched{border-left:3px solid var(--border);}
-.tac-top{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
-.tac-icon{font-size:18px;}
-.tac-name{font-size:13px;font-weight:700;flex:1;}
-.tac-badge{font-size:11px;font-weight:800;padding:3px 9px;border-radius:8px;}
-.bad-red{background:#2d1a1a;color:var(--red);}
-.bad-yel{background:#2a2600;color:var(--yellow);}
-.bad-grn{background:#1a3326;color:var(--green);}
-.bad-neu{background:var(--card2);color:var(--sub);}
-.tac-bar-row{display:flex;align-items:center;gap:8px;}
-.tac-bar{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden;}
-.tac-fill{height:100%;border-radius:3px;transition:width 0.7s ease;}
-.tac-meta{font-size:11px;color:var(--sub);white-space:nowrap;}
-.tac-weak-label{font-size:10px;color:var(--red);font-weight:700;margin-top:4px;display:flex;align-items:center;gap:4px;}
-.tac-start-btn{font-size:11px;color:var(--blue);font-weight:700;margin-top:4px;cursor:pointer;}
+/* 30-day heatmap */
+.heat-cell{border-radius:2px;aspect-ratio:1;}
 
-/* Performance Graph */
-.perf-graph-card{background:var(--card);border-radius:14px;padding:14px;margin-bottom:14px;border:1px solid var(--border);}
-.pg-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
-.pg-title{font-size:13px;font-weight:700;}
-.pg-legend{font-size:11px;color:var(--sub);}
-.pg-svg-wrap{width:100%;overflow:hidden;}
-.pg-empty{text-align:center;padding:24px;color:var(--sub);font-size:13px;}
-.pg-day-labels{display:flex;justify-content:space-between;padding:0 4px;margin-top:4px;}
-.pg-day-lbl{font-size:9px;color:var(--sub2);text-align:center;flex:1;}
+/* swipeable graph */
+.graph-wrap{overflow:hidden;position:relative;}
+.graph-slide{display:flex;transition:transform 0.35s cubic-bezier(.4,0,.2,1);}
+.graph-panel{min-width:100%;box-sizing:border-box;}
+.graph-dot{width:8px;height:8px;border-radius:50%;background:var(--border);cursor:pointer;transition:background 0.2s;}
+.graph-dot.on{background:var(--blue);}
+
+/* subject breakdown cards */
+.subj-card{background:var(--card);border:0.5px solid var(--border);border-radius:12px;padding:12px;cursor:pointer;transition:border-color 0.2s;flex:1;}
+.subj-card:active{border-color:var(--blue);}
+.mini-stat{background:var(--card2);border-radius:8px;padding:6px 4px;text-align:center;flex:1;}
+
+/* detail modal (bottom sheet) */
+.stats-modal-bg{position:fixed;inset:0;background:rgba(0,0,0,0.55);display:flex;align-items:flex-end;z-index:300;}
+.stats-modal-box{background:var(--card);border-radius:16px 16px 0 0;width:100%;max-height:80vh;overflow-y:auto;padding-bottom:28px;}
+.stats-modal-handle{width:36px;height:4px;background:var(--border);border-radius:2px;margin:12px auto 0;}
+.stats-modal-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 10px;}
+.stats-close-btn{width:28px;height:28px;border-radius:50%;background:var(--card2);border:0.5px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;}
+.wrong-item{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:0.5px solid var(--border);}
+.topic-row-s{padding:10px 0;border-bottom:0.5px solid var(--border);}
+.acc-bar-bg{height:5px;background:var(--card2);border-radius:3px;overflow:hidden;margin-top:4px;}
+.acc-bar-fill{height:100%;border-radius:3px;}
+.stats-sec-label{font-size:11px;font-weight:500;color:var(--sub);text-transform:uppercase;letter-spacing:0.6px;padding:14px 16px 6px;}
 
 /* Backup / Restore buttons */
 .backup-section{padding:16px 14px 24px;border-top:1px solid var(--border);margin-top:6px;}
@@ -469,54 +454,153 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 
 <!-- STATS SCREEN -->
 <div id="stats-screen" class="screen" style="display:none;">
-  <div class="stats-header">
-    <div class="sh-title">📊 Your Statistics</div>
-    <div class="sh-grid">
-      <div class="sh-cell"><div class="sh-num qhs-b" id="st-total">0</div><div class="sh-lbl">Total Done</div></div>
-      <div class="sh-cell"><div class="sh-num qhs-g" id="st-correct">0</div><div class="sh-lbl">Correct</div></div>
-      <div class="sh-cell"><div class="sh-num qhs-r" id="st-wrong">0</div><div class="sh-lbl">Wrong</div></div>
-      <div class="sh-cell"><div class="sh-num qhs-y" id="st-streak">0</div><div class="sh-lbl">Best Streak</div></div>
+
+  <!-- Top 4-stat bar -->
+  <div style="display:flex;gap:8px;padding:12px 12px 10px;background:var(--card);border-bottom:0.5px solid var(--border);">
+    <div class="stat-card"><div class="stat-num" style="color:var(--blue);" id="st-total">0</div><div class="stat-lbl">Total Done</div></div>
+    <div class="stat-card"><div class="stat-num" style="color:var(--green);" id="st-correct">0</div><div class="stat-lbl">Correct</div></div>
+    <div class="stat-card"><div class="stat-num" style="color:var(--red);" id="st-wrong">0</div><div class="stat-lbl">Wrong</div></div>
+    <div class="stat-card"><div class="stat-num" style="color:var(--yellow);" id="st-streak">0</div><div class="stat-lbl">Best Streak</div></div>
+  </div>
+
+  <!-- 30-day heatmap -->
+  <div style="padding:10px 12px;background:var(--card);border-bottom:0.5px solid var(--border);display:flex;align-items:center;gap:10px;">
+    <div style="font-size:12px;font-weight:500;color:var(--sub);white-space:nowrap;">30-day activity</div>
+    <div id="st-heatmap" style="display:grid;grid-template-columns:repeat(10,1fr);gap:2px;flex:1;"></div>
+    <div style="font-size:10px;color:var(--sub);white-space:nowrap;line-height:1.6;">
+      <span style="color:var(--green);">■</span> &gt;50<br>
+      <span style="color:var(--yellow);">■</span> ~40<br>
+      <span style="color:var(--red);">■</span> ~10<br>
+      <span style="color:var(--border);">■</span> none
     </div>
   </div>
-  <div class="stats-body">
-    <div class="overall-acc">
-      <div class="oa-row">
-        <div class="oa-label">Overall Accuracy</div>
-        <div class="oa-pct" id="oa-pct">0%</div>
-      </div>
-      <div class="oa-bar"><div class="oa-fill" id="oa-fill" style="width:0%"></div></div>
-    </div>
-    <div class="sec-label">🎯 Wrong Questions Pending</div>
-    <div style="background:var(--card);border-radius:14px;padding:14px;margin-bottom:14px;border:1px solid var(--border);" id="wrong-questions-card"></div>
-    <div class="sec-label">📈 Performance (Last 7 Days)</div>
-    <div class="perf-graph-card">
-      <div class="pg-header">
-        <div class="pg-title">Daily Accuracy %</div>
-        <div class="pg-legend" id="pg-legend">—</div>
-      </div>
-      <div class="pg-svg-wrap" id="pg-svg-wrap">
-        <div class="pg-empty" id="pg-empty">Practice for a few days to see your graph 📊</div>
-      </div>
-      <div class="pg-day-labels" id="pg-day-labels"></div>
-    </div>
 
-    <div class="sec-label">📊 Topic-wise Accuracy <span style="font-size:10px;color:var(--red);font-weight:normal;">⬆️ Weakest first</span></div>
-    <div class="topic-acc-list" id="topic-acc-list"></div>
+  <!-- Swipeable 3-panel graph -->
+  <div style="background:var(--card);border-bottom:0.5px solid var(--border);padding:12px;">
+    <div class="graph-wrap" id="st-graph-wrap">
+      <div class="graph-slide" id="st-graph-slide">
+        <!-- Panel 1: Questions done -->
+        <div class="graph-panel" style="padding:0 2px;">
+          <div style="text-align:center;font-size:13px;font-weight:500;color:var(--sub);margin-bottom:10px;">Questions done (last 7 days)</div>
+          <svg width="100%" height="130" viewBox="0 0 330 130" id="svg-done">
+            <line x1="30" y1="15" x2="320" y2="15" stroke="var(--border)" stroke-width="0.5"/>
+            <line x1="30" y1="55" x2="320" y2="55" stroke="var(--border)" stroke-width="0.5"/>
+            <line x1="30" y1="95" x2="320" y2="95" stroke="var(--border)" stroke-width="0.5"/>
+            <text x="25" y="19" font-size="10" fill="var(--sub)" text-anchor="end" id="svg-done-max">30</text>
+            <text x="25" y="59" font-size="10" fill="var(--sub)" text-anchor="end" id="svg-done-mid">15</text>
+            <text x="25" y="99" font-size="10" fill="var(--sub)" text-anchor="end">0</text>
+            <polyline id="svg-done-gs" points="" fill="none" stroke="var(--blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline id="svg-done-eng" points="" fill="none" stroke="#ff9500" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <g id="svg-done-xlabels"></g>
+          </svg>
+          <div style="display:flex;gap:16px;margin-top:6px;justify-content:center;">
+            <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--sub);"><div style="width:14px;height:2.5px;background:var(--blue);border-radius:2px;"></div>GS</div>
+            <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--sub);"><div style="width:14px;height:2.5px;background:#ff9500;border-radius:2px;"></div>English</div>
+          </div>
+        </div>
+        <!-- Panel 2: Accuracy % -->
+        <div class="graph-panel" style="padding:0 2px;">
+          <div style="text-align:center;font-size:13px;font-weight:500;color:var(--sub);margin-bottom:10px;">Accuracy % (last 7 days)</div>
+          <svg width="100%" height="130" viewBox="0 0 330 130">
+            <line x1="30" y1="15" x2="320" y2="15" stroke="var(--border)" stroke-width="0.5"/>
+            <line x1="30" y1="55" x2="320" y2="55" stroke="var(--border)" stroke-width="0.5"/>
+            <line x1="30" y1="95" x2="320" y2="95" stroke="var(--border)" stroke-width="0.5"/>
+            <text x="25" y="19" font-size="10" fill="var(--sub)" text-anchor="end">100%</text>
+            <text x="25" y="59" font-size="10" fill="var(--sub)" text-anchor="end">50%</text>
+            <text x="25" y="99" font-size="10" fill="var(--sub)" text-anchor="end">0%</text>
+            <polyline id="svg-acc-gs" points="" fill="none" stroke="var(--blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline id="svg-acc-eng" points="" fill="none" stroke="#ff9500" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <g id="svg-acc-xlabels"></g>
+          </svg>
+          <div style="display:flex;gap:16px;margin-top:6px;justify-content:center;">
+            <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--sub);"><div style="width:14px;height:2.5px;background:var(--blue);border-radius:2px;"></div>GS</div>
+            <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--sub);"><div style="width:14px;height:2.5px;background:#ff9500;border-radius:2px;"></div>English</div>
+          </div>
+        </div>
+        <!-- Panel 3: Mock scores -->
+        <div class="graph-panel" style="padding:0 2px;">
+          <div style="text-align:center;font-size:13px;font-weight:500;color:var(--sub);margin-bottom:10px;">Mock test scores (last 7 attempts)</div>
+          <svg width="100%" height="130" viewBox="0 0 330 130">
+            <line x1="30" y1="15" x2="320" y2="15" stroke="var(--border)" stroke-width="0.5"/>
+            <line x1="30" y1="55" x2="320" y2="55" stroke="var(--border)" stroke-width="0.5"/>
+            <line x1="30" y1="95" x2="320" y2="95" stroke="var(--border)" stroke-width="0.5"/>
+            <text x="25" y="19" font-size="10" fill="var(--sub)" text-anchor="end">50</text>
+            <text x="25" y="59" font-size="10" fill="var(--sub)" text-anchor="end">25</text>
+            <text x="25" y="99" font-size="10" fill="var(--sub)" text-anchor="end">0</text>
+            <polyline id="svg-mock-gs" points="" fill="none" stroke="var(--blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline id="svg-mock-eng" points="" fill="none" stroke="#ff9500" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <g id="svg-mock-xlabels"></g>
+          </svg>
+          <div style="display:flex;gap:16px;margin-top:6px;justify-content:center;">
+            <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--sub);"><div style="width:14px;height:2.5px;background:var(--blue);border-radius:2px;"></div>GS mocks</div>
+            <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--sub);"><div style="width:14px;height:2.5px;background:#ff9500;border-radius:2px;"></div>English mocks</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Swipe dots -->
+    <div style="display:flex;justify-content:center;gap:7px;margin-top:10px;" id="st-dots-row">
+      <div class="graph-dot on" onclick="stGoSlide(0)"></div>
+      <div class="graph-dot" onclick="stGoSlide(1)"></div>
+      <div class="graph-dot" onclick="stGoSlide(2)"></div>
+    </div>
+  </div>
+
+  <!-- Subject breakdown cards -->
+  <div style="padding:10px 12px 16px;background:var(--bg);">
+    <div style="font-size:11px;font-weight:500;color:var(--sub);text-transform:uppercase;letter-spacing:0.6px;margin-bottom:8px;">Subject breakdown</div>
+    <div style="display:flex;gap:10px;">
+      <div class="subj-card" id="subj-gs-card" onclick="openStatsModal('gs')">
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+          <span style="font-size:16px;">📚</span>
+          <span style="font-size:13px;font-weight:500;flex:1;">General Studies</span>
+          <span id="subj-gs-done" style="font-size:11px;background:rgba(43,159,234,0.12);color:var(--blue);padding:2px 7px;border-radius:10px;">0 done</span>
+        </div>
+        <div style="display:flex;gap:6px;">
+          <div class="mini-stat"><div style="font-size:15px;font-weight:500;color:var(--green);" id="subj-gs-acc">—%</div><div style="font-size:10px;color:var(--sub);">Accuracy</div></div>
+          <div class="mini-stat"><div style="font-size:15px;font-weight:500;color:var(--red);" id="subj-gs-wrong">0</div><div style="font-size:10px;color:var(--sub);">Wrong</div></div>
+        </div>
+        <div style="font-size:11px;color:var(--sub);margin-top:8px;text-align:center;">Tap for details ›</div>
+      </div>
+      <div class="subj-card" id="subj-eng-card" onclick="openStatsModal('eng')">
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+          <span style="font-size:16px;">📝</span>
+          <span style="font-size:13px;font-weight:500;flex:1;">English</span>
+          <span id="subj-eng-done" style="font-size:11px;background:rgba(255,149,0,0.12);color:#ff9500;padding:2px 7px;border-radius:10px;">0 done</span>
+        </div>
+        <div style="display:flex;gap:6px;">
+          <div class="mini-stat"><div style="font-size:15px;font-weight:500;color:var(--green);" id="subj-eng-acc">—%</div><div style="font-size:10px;color:var(--sub);">Accuracy</div></div>
+          <div class="mini-stat"><div style="font-size:15px;font-weight:500;color:var(--red);" id="subj-eng-wrong">0</div><div style="font-size:10px;color:var(--sub);">Wrong</div></div>
+        </div>
+        <div style="font-size:11px;color:var(--sub);margin-top:8px;text-align:center;">Tap for details ›</div>
+      </div>
+    </div>
   </div>
 
   <!-- Backup & Restore -->
   <div class="backup-section">
     <div class="backup-label">💾 Backup & Restore Progress</div>
     <div class="backup-row">
-      <button class="backup-btn export-btn" onclick="exportBackup()">
-        📤 Export Backup
-      </button>
-      <button class="backup-btn import-btn" onclick="document.getElementById('import-file-input').click()">
-        📥 Import Backup
-      </button>
+      <button class="backup-btn export-btn" onclick="exportBackup()">📤 Export Backup</button>
+      <button class="backup-btn import-btn" onclick="document.getElementById('import-file-input').click()">📥 Import Backup</button>
     </div>
     <input type="file" id="import-file-input" accept=".json" style="display:none" onchange="importBackup(event)">
     <div class="backup-toast" id="backup-toast"></div>
+  </div>
+</div>
+
+<!-- STATS DETAIL MODAL (bottom sheet) -->
+<div id="stats-modal-bg" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);align-items:flex-end;z-index:300;" onclick="closeStatsModal(event)">
+  <div id="stats-modal-box" style="background:var(--card);border-radius:16px 16px 0 0;width:100%;max-height:80vh;overflow-y:auto;padding-bottom:28px;">
+    <div style="width:36px;height:4px;background:var(--border);border-radius:2px;margin:12px auto 0;"></div>
+    <div class="stats-modal-head">
+      <span id="stats-modal-title" style="font-size:15px;font-weight:600;"></span>
+      <div style="width:28px;height:28px;border-radius:50%;background:var(--card2);border:0.5px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;" onclick="closeStatsModalDirect()">✕</div>
+    </div>
+    <div class="stats-sec-label">🎯 Wrong questions pending</div>
+    <div id="stats-modal-wrong" style="padding:0 16px;"></div>
+    <div class="stats-sec-label" style="margin-top:8px;">📊 Topic accuracy — weakest first</div>
+    <div id="stats-modal-topics" style="padding:0 16px;"></div>
   </div>
 </div>
 
@@ -1673,260 +1757,231 @@ function renderEngHome(){
 }
 
 // ══════════════════════════════════════════════════════
-// PERFORMANCE GRAPH RENDERER
+// STATS SCREEN — heatmap, swipeable graph, modal
 // ══════════════════════════════════════════════════════
-function renderPerfGraph(){
+
+// Swipeable graph slide state
+let stCurSlide = 0;
+
+function stGoSlide(n){
+  stCurSlide = n;
+  const slide = document.getElementById('st-graph-slide');
+  if(slide) slide.style.transform = `translateX(-${n*100}%)`;
+  document.querySelectorAll('#st-dots-row .graph-dot').forEach((d,i)=>d.classList.toggle('on',i===n));
+}
+
+function renderHeatmap(){
+  const hm = document.getElementById('st-heatmap');
+  if(!hm) return;
+  // Build a 30-cell array from dailyLog
   const log = G.dailyLog || [];
-  const wrap  = document.getElementById('pg-svg-wrap');
-  const empty = document.getElementById('pg-empty');
-  const legend= document.getElementById('pg-legend');
-  const lbls  = document.getElementById('pg-day-labels');
-  if(!wrap) return;
-
-  // Need at least 2 days to draw a line
-  if(log.length < 2){
-    if(empty) empty.style.display='block';
-    return;
+  const today = new Date();
+  const cells = [];
+  for(let i=29; i>=0; i--){
+    const d = new Date(today); d.setDate(today.getDate()-i);
+    const key = d.toDateString();
+    const entry = log.find(l=>l.date===key);
+    const done = entry ? (entry.done||0) : 0;
+    // 0=none, 1=low(<10), 2=mid(<40), 3=high(>=40)
+    cells.push(done===0 ? 0 : done<10 ? 1 : done<40 ? 2 : 3);
   }
-  if(empty) empty.style.display='none';
+  const colors = ['transparent','#e5534b','#f0b429','#3db85c'];
+  hm.innerHTML = '';
+  cells.forEach(v=>{
+    const d = document.createElement('div');
+    d.className = 'heat-cell';
+    d.style.background = colors[v];
+    if(v===0) d.style.border = '0.5px solid var(--border)';
+    hm.appendChild(d);
+  });
+}
 
-  // Take last 7 days
-  const days = log.slice(-7);
-
-  // Build accuracy array (0–100)
-  const accArr = days.map(d=> d.done>0 ? Math.round((d.correct/d.total||d.correct/d.done||0)*100) : 0);
-
-  // SVG dimensions
-  const W = wrap.clientWidth || 280;
-  const H = 110;
-  const padL = 28, padR = 10, padT = 12, padB = 10;
-  const gW = W - padL - padR;
-  const gH = H - padT - padB;
-
-  const minV = 0, maxV = 100;
-  const xStep = gW / Math.max(days.length - 1, 1);
-
-  // Convert to SVG coords
-  const pts = accArr.map((v,i)=>({
-    x: padL + i * xStep,
-    y: padT + gH - ((v - minV) / (maxV - minV)) * gH
-  }));
-
-  // Build smooth path (straight lines — clean & simple)
-  const pathD = pts.map((p,i)=>(i===0?`M${p.x.toFixed(1)},${p.y.toFixed(1)}`:`L${p.x.toFixed(1)},${p.y.toFixed(1)}`)).join(' ');
-
-  // Fill area under line
-  const fillD = pathD + ` L${pts[pts.length-1].x.toFixed(1)},${(padT+gH).toFixed(1)} L${pts[0].x.toFixed(1)},${(padT+gH).toFixed(1)} Z`;
-
-  // Y-axis labels: 0, 50, 100
-  const yLabels = [0,50,100].map(v=>{
-    const y = padT + gH - (v/100)*gH;
-    return `<text x="${padL-4}" y="${y+4}" fill="var(--sub2)" font-size="9" text-anchor="end">${v}</text>
-            <line x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}" stroke="var(--border)" stroke-width="0.8"/>`;
-  }).join('');
-
-  // Dot for each data point
-  const dots = pts.map((p,i)=>{
-    const v = accArr[i];
-    const col = v>=70?'var(--green)':v>=45?'var(--yellow)':'var(--red)';
-    return `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4" fill="${col}" stroke="var(--card)" stroke-width="2"/>
-            <text x="${p.x.toFixed(1)}" y="${(p.y-8).toFixed(1)}" fill="${col}" font-size="9" text-anchor="middle" font-weight="700">${v}%</text>`;
-  }).join('');
-
-  // Trend indicator for legend
-  const latest = accArr[accArr.length-1];
-  const prev   = accArr.length>1 ? accArr[accArr.length-2] : latest;
-  const trend  = latest > prev ? `▲ +${latest-prev}%` : latest < prev ? `▼ ${latest-prev}%` : '→ same';
-  const tCol   = latest > prev ? 'var(--green)' : latest < prev ? 'var(--red)' : 'var(--sub)';
-  if(legend) { legend.textContent = `Today: ${latest}% ${trend}`; legend.style.color = tCol; }
-
-  // Day labels
+function renderSwipeGraphs(){
+  const log = G.dailyLog || [];
   const dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-  if(lbls) lbls.innerHTML = days.map(d=>{
-    const dt = new Date(d.date);
-    return `<div class="pg-day-lbl">${dayNames[dt.getDay()]}</div>`;
-  }).join('');
-
-  const svg = `<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
-    ${yLabels}
-    <defs>
-      <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="var(--blue)" stop-opacity="0.25"/>
-        <stop offset="100%" stop-color="var(--blue)" stop-opacity="0.02"/>
-      </linearGradient>
-    </defs>
-    <path d="${fillD}" fill="url(#fillGrad)"/>
-    <path d="${pathD}" fill="none" stroke="var(--blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    ${dots}
-  </svg>`;
-
-  wrap.innerHTML = svg;
-}
-
-// ══════════════════════════════════════════════════════
-// STATS RENDER
-// ══════════════════════════════════════════════════════
-function renderStats(){
-  renderPerfGraph();
-  document.getElementById('st-total').textContent=G.totalDone;
-  document.getElementById('st-correct').textContent=G.totalCorrect;
-  document.getElementById('st-wrong').textContent=G.totalDone-G.totalCorrect;
-  document.getElementById('st-streak').textContent=G.bestStreak;
-
-  const pct=G.totalDone?Math.round(G.totalCorrect/G.totalDone*100):0;
-  document.getElementById('oa-pct').textContent=pct+'%';
-  const fill=document.getElementById('oa-fill');
-  fill.style.width=pct+'%';
-  fill.style.background=pct>=70?'linear-gradient(90deg,var(--green),#5fff8a)':pct>=45?'linear-gradient(90deg,var(--yellow),#ffd166)':'linear-gradient(90deg,var(--red),#ff7a73)';
-
-  // Render wrong questions card
-  renderWrongQuestionsCard();
-
-  // Topic accuracy — weakest first
-  // Build flat list: main topics + all sub-topics that have been attempted
-  const list = document.getElementById('topic-acc-list');
-
-  // Collect all topic+subtopic names
-  const allStatTopics = [];
-  TOPIC_ORDER.forEach(sec => {
-    sec.topics.forEach(tObj => {
-      const name = tObj.name;
-      allStatTopics.push({label: name, filterKey: name, isSub: false});
-      // Add sub-topics that have data
-      (tObj.subs||[]).forEach(sub => {
-        if(G.topicStats[sub] && G.topicStats[sub].done > 0){
-          const shortName = sub.replace(/^[^—]+—\s*/,'');
-          allStatTopics.push({label: shortName, filterKey: sub, isSub: true, parent: name});
-        }
-      });
-    });
-  });
-
-  const topicData = allStatTopics.map(({label, filterKey, isSub, parent}) => {
-    const ts = G.topicStats[filterKey];
-    const count = isSub
-      ? ALL_MCQ.filter(m=>m.sub===filterKey).length
-      : ALL_MCQ.filter(m=>m.topic===filterKey).length;
-    if(!ts||!ts.done) return {label,filterKey,count,pct:-1,done:0,correct:0,isSub,parent};
-    const p = Math.round(ts.correct/ts.done*100);
-    return {label,filterKey,count,pct:p,done:ts.done,correct:ts.correct,isSub,parent};
-  });
-
-  // Sort: lowest accuracy first (untouched = last)
-  topicData.sort((a,b)=>{
-    if(a.pct===-1 && b.pct===-1) return 0;
-    if(a.pct===-1) return 1;
-    if(b.pct===-1) return -1;
-    return a.pct-b.pct;
-  });
-
-  list.innerHTML = topicData.map(d=>{
-    const icon = d.isSub ? (SUB_ICONS[d.filterKey]||'📖') : (TOPIC_ICONS[d.filterKey]||'📖');
-    let cardClass='untouched', badgeClass='bad-neu', badgeTxt='Not started';
-    let fillColor='var(--sub2)', fillW='0%', weakLabel='';
-    if(d.pct>=0){
-      fillW=d.pct+'%';
-      if(d.pct<45){ cardClass='weak-1'; badgeClass='bad-red'; badgeTxt=d.pct+'%'; fillColor='var(--red)'; weakLabel='<div class="tac-weak-label">⚠️ Needs improvement</div>'; }
-      else if(d.pct<70){ cardClass='weak-2'; badgeClass='bad-yel'; badgeTxt=d.pct+'%'; fillColor='var(--yellow)'; }
-      else { cardClass='strong'; badgeClass='bad-grn'; badgeTxt=d.pct+'%'; fillColor='var(--green)'; }
-    }
-    const metaTxt = d.done>0 ? `${d.correct}/${d.done} correct` : `${d.count} questions`;
-    const subIndent = d.isSub ? 'margin-left:14px;border-left:2px solid var(--border);' : '';
-    const mode = d.isSub ? 'sub' : 'topic';
-    return `<div class="tac-card ${cardClass}" style="${subIndent}" onclick="startQuiz('${mode}','${d.filterKey}')">
-      <div class="tac-top">
-        <div class="tac-icon">${icon}</div>
-        <div class="tac-name">${escH(d.label)}${d.isSub ? ' <span style="font-size:10px;color:var(--sub2)">· '+escH(d.parent||'')+'</span>' : ''}</div>
-        <div class="tac-badge ${badgeClass}">${badgeTxt}</div>
-      </div>
-      <div class="tac-bar-row">
-        <div class="tac-bar"><div class="tac-fill" style="width:${fillW};background:${fillColor}"></div></div>
-        <div class="tac-meta">${metaTxt}</div>
-      </div>
-      ${weakLabel}
-      ${d.done>0?'<div class="tac-start-btn">Practice this topic →</div>':''}
-    </div>`;
-  }).join('');
-}
-
-// ══════════════════════════════════════════════════════
-// WRONG QUESTIONS CARD RENDERER
-// ══════════════════════════════════════════════════════
-function renderWrongQuestionsCard(){
-  const wrongList = document.getElementById('wrong-questions-card');
-  if(!wrongList) return;
-
-  const allWrong = [...G.wrongQueue];
-  if(allWrong.length === 0){
-    wrongList.innerHTML = `<div style="padding:20px;text-align:center;color:var(--sub);font-size:13px;">✨ No wrong questions! Keep practising to stay sharp.</div>`;
-    return;
+  const days7 = [];
+  const today = new Date();
+  for(let i=6;i>=0;i--){
+    const d=new Date(today); d.setDate(today.getDate()-i);
+    const key=d.toDateString();
+    const entry=log.find(l=>l.date===key)||{date:key,done:0,correct:0,total:0};
+    days7.push({...entry, dayName: dayNames[d.getDay()]});
   }
 
-  // Count by main topic (using q.topic)
-  const byTopic = {};
-  allWrong.forEach(w=>{
-    const q = ALL_MCQ.find(m=>m.id===w.id) || ALL_ENG_MCQ.find(m=>m.id===w.id);
-    if(!q) return;
-    const t = q.topic;
-    if(!byTopic[t]) byTopic[t]={total:0, needsOneMore:0};
-    byTopic[t].total++;
-    if((w.correctStreak||0)===1) byTopic[t].needsOneMore++;
-  });
+  // ── Panel 1: Questions done ──
+  // GS done = entry.done (all GS questions that day)
+  // We don't store per-subject daily done separately in current data model,
+  // so approximate: GS done from topicStats vs total
+  const doneData = days7.map(d=>d.done||0);
+  const maxDone = Math.max(...doneData, 1);
+  const xPositions = [50,90,130,170,210,250,290];
 
-  // Summary counts
-  const totalWrong = allWrong.length;
-  const needsTwoMore = allWrong.filter(w=>(w.correctStreak||0)===0).length;
-  const needsOneMore = allWrong.filter(w=>(w.correctStreak||0)===1).length;
+  function toSvgY(v, maxV){ return 95 - Math.round(((v/maxV)*80)); }
 
-  // Build topic rows sorted by count (highest first)
-  const topicRows = Object.entries(byTopic)
-    .sort((a,b)=>b[1].total - a[1].total)
-    .map(([topic, counts])=>{
-      const icon = TOPIC_ICONS[topic] || ENG_TOPIC_ICONS[topic] || '📖';
-      return `<div style="display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:0.5px solid var(--border);">
-        <span style="font-size:14px;flex-shrink:0;">${icon}</span>
-        <div style="flex:1;">
-          <div style="font-size:13px;font-weight:700;color:var(--text);">${escH(topic)}</div>
-          <div style="font-size:11px;color:var(--sub);margin-top:1px;">${counts.total} wrong • ${counts.needsOneMore} need 1 more</div>
-        </div>
-        <button onclick="startQuiz('topic','${topic}')" style="font-size:11px;padding:4px 10px;background:rgba(43,159,234,0.08);color:var(--blue);border:1px solid rgba(43,159,234,0.3);border-radius:8px;cursor:pointer;font-weight:600;-webkit-tap-highlight-color:transparent;transition:all 0.15s;">Practice</button>
-      </div>`;
-    }).join('');
+  const donePoints = days7.map((d,i)=>({x:xPositions[i], y:toSvgY(d.done||0, maxDone)}));
+  const donePoly = donePoints.map(p=>`${p.x},${p.y}`).join(' ');
+  const el = document.getElementById('svg-done-gs');
+  if(el) el.setAttribute('points', donePoly);
+  // For now show same line in orange too (we'll improve with per-subject tracking later)
+  const elEng = document.getElementById('svg-done-eng');
+  if(elEng) elEng.setAttribute('points', '');
+  // X labels
+  const xlg = document.getElementById('svg-done-xlabels');
+  if(xlg) xlg.innerHTML = days7.map((d,i)=>`<text x="${xPositions[i]}" y="118" font-size="10" fill="var(--sub)" text-anchor="middle">${d.dayName}</text>`).join('');
+  // Y axis max label
+  const maxEl = document.getElementById('svg-done-max');
+  if(maxEl) maxEl.textContent = maxDone;
+  const midEl = document.getElementById('svg-done-mid');
+  if(midEl) midEl.textContent = Math.round(maxDone/2);
 
-  wrongList.innerHTML = `
-    <div style="display:flex;align-items:center;gap:8px;margin-bottom:1rem;">
-      <span style="font-size:18px;">🎯</span>
-      <div>
-        <h4 style="font-size:14px;font-weight:700;margin:0;color:var(--text);">Wrong Questions Pending</h4>
-        <p style="font-size:12px;color:var(--sub);margin:2px 0 0;">Practice until you get 2 correct in a row to graduate</p>
-      </div>
-    </div>
+  // ── Panel 2: Accuracy % ──
+  const accData = days7.map(d=> d.total>0 ? Math.round((d.correct/d.total)*100) : (d.done>0 ? Math.round((d.correct/d.done)*100)||0 : 0));
+  const accPoints = days7.map((d,i)=>({x:xPositions[i], y:toSvgY(accData[i], 100)}));
+  const accPoly = accPoints.map(p=>`${p.x},${p.y}`).join(' ');
+  const accEl = document.getElementById('svg-acc-gs');
+  if(accEl) accEl.setAttribute('points', accPoly);
+  const accEngEl = document.getElementById('svg-acc-eng');
+  if(accEngEl) accEngEl.setAttribute('points', '');
+  const xlga = document.getElementById('svg-acc-xlabels');
+  if(xlga) xlga.innerHTML = days7.map((d,i)=>`<text x="${xPositions[i]}" y="118" font-size="10" fill="var(--sub)" text-anchor="middle">${d.dayName}</text>`).join('');
 
-    <div style="background:var(--card2);border-radius:10px;padding:12px;margin-bottom:1rem;border:1px solid var(--border);display:flex;justify-content:space-around;">
-      <div style="text-align:center;">
-        <div style="font-size:10px;color:var(--sub2);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;font-weight:700;">Total Wrong</div>
-        <div style="font-size:20px;font-weight:800;color:var(--blue);">${totalWrong}</div>
-      </div>
-      <div style="text-align:center;">
-        <div style="font-size:10px;color:var(--sub2);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;font-weight:700;">Need 2x Correct</div>
-        <div style="font-size:20px;font-weight:800;color:var(--yellow);">${needsTwoMore}</div>
-      </div>
-      <div style="text-align:center;">
-        <div style="font-size:10px;color:var(--sub2);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;font-weight:700;">Almost Done</div>
-        <div style="font-size:20px;font-weight:800;color:var(--green);">${needsOneMore}</div>
-      </div>
-    </div>
-
-    <div style="margin-bottom:1rem;">
-      <div style="font-size:11px;font-weight:700;color:var(--sub2);text-transform:uppercase;letter-spacing:0.7px;margin-bottom:8px;">📊 By Topic</div>
-      ${topicRows}
-    </div>
-
-    <div style="text-align:center;font-size:11px;color:var(--sub);padding-top:1rem;border-top:1px solid var(--border);margin-top:1rem;padding-top:1rem;">
-      💡 All wrong questions (from topics, random, or mocks) appear here automatically
-    </div>
-  `;
+  // ── Panel 3: Mock scores ──
+  const gsMocks = (G.mockHistory||[]).slice(-7);
+  const engMocks = (G.engMockHistory||[]).slice(-7);
+  function mockPts(mocks){
+    if(!mocks.length) return '';
+    const n = mocks.length;
+    const step = n>1 ? 270/(n-1) : 0;
+    return mocks.map((m,i)=>{
+      const x = 30 + (n===1 ? 140 : i*step);
+      const y = toSvgY(m.score, 50);
+      return `${Math.round(x)},${y}`;
+    }).join(' ');
+  }
+  const mgEl = document.getElementById('svg-mock-gs');
+  if(mgEl) mgEl.setAttribute('points', mockPts(gsMocks));
+  const meEl = document.getElementById('svg-mock-eng');
+  if(meEl) meEl.setAttribute('points', mockPts(engMocks));
+  const xlm = document.getElementById('svg-mock-xlabels');
+  if(xlm) xlm.innerHTML = gsMocks.map((m,i)=>`<text x="${Math.round(30+(gsMocks.length>1?270/(gsMocks.length-1)*i:140))}" y="118" font-size="10" fill="var(--sub)" text-anchor="middle">${i+1}</text>`).join('');
 }
+
+function renderSubjectCards(){
+  // GS stats
+  let gsDone=0, gsCorrect=0;
+  const gsTopicStats = TOPIC_ORDER.flatMap(s=>s.topics).map(t=>G.topicStats[t.name]).filter(Boolean);
+  gsTopicStats.forEach(ts=>{gsDone+=ts.done; gsCorrect+=ts.correct;});
+  const gsAcc = gsDone>0 ? Math.round(gsCorrect/gsDone*100) : 0;
+  const gsWrongCount = G.wrongQueue.filter(w=>ALL_MCQ.some(m=>m.id===w.id)).length;
+  document.getElementById('subj-gs-done').textContent = gsDone+' done';
+  document.getElementById('subj-gs-acc').textContent = gsDone>0 ? gsAcc+'%' : '—%';
+  document.getElementById('subj-gs-wrong').textContent = gsWrongCount;
+
+  // English stats
+  let engDone=0, engCorrect=0;
+  ENG_TOPIC_ORDER.flatMap(s=>s.topics).forEach(t=>{
+    const ts=G.topicStats[t.name];
+    if(ts){engDone+=ts.done; engCorrect+=ts.correct;}
+  });
+  const engAcc = engDone>0 ? Math.round(engCorrect/engDone*100) : 0;
+  const engWrongCount = G.wrongQueue.filter(w=>ALL_ENG_MCQ.some(m=>m.id===w.id)).length;
+  document.getElementById('subj-eng-done').textContent = engDone+' done';
+  document.getElementById('subj-eng-acc').textContent = engDone>0 ? engAcc+'%' : '—%';
+  document.getElementById('subj-eng-wrong').textContent = engWrongCount;
+}
+
+function openStatsModal(subj){
+  const isGs = subj==='gs';
+  document.getElementById('stats-modal-title').textContent = isGs ? '📚 General Studies — Details' : '📝 English — Details';
+
+  // Wrong questions for this subject
+  const wrongQueue = G.wrongQueue.filter(w=>{
+    const q = isGs ? ALL_MCQ.find(m=>m.id===w.id) : ALL_ENG_MCQ.find(m=>m.id===w.id);
+    return !!q;
+  });
+  const byTopic={};
+  wrongQueue.forEach(w=>{
+    const POOL = isGs ? ALL_MCQ : ALL_ENG_MCQ;
+    const q=POOL.find(m=>m.id===w.id); if(!q) return;
+    if(!byTopic[q.topic]) byTopic[q.topic]={count:0};
+    byTopic[q.topic].count++;
+  });
+  const TOPIC_ICON_MAP = isGs ? TOPIC_ICONS : ENG_TOPIC_ICONS;
+  const wrongHtml = Object.entries(byTopic).sort((a,b)=>b[1].count-a[1].count).map(([topic,v])=>`
+    <div class="wrong-item">
+      <span style="font-size:16px;">${TOPIC_ICON_MAP[topic]||'📖'}</span>
+      <span style="font-size:13px;flex:1;color:var(--text);">${topic}</span>
+      <span style="font-size:12px;font-weight:600;color:var(--red);">${v.count} pending</span>
+      <span style="font-size:11px;color:var(--blue);margin-left:8px;cursor:pointer;" onclick="closeStatsModalDirect();startQuiz('topic','${topic}','${isGs?'gs':'eng'}')">Practice ›</span>
+    </div>`).join('') || '<div style="padding:10px 0;font-size:13px;color:var(--sub);">✨ No wrong questions! Great job.</div>';
+  document.getElementById('stats-modal-wrong').innerHTML = wrongHtml;
+
+  // Topic accuracy for this subject
+  const topicsOrder = isGs
+    ? TOPIC_ORDER.flatMap(s=>s.topics).map(t=>t.name)
+    : ENG_TOPIC_ORDER.flatMap(s=>s.topics).map(t=>t.name);
+  const topicsData = topicsOrder.map(name=>{
+    const ts=G.topicStats[name];
+    if(!ts||!ts.done) return null;
+    const pct=Math.round(ts.correct/ts.done*100);
+    const col=pct>=70?'var(--green)':pct>=45?'var(--yellow)':'var(--red)';
+    return {name, pct, done:ts.done, correct:ts.correct, col};
+  }).filter(Boolean).sort((a,b)=>a.pct-b.pct);
+
+  document.getElementById('stats-modal-topics').innerHTML = topicsData.map(t=>`
+    <div class="topic-row-s">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span style="font-size:13px;color:var(--text);">${escH(t.name)}</span>
+        <span style="font-size:12px;font-weight:600;color:${t.col};">${t.pct}%</span>
+      </div>
+      <div class="acc-bar-bg"><div class="acc-bar-fill" style="width:${t.pct}%;background:${t.col};"></div></div>
+      <div style="font-size:11px;color:var(--sub);margin-top:3px;">${t.correct}/${t.done} correct</div>
+    </div>`).join('') || '<div style="padding:10px 0;font-size:13px;color:var(--sub);">Start practising to see topic accuracy here.</div>';
+
+  const mb = document.getElementById('stats-modal-bg');
+  mb.style.display='flex';
+  document.getElementById('stats-modal-box').scrollTop=0;
+}
+
+function closeStatsModal(e){
+  if(e.target===document.getElementById('stats-modal-bg')) closeStatsModalDirect();
+}
+function closeStatsModalDirect(){
+  document.getElementById('stats-modal-bg').style.display='none';
+}
+
+// Touch swipe support for graph
+function initGraphSwipe(){
+  const gw = document.getElementById('st-graph-wrap');
+  if(!gw) return;
+  let tx=0, ty=0;
+  gw.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
+  gw.addEventListener('touchend',e=>{
+    const dx=e.changedTouches[0].clientX-tx;
+    const dy=e.changedTouches[0].clientY-ty;
+    if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>30){
+      if(dx<0&&stCurSlide<2) stGoSlide(stCurSlide+1);
+      if(dx>0&&stCurSlide>0) stGoSlide(stCurSlide-1);
+    }
+  },{passive:true});
+}
+
+// ── MAIN renderStats ──
+function renderStats(){
+  document.getElementById('st-total').textContent = G.totalDone;
+  document.getElementById('st-correct').textContent = G.totalCorrect;
+  document.getElementById('st-wrong').textContent = G.totalDone - G.totalCorrect;
+  document.getElementById('st-streak').textContent = G.bestStreak;
+
+  renderHeatmap();
+  renderSwipeGraphs();
+  renderSubjectCards();
+  initGraphSwipe();
+}
+
+// Keep legacy stubs for anything that might call old functions
+function renderPerfGraph(){}
+function renderWrongQuestionsCard(){}
 
 // ══════════════════════════════════════════════════════
 // TAB SWITCHING
@@ -2056,7 +2111,9 @@ function importBackup(event){
       const data = JSON.parse(e.target.result);
 
       // Basic validation
-     if(typeof data.totalDone === 'undefined' || typeof data.totalCorrect === 'undefined' || typeof data.wrongQueue === 'undefined' || typeof data.topicStats === 'undefined'){
+     // Basic validation
+      if(typeof data.totalDone === 'undefined' || typeof data.topicStats === 'undefined'){
+        throw new Error('Invalid backup file format. This does not look like Pinnacle Quiz data.');
       }
 
       // Remove metadata keys before saving
@@ -2128,7 +2185,64 @@ window.updateQuickMenuCounts = updateQuickMenuCounts;
 window.renderWrongQuestionsCard = renderWrongQuestionsCard;
 window.exportBackup = exportBackup;
 window.importBackup = importBackup;
+window.openStatsModal = openStatsModal;
+window.closeStatsModal = closeStatsModal;
+window.closeStatsModalDirect = closeStatsModalDirect;
+window.stGoSlide = stGoSlide;
 // ----------------------------
+
+// ── DOUBLE-TAP BACK TO EXIT ──
+let _backPressedOnce = false;
+window.addEventListener('popstate', function(e){
+  // Always push a dummy state back so we stay in the app
+  history.pushState(null, '', location.href);
+
+  if(S && (S.correct + S.wrong) > 0 && document.getElementById('quiz-screen').classList.contains('active')){
+    // Inside an active quiz — use existing exit logic
+    exitQuiz();
+    return;
+  }
+
+  if(_backPressedOnce){
+    // Second press within 2s — actually close
+    window.close();          // works for some browsers
+    history.go(-(history.length)); // fallback
+    return;
+  }
+
+  // First press — show toast
+  _backPressedOnce = true;
+  showExitToast();
+  setTimeout(()=>{ _backPressedOnce = false; hideExitToast(); }, 2000);
+});
+
+// Push an initial dummy state so popstate fires on first back press
+history.pushState(null, '', location.href);
+
+function showExitToast(){
+  let t = document.getElementById('exit-toast');
+  if(!t){
+    t = document.createElement('div');
+    t.id = 'exit-toast';
+    t.style.cssText = `
+      position:fixed;bottom:80px;left:50%;transform:translateX(-50%);
+      background:#1e2c3a;border:1px solid rgba(43,159,234,0.4);
+      color:#e8eaed;font-size:13px;font-weight:600;
+      padding:11px 22px;border-radius:30px;z-index:9999;
+      box-shadow:0 4px 20px rgba(0,0,0,0.5);
+      animation:factSlide 0.3s ease;
+      white-space:nowrap;
+    `;
+    document.body.appendChild(t);
+  }
+  t.textContent = '👋 Press back again to exit';
+  t.style.display = 'block';
+}
+
+function hideExitToast(){
+  const t = document.getElementById('exit-toast');
+  if(t) t.style.display = 'none';
+}
 
 } // end initApp()
 </script>
