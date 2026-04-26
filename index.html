@@ -506,8 +506,11 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
           </div>
         </div>
         <!-- Panel 2: Accuracy % -->
-        <div class="graph-panel" style="padding:0 2px;">
-          <div style="text-align:center;font-size:13px;font-weight:500;color:var(--sub);margin-bottom:10px;">Accuracy % (last 7 days)</div>
+        <div class="graph-panel" style="padding:0 2px;position:relative;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+            <div style="text-align:center;flex:1;font-size:13px;font-weight:500;color:var(--sub);">Accuracy % (last 7 days)</div>
+            <div id="acc-today-badge" style="font-size:11px;font-weight:700;padding:3px 9px;border-radius:12px;background:rgba(61,184,92,0.15);color:var(--green);border:1px solid rgba(61,184,92,0.3);white-space:nowrap;">Today: —</div>
+          </div>
           <svg width="100%" height="130" viewBox="0 0 330 130">
             <line x1="30" y1="15" x2="320" y2="15" stroke="var(--border)" stroke-width="0.5"/>
             <line x1="30" y1="55" x2="320" y2="55" stroke="var(--border)" stroke-width="0.5"/>
@@ -517,6 +520,8 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
             <text x="25" y="99" font-size="10" fill="var(--sub)" text-anchor="end">0%</text>
             <polyline id="svg-acc-gs" points="" fill="none" stroke="var(--blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             <polyline id="svg-acc-eng" points="" fill="none" stroke="#ff9500" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Data point value labels -->
+            <g id="svg-acc-values"></g>
             <g id="svg-acc-xlabels"></g>
           </svg>
           <div style="display:flex;gap:16px;margin-top:6px;justify-content:center;">
@@ -1737,7 +1742,7 @@ function renderEngHome(){
     sec.topics.forEach(tObj=>{
       const t=tObj.name;
       const count = topicCounts[t]||0;
-      const icon  = ENG_ICONS[t]||'📖';
+      const icon = ENG_TOPIC_ICONS[t]||'📖';
       const ts    = G.topicStats[t];
       const totalForTopic = topicCounts[t] || 1;
       let accClass='acc-none', accText='New';
@@ -1850,6 +1855,39 @@ function renderSwipeGraphs(){
   if(accEl) accEl.setAttribute('points', accPoly);
   const accEngEl = document.getElementById('svg-acc-eng');
   if(accEngEl) accEngEl.setAttribute('points', '');
+  
+  // Premium detail: Add value labels on data points (first & last visible)
+  const valuesG = document.getElementById('svg-acc-values');
+  if(valuesG){
+    valuesG.innerHTML = '';
+    // Show first and last point values
+    if(accPoints.length>=1){
+      const first = accPoints[0];
+      const last = accPoints[accPoints.length-1];
+      // First point label (left side)
+      valuesG.innerHTML += `<text x="${first.x}" y="${first.y-12}" font-size="11" font-weight="700" fill="var(--blue)" text-anchor="middle">${accData[0]}%</text>`;
+      // Last point label (right side)
+      valuesG.innerHTML += `<text x="${last.x}" y="${last.y-12}" font-size="11" font-weight="700" fill="var(--blue)" text-anchor="middle">${accData[accData.length-1]}%</text>`;
+    }
+  }
+  
+  // Premium detail: Today's change badge
+  const todayAcc = accData[accData.length-1];
+  const yesterdayAcc = accData.length>1 ? accData[accData.length-2] : todayAcc;
+  const change = todayAcc - yesterdayAcc;
+  const badgeEl = document.getElementById('acc-today-badge');
+  if(badgeEl){
+    if(todayAcc>0){
+      const changeText = change>0 ? `↑ +${change}%` : change<0 ? `↓ ${change}%` : '→ 0%';
+      const badgeColor = change>0 ? 'rgba(61,184,92,0.15)' : change<0 ? 'rgba(229,83,75,0.15)' : 'rgba(43,159,234,0.15)';
+      const badgeTextColor = change>0 ? 'var(--green)' : change<0 ? 'var(--red)' : 'var(--blue)';
+      badgeEl.innerHTML = `Today: ${todayAcc}% ${changeText}`;
+      badgeEl.style.background = badgeColor;
+      badgeEl.style.color = badgeTextColor;
+      badgeEl.style.borderColor = badgeColor.replace('0.15', '0.3');
+    }
+  }
+  
   const xlga = document.getElementById('svg-acc-xlabels');
   if(xlga) xlga.innerHTML = days7.map((d,i)=>`<text x="${xPositions[i]}" y="118" font-size="10" fill="var(--sub)" text-anchor="middle">${d.dayName}</text>`).join('');
 
@@ -2198,6 +2236,59 @@ window.closeStatsModal = closeStatsModal;
 window.closeStatsModalDirect = closeStatsModalDirect;
 window.stGoSlide = stGoSlide;
 // ----------------------------
+
+// ── DOUBLE-TAP BACK TO EXIT ──
+let _backPressedOnce = false;
+window.addEventListener('popstate', function(e){
+  // Always push a dummy state back so we stay in the app
+  history.pushState(null, '', location.href);
+
+  if(S && (S.correct + S.wrong) > 0 && document.getElementById('quiz-screen').classList.contains('active')){
+    // Inside an active quiz — use existing exit logic
+    exitQuiz();
+    return;
+  }
+
+  if(_backPressedOnce){
+    // Second press within 2s — actually close
+    window.close();          // works for some browsers
+    history.go(-(history.length)); // fallback
+    return;
+  }
+
+  // First press — show toast
+  _backPressedOnce = true;
+  showExitToast();
+  setTimeout(()=>{ _backPressedOnce = false; hideExitToast(); }, 2000);
+});
+
+// Push an initial dummy state so popstate fires on first back press
+history.pushState(null, '', location.href);
+
+function showExitToast(){
+  let t = document.getElementById('exit-toast');
+  if(!t){
+    t = document.createElement('div');
+    t.id = 'exit-toast';
+    t.style.cssText = `
+      position:fixed;bottom:80px;left:50%;transform:translateX(-50%);
+      background:#1e2c3a;border:1px solid rgba(43,159,234,0.4);
+      color:#e8eaed;font-size:13px;font-weight:600;
+      padding:11px 22px;border-radius:30px;z-index:9999;
+      box-shadow:0 4px 20px rgba(0,0,0,0.5);
+      animation:factSlide 0.3s ease;
+      white-space:nowrap;
+    `;
+    document.body.appendChild(t);
+  }
+  t.textContent = '👋 Press back again to exit';
+  t.style.display = 'block';
+}
+
+function hideExitToast(){
+  const t = document.getElementById('exit-toast');
+  if(t) t.style.display = 'none';
+}
 
 } // end initApp()
 </script>
