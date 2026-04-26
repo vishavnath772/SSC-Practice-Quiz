@@ -883,9 +883,23 @@ function saveG(){
   const today = new Date().toDateString();
   const log = G.dailyLog || [];
   const todayIdx = log.findIndex(d=>d.date===today);
+  // Calculate per-subject correct counts from topicStats
+  const gsTopicNames = (typeof TOPIC_ORDER !== 'undefined')
+    ? TOPIC_ORDER.flatMap(s=>s.topics).map(t=>t.name)
+    : [];
+  const engTopicNames = (typeof ENG_TOPIC_ORDER !== 'undefined')
+    ? ENG_TOPIC_ORDER.flatMap(s=>s.topics).map(t=>t.name)
+    : [];
+  let gsCorrectToday = 0, engCorrectToday = 0;
+  if(G.topicStats){
+    gsTopicNames.forEach(n=>{ if(G.topicStats[n]) gsCorrectToday += G.topicStats[n].correct; });
+    engTopicNames.forEach(n=>{ if(G.topicStats[n]) engCorrectToday += G.topicStats[n].correct; });
+  }
   const snap = {date:today, done:G.todayDone, correct: G.topicStats
     ? Object.values(G.topicStats).reduce((s,t)=>s+t.correct,0) : G.totalCorrect,
-    total: G.totalDone};
+    total: G.totalDone,
+    engDone: G.engTodayDone||0,
+    engCorrect: engCorrectToday};
   if(todayIdx > -1) log[todayIdx] = snap;
   else log.push(snap);
   // Keep last 30 days only
@@ -1830,38 +1844,41 @@ function renderSwipeGraphs(){
   }
 
   // ── Panel 1: Questions done ──
-  // GS done = entry.done (all GS questions that day)
-  // We don't store per-subject daily done separately in current data model,
-  // so approximate: GS done from topicStats vs total
-  const doneData = days7.map(d=>d.done||0);
-  const maxDone = Math.max(...doneData, 1);
+  const doneData    = days7.map(d=>d.done||0);
+  const engDoneData = days7.map(d=>d.engDone||0);
+  const maxDone = Math.max(...doneData, ...engDoneData, 1);
   const xPositions = [50,90,130,170,210,250,290];
 
   function toSvgY(v, maxV){ return 95 - Math.round(((v/maxV)*80)); }
 
+  // GS line (blue)
   const donePoints = days7.map((d,i)=>({x:xPositions[i], y:toSvgY(d.done||0, maxDone)}));
   const donePoly = donePoints.map(p=>`${p.x},${p.y}`).join(' ');
   const el = document.getElementById('svg-done-gs');
   if(el) el.setAttribute('points', donePoly);
-  // For now show same line in orange too (we'll improve with per-subject tracking later)
+  // English line (orange)
+  const engDonePoints = days7.map((d,i)=>({x:xPositions[i], y:toSvgY(d.engDone||0, maxDone)}));
+  const engDonePoly = engDonePoints.map(p=>`${p.x},${p.y}`).join(' ');
   const elEng = document.getElementById('svg-done-eng');
-  if(elEng) elEng.setAttribute('points', '');
+  if(elEng) elEng.setAttribute('points', engDonePoly);
   // X labels
   const xlg = document.getElementById('svg-done-xlabels');
   if(xlg) xlg.innerHTML = days7.map((d,i)=>`<text x="${xPositions[i]}" y="118" font-size="10" fill="var(--sub)" text-anchor="middle">${d.dayName}</text>`).join('');
-  // Value labels on all 7 points — yellow, skip zeros
+  // Value labels on GS points — yellow, skip zeros
   const doneVals = document.getElementById('svg-done-values');
-  if(doneVals) doneVals.innerHTML = donePoints.map((p,i)=> doneData[i]>0 ? `<text x="${p.x}" y="${p.y-8}" font-size="10" font-weight="700" fill="#f0b429" text-anchor="middle">${doneData[i]}</text>` : '').join('');
+  if(doneVals) doneVals.innerHTML = [
+    ...donePoints.map((p,i)=> doneData[i]>0 ? `<text x="${p.x}" y="${p.y-8}" font-size="10" font-weight="700" fill="#f0b429" text-anchor="middle">${doneData[i]}</text>` : ''),
+    ...engDonePoints.map((p,i)=> engDoneData[i]>0 ? `<text x="${p.x}" y="${p.y-8}" font-size="10" font-weight="700" fill="#ff9500" text-anchor="middle">${engDoneData[i]}</text>` : '')
+  ].join('');
   // Today badge
   const doneBadge = document.getElementById('done-today-badge');
   if(doneBadge){
-    const todayDone = doneData[doneData.length-1];
-    const yestDone  = doneData.length>1 ? doneData[doneData.length-2] : todayDone;
-    const dChange   = todayDone - yestDone;
-    if(todayDone>0){
-      const ct = dChange>0 ? `↑ +${dChange}` : dChange<0 ? `↓ ${dChange}` : '→ 0';
-      doneBadge.textContent = `Today: ${todayDone} ${ct}`;
-      doneBadge.style.color = dChange>0 ? 'var(--green)' : dChange<0 ? 'var(--red)' : 'var(--blue)';
+    const todayGS  = doneData[doneData.length-1];
+    const todayEng = engDoneData[engDoneData.length-1];
+    const total = todayGS + todayEng;
+    if(total>0){
+      doneBadge.textContent = `GS:${todayGS} Eng:${todayEng}`;
+      doneBadge.style.color = 'var(--blue)';
     }
   }
   // Y axis max label
@@ -1871,28 +1888,32 @@ function renderSwipeGraphs(){
   if(midEl) midEl.textContent = Math.round(maxDone/2);
 
   // ── Panel 2: Accuracy % ──
-  const accData = days7.map(d=> d.total>0 ? Math.round((d.correct/d.total)*100) : (d.done>0 ? Math.round((d.correct/d.done)*100)||0 : 0));
-  const accPoints = days7.map((d,i)=>({x:xPositions[i], y:toSvgY(accData[i], 100)}));
-  const accPoly = accPoints.map(p=>`${p.x},${p.y}`).join(' ');
+  const accData    = days7.map(d=> d.total>0 ? Math.round((d.correct/d.total)*100) : (d.done>0 ? Math.round((d.correct/d.done)*100)||0 : 0));
+  const engAccData = days7.map(d=> d.engDone>0 ? Math.round(((d.engCorrect||0)/d.engDone)*100) : 0);
+  const accPoints    = days7.map((d,i)=>({x:xPositions[i], y:toSvgY(accData[i], 100)}));
+  const engAccPoints = days7.map((d,i)=>({x:xPositions[i], y:toSvgY(engAccData[i], 100)}));
+  const accPoly    = accPoints.map(p=>`${p.x},${p.y}`).join(' ');
+  const engAccPoly = engAccPoints.map(p=>`${p.x},${p.y}`).join(' ');
   const accEl = document.getElementById('svg-acc-gs');
   if(accEl) accEl.setAttribute('points', accPoly);
   const accEngEl = document.getElementById('svg-acc-eng');
-  if(accEngEl) accEngEl.setAttribute('points', '');
+  if(accEngEl) accEngEl.setAttribute('points', engAccPoly);
   
-  // Value labels on all 7 points — yellow, skip zeros
+  // Value labels on both lines — skip zeros
   const valuesG = document.getElementById('svg-acc-values');
-  if(valuesG) valuesG.innerHTML = accPoints.map((p,i)=> accData[i]>0 ? `<text x="${p.x}" y="${p.y-8}" font-size="10" font-weight="700" fill="#f0b429" text-anchor="middle">${accData[i]}%</text>` : '').join('');
+  if(valuesG) valuesG.innerHTML = [
+    ...accPoints.map((p,i)=> accData[i]>0 ? `<text x="${p.x}" y="${p.y-8}" font-size="10" font-weight="700" fill="#f0b429" text-anchor="middle">${accData[i]}%</text>` : ''),
+    ...engAccPoints.map((p,i)=> engAccData[i]>0 ? `<text x="${p.x}" y="${p.y-8}" font-size="10" font-weight="700" fill="#ff9500" text-anchor="middle">${engAccData[i]}%</text>` : '')
+  ].join('');
 
-  // Today's change badge — flat, colour-coded
-  const todayAcc = accData[accData.length-1];
-  const yesterdayAcc = accData.length>1 ? accData[accData.length-2] : todayAcc;
-  const change = todayAcc - yesterdayAcc;
+  // Today's accuracy badge — show both GS and Eng
+  const todayAcc    = accData[accData.length-1];
+  const todayEngAcc = engAccData[engAccData.length-1];
   const badgeEl = document.getElementById('acc-today-badge');
   if(badgeEl){
-    if(todayAcc>0){
-      const changeText = change>0 ? `↑ +${change}%` : change<0 ? `↓ ${change}%` : '→ 0%';
-      badgeEl.textContent = `Today: ${todayAcc}% ${changeText}`;
-      badgeEl.style.color = change>0 ? 'var(--green)' : change<0 ? 'var(--red)' : 'var(--blue)';
+    if(todayAcc>0 || todayEngAcc>0){
+      badgeEl.textContent = `GS:${todayAcc||0}% Eng:${todayEngAcc||0}%`;
+      badgeEl.style.color = 'var(--blue)';
     }
   }
   
@@ -1918,13 +1939,20 @@ function renderSwipeGraphs(){
   if(meEl) meEl.setAttribute('points', mockPts(engMocks));
   const xlm = document.getElementById('svg-mock-xlabels');
   if(xlm) xlm.innerHTML = gsMocks.map((m,i)=>`<text x="${Math.round(30+(gsMocks.length>1?270/(gsMocks.length-1)*i:140))}" y="118" font-size="10" fill="var(--sub)" text-anchor="middle">${i+1}</text>`).join('');
-  // Value labels on all GS mock points — yellow
+  // Value labels on both GS and Eng mock points — yellow/orange
   const mockVals = document.getElementById('svg-mock-values');
-  if(mockVals) mockVals.innerHTML = gsMocks.map((m,i)=>{
-    const n=gsMocks.length; const x=Math.round(30+(n>1?270/(n-1)*i:140));
-    const y=toSvgY(m.score,50);
-    return `<text x="${x}" y="${y-8}" font-size="10" font-weight="700" fill="#f0b429" text-anchor="middle">${m.score}</text>`;
-  }).join('');
+  if(mockVals) mockVals.innerHTML = [
+    ...gsMocks.map((m,i)=>{
+      const n=gsMocks.length; const x=Math.round(30+(n>1?270/(n-1)*i:140));
+      const y=toSvgY(m.score,50);
+      return `<text x="${x}" y="${y-8}" font-size="10" font-weight="700" fill="#f0b429" text-anchor="middle">${m.score}</text>`;
+    }),
+    ...engMocks.map((m,i)=>{
+      const n=engMocks.length; const x=Math.round(30+(n>1?270/(n-1)*i:140));
+      const y=toSvgY(m.score,50);
+      return `<text x="${x}" y="${y-8}" font-size="10" font-weight="700" fill="#ff9500" text-anchor="middle">${m.score}</text>`;
+    })
+  ].join('');
   // Latest mock badge
   const mockBadge = document.getElementById('mock-today-badge');
   if(mockBadge && gsMocks.length>0){
@@ -2343,4 +2371,3 @@ function hideExitToast(){
 </div>
 </body>
 </html>
-
