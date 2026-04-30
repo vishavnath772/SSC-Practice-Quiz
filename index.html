@@ -184,11 +184,14 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 /* Sticky Header */
 .quiz-header{position:sticky;top:0;z-index:150;background:rgba(14,22,33,0.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:8px 14px 0;}
 .qh-top{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
-.qh-return{display:flex;align-items:center;font-size:15px;font-weight:700;color:var(--blue);
-  cursor:pointer;padding:8px 16px 8px 4px;border-radius:10px;gap:4px;
+.qh-return{display:flex;align-items:center;gap:4px;
+  font-size:12px;font-weight:600;color:var(--blue);
+  background:rgba(43,159,234,0.1);
+  border:1px solid rgba(43,159,234,0.25);border-radius:8px;padding:5px 10px;
+  cursor:pointer;-webkit-appearance:none;
   -webkit-tap-highlight-color:transparent;user-select:none;
-  transition:background 0.15s;}
-.qh-return:active{background:rgba(43,159,234,0.15);}
+  transition:all 0.15s;}
+.qh-return:active{transform:scale(0.95);background:rgba(43,159,234,0.2);}
 .qh-badge{background:rgba(43,159,234,0.15);border:1px solid rgba(43,159,234,0.3);color:var(--blue);font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap;}
 /* Stats row in quiz header */
 .qh-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:8px;}
@@ -437,7 +440,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:-apple-
 <div id="quiz-screen" class="screen" style="display:none;flex-direction:column;">
   <div class="quiz-header" id="quiz-header">
     <div class="qh-top">
-      <div class="qh-return" onclick="exitQuiz()">‹ Return</div>
+      <button class="qh-return" onclick="exitQuiz()">← Go Back</button>
       <div class="qh-topic" id="qh-topic" style="font-size:13px;font-weight:700;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"></div>
       <div class="qh-badge" id="qh-badge">Q 0</div>
     </div>
@@ -1083,10 +1086,28 @@ function buildQueue(mode, topic=null, dataset='gs'){
 
   const dueWrong = G.wrongQueue.filter(w=>G.totalDone-w.wrongAt>=40)
                     .map(w=>POOL.find(m=>m.id===w.id)).filter(Boolean);
-  // Inject 1 revision every ~10 fresh
+  
+  // ── SMART RANDOM INJECTION: max 2 wrong per 10 questions ──
   const result = [];
   let ri = 0;
-  fresh.forEach((q,i)=>{ result.push(q); if((i+1)%10===0 && ri<dueWrong.length) result.push(dueWrong[ri++]); });
+  let wrongInjectedInChunk = 0;
+  
+  fresh.forEach((q,i)=>{
+    result.push(q);
+    
+    // Every 10 fresh questions, reset chunk counter
+    if((i+1) % 10 === 0) wrongInjectedInChunk = 0;
+    
+    // Inject wrong question only if:
+    // 1. We haven't injected 2 in this chunk yet
+    // 2. There are wrong questions available
+    // 3. Random chance (60% chance at each position)
+    if(wrongInjectedInChunk < 2 && ri < dueWrong.length && Math.random() < 0.6){
+      result.push(dueWrong[ri++]);
+      wrongInjectedInChunk++;
+    }
+  });
+  
   if(result.length<10 && pool.length>0) result.push(...shuffle(pool).slice(0,20));
   return result;
 }
@@ -1229,6 +1250,9 @@ function escH(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>
 function renderBubble(q, idx){
   const feed = document.getElementById('feed');
   const isRevision = G.wrongQueue.some(w=>w.id===q.id);
+  const wEntry = isRevision ? G.wrongQueue.find(w=>w.id===q.id) : null;
+  const prevChose = wEntry ? wEntry.lastChose : null;
+  
   const opts = ['a','b','c','d'];
   const labels = ['A','B','C','D'];
   // Shuffle option order for revision questions
@@ -1243,10 +1267,9 @@ function renderBubble(q, idx){
       <div class="qb-num">Q${idx+1}</div>
       <div class="qb-topic-pill">${escH(q.topic)}</div>
       ${isRevision ? (() => {
-        const wEntry = G.wrongQueue.find(w=>w.id===q.id);
         const streak = wEntry ? (wEntry.correctStreak||0) : 0;
         const dots = streak===0 ? '○○' : streak===1 ? '●○' : '●●';
-        return `<div class="qb-rev-pill">🔄 ${dots}</div>`;
+        return `<div class="qb-rev-pill" style="display:flex;align-items:center;gap:4px;"><span style="transform:scaleX(-1);display:inline-block;">🔄</span> ${dots}</div>`;
       })() : ''}
       <div class="qb-timer grey" id="qtimer-${idx}">⏳ 0s</div>
     </div>
@@ -1301,13 +1324,47 @@ function handleAnswer(idx, chosen){
   opts.forEach(b=>b.disabled=true);
 
   // Style options
+  const isRevisionQ = G.wrongQueue.some(w=>w.id===q.id);
+  const wEntry = isRevisionQ ? G.wrongQueue.find(w=>w.id===q.id) : null;
+  const prevChose = wEntry ? wEntry.lastChose : null;
+  
   document.querySelectorAll(`#opts-${idx} .opt-btn`).forEach(btn=>{
-    const btnId = btn.id; // opt-{idx}-{letter}
+    const btnId = btn.id;
     const letter = btnId.split('-').pop();
-    if(letter===chosen && isCorrect){ btn.classList.add('correct'); document.getElementById(`icon-${idx}-${letter}`).textContent='✓'; }
-    else if(letter===chosen && !isCorrect){ btn.classList.add('wrong'); document.getElementById(`icon-${idx}-${letter}`).textContent='✗'; }
-    else if(letter===correct && !isCorrect){ btn.classList.add('correct'); document.getElementById(`icon-${idx}-${letter}`).textContent='✓'; }
-    else { btn.classList.add('dimmed'); }
+    
+    if(letter===chosen && isCorrect){ 
+      btn.classList.add('correct'); 
+      document.getElementById(`icon-${idx}-${letter}`).textContent='✓'; 
+    }
+    else if(letter===chosen && !isCorrect){ 
+      btn.classList.add('wrong'); 
+      const iconEl = document.getElementById(`icon-${idx}-${letter}`);
+      // If same as previous wrong choice — show both ✗ and 🔄
+      if(isRevisionQ && prevChose===letter){
+        iconEl.style.opacity='1';
+        iconEl.style.transform='scale(1)';
+        iconEl.innerHTML = '✗ <span style="transform:scaleX(-1);display:inline-block;font-size:14px;">🔄</span>';
+      } else {
+        iconEl.textContent='✗'; 
+      }
+    }
+    else if(letter===correct && !isCorrect){ 
+      btn.classList.add('correct'); 
+      document.getElementById(`icon-${idx}-${letter}`).textContent='✓'; 
+    }
+    else { 
+      btn.classList.add('dimmed'); 
+    }
+    
+    // AFTER all correct/wrong styling — always show reload icon on previous wrong choice
+    // (only if it's a different option from what user just chose)
+    if(isRevisionQ && prevChose && letter===prevChose && letter!==chosen){
+      const iconEl = document.getElementById(`icon-${idx}-${letter}`);
+      iconEl.style.opacity='1';
+      iconEl.style.transform='scale(1)';
+      iconEl.innerHTML = '<span style="transform:scaleX(-1);display:inline-block;font-size:16px;">🔄</span>';
+      btn.style.borderColor = 'rgba(240,180,41,0.45)';
+    }
   });
 
   // Sound + vibration feedback
@@ -1361,7 +1418,7 @@ function handleAnswer(idx, chosen){
     S.sessionWrong.push({id:q.id, q:q.q, chose:chosen, correct, fact:q.fact, choseTxt:q[chosen], correctTxt:q[correct]});
     const wi = G.wrongQueue.findIndex(w=>w.id===q.id);
     if(wi>-1) G.wrongQueue.splice(wi,1);
-    G.wrongQueue.push({id:q.id, wrongAt:G.totalDone, correctStreak:0});
+    G.wrongQueue.push({id:q.id, wrongAt:G.totalDone, correctStreak:0, lastChose:chosen});
     if(G.wrongQueue.length>300) G.wrongQueue=G.wrongQueue.slice(-300);
   }
   // Avg timer: only count time above 15s (ignore reading window)
@@ -1888,8 +1945,8 @@ function renderSwipeGraphs(){
   if(midEl) midEl.textContent = Math.round(maxDone/2);
 
   // ── Panel 2: Accuracy % ──
-  const accData    = days7.map(d=> d.total>0 ? Math.round((d.correct/d.total)*100) : (d.done>0 ? Math.round((d.correct/d.done)*100)||0 : 0));
-  const engAccData = days7.map(d=> d.engDone>0 ? Math.round(((d.engCorrect||0)/d.engDone)*100) : 0);
+  const accData    = days7.map(d=> d.total>0 ? Math.min(100, Math.round((d.correct/d.total)*100)) : (d.done>0 ? Math.min(100, Math.round((d.correct/d.done)*100))||0 : 0));
+  const engAccData = days7.map(d=> d.engDone>0 ? Math.min(100, Math.round(((d.engCorrect||0)/d.engDone)*100)) : 0);
   const accPoints    = days7.map((d,i)=>({x:xPositions[i], y:toSvgY(accData[i], 100)}));
   const engAccPoints = days7.map((d,i)=>({x:xPositions[i], y:toSvgY(engAccData[i], 100)}));
   const accPoly    = accPoints.map(p=>`${p.x},${p.y}`).join(' ');
@@ -1982,7 +2039,7 @@ function renderSubjectCards(){
     const ts=G.topicStats[t.name];
     if(ts){engDone+=ts.done; engCorrect+=ts.correct;}
   });
-  const engAcc = engDone>0 ? Math.round(engCorrect/engDone*100) : 0;
+  const engAcc = engDone>0 ? Math.min(100, Math.round(engCorrect/engDone*100)) : 0;
   const engWrongCount = G.wrongQueue.filter(w=>ALL_ENG_MCQ.some(m=>m.id===w.id)).length;
   document.getElementById('subj-eng-done').textContent = engDone+' done';
   document.getElementById('subj-eng-acc').textContent = engDone>0 ? engAcc+'%' : '—%';
