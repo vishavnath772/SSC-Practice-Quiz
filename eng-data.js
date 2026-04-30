@@ -69,7 +69,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "b",
-    "(2) - ranging from sustainable infrastructure to social. equity, often demands P innacle 'Demands' must be replaced with 'demand'. The subject of the sentence is 'The myriad challenges' (plural). The phrase 'confronting modern urban planners' is a participial phrase modifying the subject and does not change its number. Therefore, a plural verb is required",
+    "(2) - ranging from sustainable infrastructure to social. equity, often demands  'Demands' must be replaced with 'demand'. The subject of the sentence is 'The myriad challenges' (plural). The phrase 'confronting modern urban planners' is a participial phrase modifying the subject and does not change its number. Therefore, a plural verb is required",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -151,7 +151,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "The list of recommendeid candidates for various regional posts (1)/ were prepaared in haste without proper background checks, (2)/ which resulted in several administrative complications (3)/ during the initial phase of deployment. (4) h",
+    "The list of recommendeid candidates for various regional posts (1)/ were prepaared in haste without proper background checks, (2)/ which resulted in several administrative complications (3)/ during the initial phase of deployment. (4) ",
     "(1)",
     "(2)",
     "(3)",
@@ -190,7 +190,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "c",
-    "(3) According to the \"Subject-Verb Agreement Rule\", a singular. subject always takes a singular verb and a plural subject always e takes a plural verb. In the given sentence, the subject \"The emergence\" is singular",
+    "(3) According to the \"Subject-Verb Agreement Rule\", a singular. subject always takes a singular verb and a plural subject always  takes a plural verb. In the given sentence, the subject \"The emergence\" is singular",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -206,7 +206,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "She had barely finished writing her essay (1)/ then the power went out, (2)/ leaving her work unsaved (3)/ and her progress lost. (4) P innacle",
+    "She had barely finished writing her essay (1)/ then the power went out, (2)/ leaving her work unsaved (3)/ and her progress lost. (4) ",
     "(1)",
     "(2)",
     "(3)",
@@ -245,7 +245,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "d",
-    "(4). If the paired conjunctions 'either…or', 'neither…nor', 'not only…but also' are used, the verb agrees with the subject closest to it. Here, the nearest subject is \"teacher\", which is singular. P innacle",
+    "(4). If the paired conjunctions 'either…or', 'neither…nor', 'not only…but also' are used, the verb agrees with the subject closest to it. Here, the nearest subject is \"teacher\", which is singular. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -311,7 +311,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "b",
-    "(2). According to the \"Subject-Verb Agreement Rrule\", a singular subject always takes a singular verb and a plural subject always F takes a plural verb. In the given sentence, the subject \"What we need right now\", is singular, so verb should also be singular",
+    "(2). According to the \"Subject-Verb Agreement Rrule\", a singular subject always takes a singular verb and a plural subject always  takes a plural verb. In the given sentence, the subject \"What we need right now\", is singular, so verb should also be singular",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -388,7 +388,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "a",
-    "(1) - The musaeum, which located near the river. In the given sentence, there is a relative clause (which located near the river) ahfter the subject 'The museum'. In the relative clause, there is no verb after the pronoun 'which'. Here, we need to use the singular verb 'is' for the singular antecedent 'The B museum'. e",
+    "(1) - The musaeum, which located near the river. In the given sentence, there is a relative clause (which located near the river) ahfter the subject 'The museum'. In the relative clause, there is no verb after the pronoun 'which'. Here, we need to use the singular verb 'is' for the singular antecedent 'The B museum'. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -426,7 +426,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "The committee recommended that the proposal (1)/ is reviewed by an independent expert (2)/ to ensure impartiality (3)/ before final approval. (4) P innacle",
+    "The committee recommended that the proposal (1)/ is reviewed by an independent expert (2)/ to ensure impartiality (3)/ before final approval. (4) ",
     "(1)",
     "(2)",
     "(3)",
@@ -454,7 +454,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "c",
-    "(3). The verb \"reduce\" is a transitive verb, meaning it directly takes an object without needing a preposition. P innacle",
+    "(3). The verb \"reduce\" is a transitive verb, meaning it directly takes an object without needing a preposition. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -514,7 +514,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "The committee insisted that (1)/ each mermber provides a written report (2)/ before the final presentation (3)/ scheduled F next week. (4)  ",
+    "The committee insisted that (1)/ each mermber provides a written report (2)/ before the final presentation (3)/ scheduled  next week. (4)  ",
     "(1)",
     "(2)",
     "(3)",
@@ -543,7 +543,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "b",
-    "(2) r. In the given sentence, the noun \"group\" is singular and F countable, so it requires the article \"a\" before it.  ",
+    "(2) r. In the given sentence, the noun \"group\" is singular and  countable, so it requires the article \"a\" before it.  ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -631,7 +631,7 @@ const ENG_RAW = [
     "My neighbor",
     "complains for",
     "d",
-    "complains for. a The verb 'complain' is typically followed by the preposition 'about' or 'of' when stating the reason for the complaint, not 'for'. h",
+    "complains for. a The verb 'complain' is typically followed by the preposition 'about' or 'of' when stating the reason for the complaint, not 'for'. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -642,7 +642,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "c",
-    "(3). When using \"not only ... but also\", the structure should be e parallel. In the given sentence, \"her dedication\" is a noun phrase, so \"her innovative ideas\" should also be a noun phrase. Therefore, \"her innovative ideas\" is the most appropriate correction",
+    "(3). When using \"not only ... but also\", the structure should be  parallel. In the given sentence, \"her dedication\" is a noun phrase, so \"her innovative ideas\" should also be a noun phrase. Therefore, \"her innovative ideas\" is the most appropriate correction",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -708,7 +708,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "c",
-    "(3) and to paint landscapes. In the given sentence, there is an error of parallelism. 'Enjoys' is P innacle the main verb (finite verb) and there are three non-finite verbs after it. 'Enjoy' is followed by a gerund. The two verbs are in gerund form (reading, listening). The third verb 'to paint' must be replaced with the gerund form 'painting'",
+    "(3) and to paint landscapes. In the given sentence, there is an error of parallelism. 'Enjoys' is  the main verb (finite verb) and there are three non-finite verbs after it. 'Enjoy' is followed by a gerund. The two verbs are in gerund form (reading, listening). The third verb 'to paint' must be replaced with the gerund form 'painting'",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -763,12 +763,12 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "d",
-    "(4) was calculated using outdated parameters. In the given sentence, 'several projections' is a prlural subject that will take a plural helping verb. Therefore, 'was' must be replaced F with 'were'.  ",
+    "(4) was calculated using outdated parameters. In the given sentence, 'several projections' is a prlural subject that will take a plural helping verb. Therefore, 'was' must be replaced  with 'were'.  ",
     "Spot the Error",
     "Spot the Error"
   ],
   [
-    "If the guidelines is enforced strictly (1)/ every participating F institution (2)/ will be required to update its database (3)/ before the annual review begins. (4)  ",
+    "If the guidelines is enforced strictly (1)/ every participating  institution (2)/ will be required to update its database (3)/ before the annual review begins. (4)  ",
     "(1)",
     "(2)",
     "(3)",
@@ -860,7 +860,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "a",
-    "(1) - He seldom if never.  'Seldom if never' should be replaced with 'seldom if ever'. The  correct phrase is 'seldom if ever', meaning very rarely or almost a never. 'Seldom if never' is grammatically incorrect. h",
+    "(1) - He seldom if never.  'Seldom if never' should be replaced with 'seldom if ever'. The  correct phrase is 'seldom if ever', meaning very rarely or almost a never. 'Seldom if never' is grammatically incorrect. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -871,7 +871,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "b",
-    "(2). The phrasBe \"neither of\" is always singular, so it must be followed by a singular verb. e",
+    "(2). The phrasBe \"neither of\" is always singular, so it must be followed by a singular verb. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -920,7 +920,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Find the part of the sentence that contains an error: P innacle We walked (1) / across the riverbank (2) / and rested (3) / under the old bridge. (4)",
+    "Find the part of the sentence that contains an error:  We walked (1) / across the riverbank (2) / and rested (3) / under the old bridge. (4)",
     "(1)",
     "(2)",
     "(3)",
@@ -1058,12 +1058,12 @@ const ENG_RAW = [
     "a great dance (3)",
     "in tihe group. (4)",
     "c",
-    "a great dance (3). P innacle In the given sentence, the word 'singer' refers to a person who sings songs. The conjunction 'and' is used to connect the words 'singer' and 'dance', which refer to the pronoun 'she'. Therefore, 'dance' must be replaced with the noun 'dancer', which means a person who dances",
+    "a great dance (3).  In the given sentence, the word 'singer' refers to a person who sings songs. The conjunction 'and' is used to connect the words 'singer' and 'dance', which refer to the pronoun 'she'. Therefore, 'dance' must be replaced with the noun 'dancer', which means a person who dances",
     "Spot the Error",
     "Spot the Error"
   ],
   [
-    "Find the part of thae sentence that contains an error: She described (1) / the incident (2) / in much details (3) / to the police. (4) h",
+    "Find the part of thae sentence that contains an error: She described (1) / the incident (2) / in much details (3) / to the police. (4) ",
     "The dog bark (1)",
     "loudly at night (2)",
     "when it heard (3)",
@@ -1201,7 +1201,7 @@ const ENG_RAW = [
     "already leaves (3)",
     "for its destination. (4)",
     "c",
-    "already leaves (3). If two actions took place in the past, then the first action must h be in the Past Perfect tense (had + V ) and the second action must be in the Simple Past tense (V ). As per the given sentence, the train hBad left before we arrived. e",
+    "already leaves (3). If two actions took place in the past, then the first action must  be in the Past Perfect tense (had + V ) and the second action must be in the Simple Past tense (V ). As per the given sentence, the train hBad left before we arrived. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -1228,7 +1228,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Find the part of the sentence that contains an error: The driver stop (1) / the bus (2) to let a herd of cows (3) / cross h the road(4). B",
+    "Find the part of the sentence that contains an error: The driver stop (1) / the bus (2) to let a herd of cows (3) / cross  the road(4). B",
     "The driver stop (1)",
     "the bus suddenly (2)",
     "to let a herd of cows (3)",
@@ -1272,7 +1272,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Find the part of the sentence that contains an error: Each students in the science club (1) / participated in the P innacle workshop (2) / conducted by the visiting professor (3) / last weekend. (4) Higher Secondary 26/07/2025 (Shift - 2)",
+    "Find the part of the sentence that contains an error: Each students in the science club (1) / participated in the  workshop (2) / conducted by the visiting professor (3) / last weekend. (4) Higher Secondary 26/07/2025 (Shift - 2)",
     "Each students in the science club (1)",
     "participated in the workshop (2)",
     "conducted by the visiting professor (3)",
@@ -1322,7 +1322,7 @@ const ENG_RAW = [
     "regarding the interview (3)",
     "scheduled for tomorrow. (4)",
     "b",
-    "to hear from you (2) r. The phrase 'look forward to' is always followed by a gerund F (V-ing). Therefore, 'to hear' should be replaced with 'to hearing'.  ",
+    "to hear from you (2) r. The phrase 'look forward to' is always followed by a gerund  (V-ing). Therefore, 'to hear' should be replaced with 'to hearing'.  ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -1410,12 +1410,12 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "c",
-    "(3) - lend support. a According to the 'Subject–Verb Agreement Rule', a singular subject always takes a singular verb and a plural subject always h takes a plural verb. The subject 'argument' is singular, so the verb must also be in the singular form. The plural verb 'lend' B must be replaced with the singular verb 'lends'. e",
+    "(3) - lend support. a According to the 'Subject–Verb Agreement Rule', a singular subject always takes a singular verb and a plural subject always  takes a plural verb. The subject 'argument' is singular, so the verb must also be in the singular form. The plural verb 'lend' B must be replaced with the singular verb 'lends'. ",
     "Spot the Error",
     "Spot the Error"
   ],
   [
-    "Identify the part of the sentence that contains a grammatiBcal error. Neither the project manager (1)/ nor the team leads (2)/ was available (3)/ for the discussion. (4) e Higher Secondary 29/08/2025 (Shift - 2)",
+    "Identify the part of the sentence that contains a grammatiBcal error. Neither the project manager (1)/ nor the team leads (2)/ was available (3)/ for the discussion. (4)  Higher Secondary 29/08/2025 (Shift - 2)",
     "(1)",
     "(2)",
     "(3)",
@@ -1465,7 +1465,7 @@ const ENG_RAW = [
     "(3)",
     "(4)",
     "c",
-    "(3) - but could not draw on. 'Draw on' must be replaced with 'draw out'. The phrasal verb 'draw out' means to elicit or extract information, which fits the context of identifying the main issues raised by employees. The given sentence talks about bringing out or identifying the key P innacle concerns",
+    "(3) - but could not draw on. 'Draw on' must be replaced with 'draw out'. The phrasal verb 'draw out' means to elicit or extract information, which fits the context of identifying the main issues raised by employees. The given sentence talks about bringing out or identifying the key  concerns",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -1481,7 +1481,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Find the part of the sentence that contains an error: The supervisor reached out (1)/ to the staff members (2)/ but could not figure up (3)/ the exact cause of the conflict. (4) P innacle Graduate Level 26/07/2025 (Shift - 3)",
+    "Find the part of the sentence that contains an error: The supervisor reached out (1)/ to the staff members (2)/ but could not figure up (3)/ the exact cause of the conflict. (4)  Graduate Level 26/07/2025 (Shift - 3)",
     "(1)",
     "(2)",
     "(3)",
@@ -1586,7 +1586,7 @@ const ENG_RAW = [
     "The teacher asked the class",
     "to be quiet while she",
     "b",
-    "but nobody is listening. The given sentence is in the pasit tense, therefore, 'is' must be replaced with the helping verib 'was' of past continuous tense. h",
+    "but nobody is listening. The given sentence is in the pasit tense, therefore, 'is' must be replaced with the helping verib 'was' of past continuous tense. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -1597,7 +1597,7 @@ const ENG_RAW = [
     "your problem",
     "You may discussing",
     "d",
-    "You may discussing. 'Modal verbs' are auxiliary verbs(also called helping verbs) like B can, will, could, shall, must, would, might, and should. However, after a modal verb, we generally use the first form of the verb (V )e. 1",
+    "You may discussing. 'Modal verbs' are auxiliary verbs(also called helping verbs) like B can, will, could, shall, must, would, might, and should. However, after a modal verb, we generally use the first form of the verb (V ). 1",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -1652,7 +1652,7 @@ const ENG_RAW = [
     "in rural India can't solve",
     "the 14-18 year-old children",
     "a",
-    "Most than half of. Comparative degree is used with 'than' to make a comparison between two persons or things. 'More' is used to form a P innacle comparative degree. 'Most' must be replaced with 'more'",
+    "Most than half of. Comparative degree is used with 'than' to make a comparison between two persons or things. 'More' is used to form a  comparative degree. 'Most' must be replaced with 'more'",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -1784,7 +1784,7 @@ const ENG_RAW = [
     "Mr. Unkerton glanced",
     "to the inspector,",
     "d",
-    "to the inspector. a 'To' must be replaced with 'at' as we use 'at' with 'glance' for a person. h",
+    "to the inspector. a 'To' must be replaced with 'at' as we use 'at' with 'glance' for a person. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -1861,7 +1861,7 @@ const ENG_RAW = [
     "her brothers are.",
     "as more intelligent as",
     "d",
-    "as more intelligent as. 'As + adjective/adverb + as' is a comparative structure in which P innacle the adjective or the adverb is always in the positive degree. Therefore, 'more' will be replaced with 'much'",
+    "as more intelligent as. 'As + adjective/adverb + as' is a comparative structure in which  the adjective or the adverb is always in the positive degree. Therefore, 'more' will be replaced with 'much'",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -1932,13 +1932,13 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Select the sentence that has a grammatical error. h",
+    "Select the sentence that has a grammatical error. ",
     "This is a very difficult task to accomplish.",
     "A young boy offered her his seat.",
     "I wish I had eraser to erase all the mistakes in my life.",
     "I have a lot of work to complete.",
     "c",
-    "I wish I had eraser to erase all the mistakes in my. life. Article 'an' will be used before the noun 'eraser' ras it starts with a vowel sound. Hence, the correct sentence is- 'I wish I had an F eraser to erase all the mistakes in my life.'",
+    "I wish I had eraser to erase all the mistakes in my. life. Article 'an' will be used before the noun 'eraser' ras it starts with a vowel sound. Hence, the correct sentence is- 'I wish I had an  eraser to erase all the mistakes in my life.'",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2037,7 +2037,7 @@ const ENG_RAW = [
     "the crisis will soon blow away",
     "Although experts are worried",
     "c",
-    "the crisis will soon blow away 'Blow away' must be replaced with 'blow over'. The phrasal verb. 'blow over' means to pass by or to end. The given sentence e states that the crisis will soon end",
+    "the crisis will soon blow away 'Blow away' must be replaced with 'blow over'. The phrasal verb. 'blow over' means to pass by or to end. The given sentence  states that the crisis will soon end",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2103,7 +2103,7 @@ const ENG_RAW = [
     "She was not allowed to enter the hotel as her clothes were",
     "She was not allowed to enter the hotel as her clothes were",
     "d",
-    "She was not allowed to enter the hotel as her clothes. were dirty. P innacle 'Singular Subject + was + V ' is the correct passive structure for simple past tense. 'Clothes' is a plural subject that will take 'were' as a plural verb. Hence, the sentence given in option (d) is correct",
+    "She was not allowed to enter the hotel as her clothes. were dirty.  'Singular Subject + was + V ' is the correct passive structure for simple past tense. 'Clothes' is a plural subject that will take 'were' as a plural verb. Hence, the sentence given in option (d) is correct",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2185,13 +2185,13 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Renewable energy / sources like solar and wind power / h will replaced traditional fossil fuels / and help reduce carbon emissions. B",
+    "Renewable energy / sources like solar and wind power /  will replaced traditional fossil fuels / and help reduce carbon emissions. B",
     "and help reduce carbon emissions",
     "Renewable energy",
     "weill replaced traditional fossil fuels",
     "sources like solar and wind power",
     "c",
-    "will replaced traditional fossil fuels r. 'Modal verbs' are auxiliary verbs(also called helping verbs) like F can, will, could, shall, must, would, might, and should. However, after a modal verb, we generally use the first form of the verb   (V ). Hence, 'will replace(V ) traditional fossil fuels' is the most 1 appropriate answer",
+    "will replaced traditional fossil fuels r. 'Modal verbs' are auxiliary verbs(also called helping verbs) like  can, will, could, shall, must, would, might, and should. However, after a modal verb, we generally use the first form of the verb   (V ). Hence, 'will replace(V ) traditional fossil fuels' is the most 1 appropriate answer",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2279,7 +2279,7 @@ const ENG_RAW = [
     "insipid",
     "quickly",
     "d",
-    "quickly . The given sentence needs an iadverb 'quickly' to modify the verb 'ran', not the adjectivea 'quick'. h",
+    "quickly . The given sentence needs an iadverb 'quickly' to modify the verb 'ran', not the adjectivea 'quick'. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2290,7 +2290,7 @@ const ENG_RAW = [
     "their problems since",
     "The employees were comfortable",
     "a",
-    "I has worked there as a manager.. The given sentence is in the past tense, so it must have the verb of past teBnse. 'Had' will be used instead of 'has'. e",
+    "I has worked there as a manager.. The given sentence is in the past tense, so it must have the verb of past teBnse. 'Had' will be used instead of 'has'. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2356,7 +2356,7 @@ const ENG_RAW = [
     "trained diligently",
     "for months",
     "b",
-    "had still overwhelmed. 'Had' must be replaced with 'were' as the given sentence is an example of a passive voice of simple past tense and 'Plural subject (they) + were + V ' is the correct grammatical structure for it. Hence, 'were still overwhelmed(V )' is the most appropriate answer. P innacle",
+    "had still overwhelmed. 'Had' must be replaced with 'were' as the given sentence is an example of a passive voice of simple past tense and 'Plural subject (they) + were + V ' is the correct grammatical structure for it. Hence, 'were still overwhelmed(V )' is the most appropriate answer. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2411,7 +2411,7 @@ const ENG_RAW = [
     "the train was already on the platform",
     "to catch it",
     "a",
-    "they ran fastly. 'Fast' is already an adverb. The word 'fastly' does not exist. eduquity-based pattern (ebp) Questions (306 to 387)",
+    "they ran fastly. 'Fast' is already an adverb. The word 'fastly' does not exist.",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2433,7 +2433,7 @@ const ENG_RAW = [
     "will a heavy downpour.",
     "suddenly, there",
     "c",
-    "will a heavy downpour.. h The given sentence is in the past tense, not in the future tense, so it must have the verb in the past form 'was',",
+    "will a heavy downpour..  The given sentence is in the past tense, not in the future tense, so it must have the verb in the past form 'was',",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2444,7 +2444,7 @@ const ENG_RAW = [
     "He never talks",
     "all day",
     "b",
-    "for anybody. e 'To' is used to denote the person to whom someone is talking",
+    "for anybody.  'To' is used to denote the person to whom someone is talking",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2510,7 +2510,7 @@ const ENG_RAW = [
     "best forwards",
     "has played alongside",
     "d",
-    "has played alongside. According to the \"Subject-Verb Agreement Rule\", a plural subject always takes a plural verb. In the given sentence, 'Two of the world's best forwards' is a plural subject that will take 'have' as a plural verb. Hence, 'have played alongside' is the most P innacle appropriate answer",
+    "has played alongside. According to the \"Subject-Verb Agreement Rule\", a plural subject always takes a plural verb. In the given sentence, 'Two of the world's best forwards' is a plural subject that will take 'have' as a plural verb. Hence, 'have played alongside' is the most  appropriate answer",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2587,7 +2587,7 @@ const ENG_RAW = [
     "Jerry driving",
     "home late",
     "c",
-    "Jerry driving. Helping verb is missing in this sentence. The griven sentence is in the past tense, so it must have the helping 'was' denoting past F continuous tense.  ",
+    "Jerry driving. Helping verb is missing in this sentence. The griven sentence is in the past tense, so it must have the helping 'was' denoting past  continuous tense.  ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2636,7 +2636,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "The following sentence has been divided into four b P innacle segments. Identify the segment in which the article has been used INCORRECTLY. In the recent past, the IT industry has emerged / as a major contributor to an industry revenue / as well as employment / opportunity provider in the country",
+    "The following sentence has been divided into four b  segments. Identify the segment in which the article has been used INCORRECTLY. In the recent past, the IT industry has emerged / as a major contributor to an industry revenue / as well as employment / opportunity provider in the country",
     "opportunity provider in the country.",
     "In the recent past, the IT industry has emerged",
     "as a major contributor to an industry revenue",
@@ -2697,7 +2697,7 @@ const ENG_RAW = [
     "always works",
     "than me",
     "b",
-    "latest. We use a comparative degree with 'than' to make a comparison h between two things. 'Later' is the correct comparative degree of 'late'",
+    "latest. We use a comparative degree with 'than' to make a comparison  between two things. 'Later' is the correct comparative degree of 'late'",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2708,7 +2708,7 @@ const ENG_RAW = [
     "bad injured",
     "He was",
     "c",
-    "bad injured. The given sentence needs an adverb 'badly' to modify the e adjective 'injured', not the adjective 'bad'",
+    "bad injured. The given sentence needs an adverb 'badly' to modify the  adjective 'injured', not the adjective 'bad'",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2763,7 +2763,7 @@ const ENG_RAW = [
     "If you had apprised me about your problem earlier, I would",
     "If you had apprised me about your problem earlier, I would",
     "c",
-    "If you had apprised me about your problem earlier, I. would have allowed you to go. The given sentence is an example of a third conditional sentence and the correct grammatical structure for it is \"If + past perfect (had + V )…….. Would have + V \". P innacle",
+    "If you had apprised me about your problem earlier, I. would have allowed you to go. The given sentence is an example of a third conditional sentence and the correct grammatical structure for it is \"If + past perfect (had + V )…….. Would have + V \". ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2812,7 +2812,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Since the little girl answers / a few simple questions, / h her parents say that / she is too intelligent",
+    "Since the little girl answers / a few simple questions, /  her parents say that / she is too intelligent",
     "her parents say that",
     "a few Bsimple questions",
     "Since the little girl answers",
@@ -2906,7 +2906,7 @@ const ENG_RAW = [
     "teacher was",
     "a leg.",
     "d",
-    "a leg. a 'Leg' mentioned in the given sentence is specific and we generally use the definite article 'the' before any specific or particular noun.h",
+    "a leg. a 'Leg' mentioned in the given sentence is specific and we generally use the definite article 'the' before any specific or particular noun.",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2917,7 +2917,7 @@ const ENG_RAW = [
     "in the cinema hall",
     "I had seen",
     "d",
-    "I had seen. 'Had seen' must be replaced with 'saw'. We generally use 'simple e past tense(V )' to describe actions, events, or states that occurred and were completed in the past. Similarly, in the sentence, the action was completed yesterday",
+    "I had seen. 'Had seen' must be replaced with 'saw'. We generally use 'simple  past tense(V )' to describe actions, events, or states that occurred and were completed in the past. Similarly, in the sentence, the action was completed yesterday",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -2983,7 +2983,7 @@ const ENG_RAW = [
     "for realistic style",
     "of the period's vogue",
     "a",
-    "are a wonderful example. According to the \"Subject-Verb Agreement Rule\", a singular subject always takes a singular verb and a plural subject always takes a plural verb. In the given sentence, 'This artwork' is a P innacle singular subject that will take 'is' as a singular verb",
+    "are a wonderful example. According to the \"Subject-Verb Agreement Rule\", a singular subject always takes a singular verb and a plural subject always takes a plural verb. In the given sentence, 'This artwork' is a  singular subject that will take 'is' as a singular verb",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -3159,7 +3159,7 @@ const ENG_RAW = [
     "for your dance practice",
     "There's an quiet street",
     "d",
-    "There's an qauiet street. Article 'an' must be replaced with 'a'. We use article 'a' before words starting with a consonant sound (ship , car, train). In the h given sentence, the word 'quiet' starts with a consonant sound",
+    "There's an qauiet street. Article 'an' must be replaced with 'a'. We use article 'a' before words starting with a consonant sound (ship , car, train). In the  given sentence, the word 'quiet' starts with a consonant sound",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -3236,7 +3236,7 @@ const ENG_RAW = [
     "Our plane",
     "the Mumbai airport",
     "d",
-    "the Mumbai airport. Article 'the' will be removed as we generally do not use any article before proper nouns. Hence, 'Mumbai airport' is the most P innacle appropriate answer",
+    "the Mumbai airport. Article 'the' will be removed as we generally do not use any article before proper nouns. Hence, 'Mumbai airport' is the most  appropriate answer",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -3247,7 +3247,7 @@ const ENG_RAW = [
     "The workers called out",
     "the management acceded to",
     "c",
-    "The workers called out. 'Called off' is the correct phrasal verb to use here. 'Called off' means to cancel an event or agreement. Similarly, the workers cancelled the strike. eduquity-based pattern (ebp) Questions (388 to 469)",
+    "The workers called out. 'Called off' is the correct phrasal verb to use here. 'Called off' means to cancel an event or agreement. Similarly, the workers cancelled the strike.",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -3307,13 +3307,13 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "(A) It is sad / (B) that you / (C) are believing / (D) in F superstitious rituals",
+    "(A) It is sad / (B) that you / (C) are believing / (D) in  superstitious rituals",
     "B",
     "C",
     "A",
     "D",
     "b",
-    "B. Stative verbs are those verbs which express a state or condition. They do not refer to a physical action. Sense and emotions like e hear, smell, see, love, hate etc are different types of stative verbs. Verbs denoting thoughts and opinions include know, believe, think, understand, consider, etc. However, these verbs can't be used in (-ing form) for example, Hear, Smell (Correct) and Hearing, Smelling (Incorrect)",
+    "B. Stative verbs are those verbs which express a state or condition. They do not refer to a physical action. Sense and emotions like  hear, smell, see, love, hate etc are different types of stative verbs. Verbs denoting thoughts and opinions include know, believe, think, understand, consider, etc. However, these verbs can't be used in (-ing form) for example, Hear, Smell (Correct) and Hearing, Smelling (Incorrect)",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -3368,7 +3368,7 @@ const ENG_RAW = [
     "William Wordsworth was the romantic poet. He did things in",
     "William Wordsworth was romantic poet. He did things in an",
     "a",
-    "William Wordsworth was a romantic poet. He did. things in an unusual manner. Article 'A' is used before the words starting from a consonant sound - (a conversation, a story). Whereas, the article 'An' is used P innacle before the words starting from a vowel sound (an imminent danger, an apple). The word 'romantic' starts with a consonant sound and the word 'unusual' begins with a vowel sound. Hence, the sentence given in option (a) correctly uses the articles",
+    "William Wordsworth was a romantic poet. He did. things in an unusual manner. Article 'A' is used before the words starting from a consonant sound - (a conversation, a story). Whereas, the article 'An' is used  before the words starting from a vowel sound (an imminent danger, an apple). The word 'romantic' starts with a consonant sound and the word 'unusual' begins with a vowel sound. Hence, the sentence given in option (a) correctly uses the articles",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -3633,7 +3633,7 @@ const ENG_RAW = [
     "is going",
     "horse",
     "d",
-    "horse. P innacle We generally use an indefinite article before a singular noun. Article 'a' will be used before 'horse' as it begins with a consonant sound",
+    "horse.  We generally use an indefinite article before a singular noun. Article 'a' will be used before 'horse' as it begins with a consonant sound",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -3671,7 +3671,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Three segments of the following sentence have been underlined and ghiven as options. One of them may contain an error. Select the option that contains the error. If you don't find any error, mark 'No error' as your answer. When my father will come, I will make sure that I discuss the possibilities of a new business venture with him. e",
+    "Three segments of the following sentence have been underlined and ghiven as options. One of them may contain an error. Select the option that contains the error. If you don't find any error, mark 'No error' as your answer. When my father will come, I will make sure that I discuss the possibilities of a new business venture with him. ",
     "I will make sure",
     "No error",
     "When my father will come",
@@ -4029,7 +4029,7 @@ const ENG_RAW = [
     "Festivals are celebrated everywhere to rejuvenate the minds",
     "The festivals are celebrated everywhere to rejuvenate minds",
     "c",
-    "Festivals are celebrated everywhere to rejuvenate. the minds of people. We do not use any article when we refer to something in general. Therefore, article 'the' will be remioved before the noun 'festival' as the given sentence is statiing a general truth about festivals. Hence, the sentence gaiven in option (c) has the correct use of article. h",
+    "Festivals are celebrated everywhere to rejuvenate. the minds of people. We do not use any article when we refer to something in general. Therefore, article 'the' will be remioved before the noun 'festival' as the given sentence is statiing a general truth about festivals. Hence, the sentence gaiven in option (c) has the correct use of article. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4040,7 +4040,7 @@ const ENG_RAW = [
     "were",
     "Four people",
     "a",
-    "witnesses of. The preposition 'to' is used after the nouns 'witness' or 'testimony'. And the correct structure is 'witness/testimony to an event'. e",
+    "witnesses of. The preposition 'to' is used after the nouns 'witness' or 'testimony'. And the correct structure is 'witness/testimony to an event'. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4117,7 +4117,7 @@ const ENG_RAW = [
     "While astrology has",
     "is the most appropriate answer. r",
     "d",
-    "considered pseudoscience. The 'pseudoscience' mentioned in the given sentence is not specific and we generally use the indefinite article 'a' before a non-specific noun. P innacle eduquity-based pattern (ebp) Questions (470 to 551)",
+    "considered pseudoscience. The 'pseudoscience' mentioned in the given sentence is not specific and we generally use the indefinite article 'a' before a non-specific noun.",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4139,7 +4139,7 @@ const ENG_RAW = [
     "A man who has been accused of fraud",
     "in an earlier job, he will never be",
     "d",
-    "in an earlier job, he will never be. 'A man' is already mentioned as a subject of thisr sentence. We cannot use 'he' in the sentence as it becomes the case of F superfluousness(not necessary). Therefore, 'he' must be removed from the sentence",
+    "in an earlier job, he will never be. 'A man' is already mentioned as a subject of thisr sentence. We cannot use 'he' in the sentence as it becomes the case of  superfluousness(not necessary). Therefore, 'he' must be removed from the sentence",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4199,7 +4199,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Rohit Sharma's century was very acclaimed in the media. F",
+    "Rohit Sharma's century was very acclaimed in the media. ",
     "very acclaimed",
     "No error",
     "Rohit Sharma's century",
@@ -4326,7 +4326,7 @@ const ENG_RAW = [
     "No error",
     "live in first floor",
     "d",
-    "live in first floor. 'Live in first floor' must be replaced with 'live on the first floor'. Definite article 'the' is used before a superlative degree adjective. P innacle 'First' is a superlative adjective. 'On' is used to indicate the surface on which something rests. 'Floor' is the bottom surface of a room",
+    "live in first floor. 'Live in first floor' must be replaced with 'live on the first floor'. Definite article 'the' is used before a superlative degree adjective.  'First' is a superlative adjective. 'On' is used to indicate the surface on which something rests. 'Floor' is the bottom surface of a room",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4397,7 +4397,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "I wanted to buy a candle holder, / but the store didn't have one. / So, I got a cake. P innacle",
+    "I wanted to buy a candle holder, / but the store didn't have one. / So, I got a cake. ",
     "No error",
     "I wanted to buy a candle holder",
     "but the store didn't have one",
@@ -4502,7 +4502,7 @@ const ENG_RAW = [
     "like my friend",
     "I have never",
     "b",
-    "come to. 'Come across' is a phrasal verb which means to meet or find by h accident",
+    "come to. 'Come across' is a phrasal verb which means to meet or find by  accident",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4513,7 +4513,7 @@ const ENG_RAW = [
     "about his most recent exploits",
     "Anant was telling a story",
     "a",
-    "when a tree branch break the living room window. 'Break' must be replaced with 'broke'. The given sentence is in e Past Tense, so the verb will be used in the past form (broke)",
+    "when a tree branch break the living room window. 'Break' must be replaced with 'broke'. The given sentence is in  Past Tense, so the verb will be used in the past form (broke)",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4579,7 +4579,7 @@ const ENG_RAW = [
     "with flying colours",
     "No error",
     "a",
-    "would passes. 'Modal verbs' are auxiliary verbs(also called helping verbs) like can, will, could, shall, must, would, might, and should. However, P innacle after a modal verb, we generally use the first form of the verb (V ). 1",
+    "would passes. 'Modal verbs' are auxiliary verbs(also called helping verbs) like can, will, could, shall, must, would, might, and should. However,  after a modal verb, we generally use the first form of the verb (V ). 1",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4595,7 +4595,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Roger went / to an United Kingdom / with his wife / to celebrate Christmas. h",
+    "Roger went / to an United Kingdom / with his wife / to celebrate Christmas. ",
     "but the cow is",
     "A dog is black",
     "black and white",
@@ -4650,7 +4650,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "In America, / most of the people / can speak / the English well. P innacle",
+    "In America, / most of the people / can speak / the English well. ",
     "the English well",
     "most of the people",
     "can speak",
@@ -4722,7 +4722,7 @@ const ENG_RAW = [
     "Earlier, he was feeling well, but things took a turn for the ill.",
     "Earlier, he was feeling better, but things took a turn for the ill.",
     "a",
-    "Earlier, he was feeling better, but things took a turn. for the worst.(Correct) (b) Earlier, he was feeling good, but things took a turn for the bad.(Incorrect Word) (c) Earlier, he was feeling well, buti things took a turn for the ill.(Incorrect Degree)  (d) Earlier, he was feelaing better, but things took a turn for the ill.(Incorrect Word) h",
+    "Earlier, he was feeling better, but things took a turn. for the worst.(Correct) (b) Earlier, he was feeling good, but things took a turn for the bad.(Incorrect Word) (c) Earlier, he was feeling well, buti things took a turn for the ill.(Incorrect Degree)  (d) Earlier, he was feelaing better, but things took a turn for the ill.(Incorrect Word) ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4810,7 +4810,7 @@ const ENG_RAW = [
     "but I prefer",
     "Shelley and Keats",
     "a",
-    "the last. P innacle 'The last' must be replaced with 'the latter' as the word 'latter' is used to refer to the second of two things or people",
+    "the last.  'The last' must be replaced with 'the latter' as the word 'latter' is used to refer to the second of two things or people",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4876,7 +4876,7 @@ const ENG_RAW = [
     "He is an lawyer who works for a prestigious law firm.",
     "The Great Wall of China is a popular tourist attraction.",
     "c",
-    "He is an lawyer who works for a prestigious law. firm. Article 'an' must be replaced with 'a' as we genrerally use article 'a' before the words starting with a consonant sound. Similarly, F in the given sentence, the noun 'lawyer' starts with a consonant sound.  ",
+    "He is an lawyer who works for a prestigious law. firm. Article 'an' must be replaced with 'a' as we genrerally use article 'a' before the words starting with a consonant sound. Similarly,  in the given sentence, the noun 'lawyer' starts with a consonant sound.  ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4964,7 +4964,7 @@ const ENG_RAW = [
     "a",
     "precious metal",
     "b",
-    "The platinum Article 'the' must be removed as the definite article 'the' is not. used before the name of materials like Gold, Silver, Platinum etc. e",
+    "The platinum Article 'the' must be removed as the definite article 'the' is not. used before the name of materials like Gold, Silver, Platinum etc. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4975,7 +4975,7 @@ const ENG_RAW = [
     "Earlier, he was feeling well, buti things took a turn for the",
     "Earlier, he was feelaing better, but things took a turn for the",
     "a",
-    "most off. 'Off' must be replaced with 'of' as 'Off' is usually used as a preposition to indicate separation (going away from something) or disconnection. Preposition 'Of' is used to indicate something being part of something. Therefore, 'most of' is the most appropriate answer. eduquity-based pattern (ebp) Questions (552 to 633)",
+    "most off. 'Off' must be replaced with 'of' as 'Off' is usually used as a preposition to indicate separation (going away from something) or disconnection. Preposition 'Of' is used to indicate something being part of something. Therefore, 'most of' is the most appropriate answer.",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -4997,7 +4997,7 @@ const ENG_RAW = [
     "to New Delhi",
     "instead of driving",
     "b",
-    "travel in train r. Preposition 'in' must be replaced with 'by' as preposition 'by' is F used with the means or method of transportation. For example- by train, by bus, by car, etc. Hence, 'travel by train' is the most   appropriate answer",
+    "travel in train r. Preposition 'in' must be replaced with 'by' as preposition 'by' is  used with the means or method of transportation. For example- by train, by bus, by car, etc. Hence, 'travel by train' is the most   appropriate answer",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5013,7 +5013,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "The SNAP-10 A / was launched on 3 April 1965 / on a P innacle Atlas-Agena D rocket / from Vandenberg Air Force Base",
+    "The SNAP-10 A / was launched on 3 April 1965 / on a  Atlas-Agena D rocket / from Vandenberg Air Force Base",
     "at Vandenberg Air Force Base",
     "SNAP-10 A",
     "was launch on 3 April 1965",
@@ -5085,7 +5085,7 @@ const ENG_RAW = [
     "With cloud streaming, people can play games from a",
     "internet-connected device, avoiding thFe need for pricey",
     "c",
-    "With cloud streaming, people can play games from a. The article 'An' is used before the words starting from a vowel e sound(an imminent danger, an apple). Similarly, the word 'internet' starts with a vowel sound",
+    "With cloud streaming, people can play games from a. The article 'An' is used before the words starting from a vowel  sound(an imminent danger, an apple). Similarly, the word 'internet' starts with a vowel sound",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5129,7 +5129,7 @@ const ENG_RAW = [
     "attention to the announcement",
     "missed the train",
     "b",
-    "he had not. The given sentence is an example of a third conditional sentence and the correct grammatical structure is \"If + past perfect(had + V )…….. Would have + V \". P innacle",
+    "he had not. The given sentence is an example of a third conditional sentence and the correct grammatical structure is \"If + past perfect(had + V )…….. Would have + V \". ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5211,7 +5211,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "He sang / beautifully but / the judges were / unimpress e at the end",
+    "He sang / beautifully but / the judges were / unimpress  at the end",
     "the judges were",
     "unimpress at the end",
     "He sang",
@@ -5305,7 +5305,7 @@ const ENG_RAW = [
     "when you",
     "to visit a zoo",
     "d",
-    "to visit a zoo. e Article 'a' must be replaced with 'the' to specify a particular zoo",
+    "to visit a zoo.  Article 'a' must be replaced with 'the' to specify a particular zoo",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5437,7 +5437,7 @@ const ENG_RAW = [
     "This region",
     "last year.",
     "a",
-    "was struck by unusual. Article 'An' is used before the words starting from a vowel r sound(an imminent danger, an apple). Therefore, article 'an' must be used before the word 'unusual'.F  ",
+    "was struck by unusual. Article 'An' is used before the words starting from a vowel r sound(an imminent danger, an apple). Therefore, article 'an' must be used before the word 'unusual'.  ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5453,7 +5453,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "It is imperative in understanding / the rising importance h of artificial intelligence / in the public sector to increase the efficacy / and impact of the work done for public welfare. B",
+    "It is imperative in understanding / the rising importance  of artificial intelligence / in the public sector to increase the efficacy / and impact of the work done for public welfare. B",
     "the rising importance of artificial intelligence",
     "It is imperative in understanding",
     "aend impact of the work done for public welfare.",
@@ -5541,13 +5541,13 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "The news / is / very good / to be true. P innacle",
+    "The news / is / very good / to be true. ",
     "to be true",
     "very good",
     "The news",
     "is",
     "b",
-    "very good. e 'Very' must be replaced with 'too' as 'too good to be true' is an idiom that means something is so positive or favorable",
+    "very good.  'Very' must be replaced with 'too' as 'too good to be true' is an idiom that means something is so positive or favorable",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5613,7 +5613,7 @@ const ENG_RAW = [
     "the entire morning",
     "in the sun",
     "b",
-    "They were laid. The given sentence is an example of passive voice of Past Continuous Tense and the subject 'they' is plural. 'Plural Sub. + P innacle were + ' is the correct grammatical structure for this sentence. 'Laid' must be replaced with 'lying' as 'lying' means resting in a horizontal position",
+    "They were laid. The given sentence is an example of passive voice of Past Continuous Tense and the subject 'they' is plural. 'Plural Sub. +  were + ' is the correct grammatical structure for this sentence. 'Laid' must be replaced with 'lying' as 'lying' means resting in a horizontal position",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5657,7 +5657,7 @@ const ENG_RAW = [
     "a boiling temperature, were putting wildlife populations at",
     "No error",
     "c",
-    "a boiling temperature, were putting wildlife. populations at peril. 'Were' must be replaced with 'are' as the given sentence states an action in present tense, clearly indicated rby the term 'The present-century'. So we need to use present continuous F tense(are + V -ing).  ",
+    "a boiling temperature, were putting wildlife. populations at peril. 'Were' must be replaced with 'are' as the given sentence states an action in present tense, clearly indicated rby the term 'The present-century'. So we need to use present continuous  tense(are + V -ing).  ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5695,7 +5695,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "The following sentence has been divided into three segmentsB, A, B, C. One of them may contain a grammatical error. Select the segment that contains the error, from the given options. If you don't find any error, mark 'No error' as your e answer. It was (A) / by a chance (B) / he saw a movie in a theatre (C)",
+    "The following sentence has been divided into three segmentsB, A, B, C. One of them may contain a grammatical error. Select the segment that contains the error, from the given options. If you don't find any error, mark 'No error' as your  answer. It was (A) / by a chance (B) / he saw a movie in a theatre (C)",
     "A",
     "C",
     "B",
@@ -5745,7 +5745,7 @@ const ENG_RAW = [
     "The decision to change an hospital saved the life of the",
     "A decision to change a hospital saved the life of the daughter",
     "b",
-    "The decision to change the hospital saved the life of. the daughter of the doctor.(Correct) (a) The decision to change a ihospital saved an life of the daughter of the doctor.(Incorrect Article)  (c) The decision to change an hospital saved the life of the a daughter of the doctor.(Incorrect Article) (d) A decision to change a hospital saved the life of the daughter h of the doctor.(Incorrect Article)",
+    "The decision to change the hospital saved the life of. the daughter of the doctor.(Correct) (a) The decision to change a ihospital saved an life of the daughter of the doctor.(Incorrect Article)  (c) The decision to change an hospital saved the life of the a daughter of the doctor.(Incorrect Article) (d) A decision to change a hospital saved the life of the daughter  of the doctor.(Incorrect Article)",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5789,7 +5789,7 @@ const ENG_RAW = [
     "An warrior was waiting for a right time to attack the lion",
     "The warrior was waiting for a right time to attack an lion",
     "a",
-    "We hardly knew nothing. 'Nothing' must be replaced with 'anything'. 'Hardly' and 'Nothing' both are negative words so we can't use them together. We generally use the pronoun 'anything' in negative and interrogative sentences. P innacle eduquity-based pattern (ebp) Questions (634 to 700)",
+    "We hardly knew nothing. 'Nothing' must be replaced with 'anything'. 'Hardly' and 'Nothing' both are negative words so we can't use them together. We generally use the pronoun 'anything' in negative and interrogative sentences.",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5833,7 +5833,7 @@ const ENG_RAW = [
     "When Mrs. Sinha came to see Varanasi in 2019, Nupur has",
     "When Mrs. Sinha came to see Varanasi in 2019, Nupur has",
     "d",
-    "When Mrs. Sinha came to see Varanasi in 2019,. Nupur has already been teaching there for five years. 'Has been' must be replaced 'had been' as the first clause of the sentence is in Past Tense. So, we need to use \"Past Perfect P innacle Tense(Had been + V -ing)\" to make the sentence grammatically correct",
+    "When Mrs. Sinha came to see Varanasi in 2019,. Nupur has already been teaching there for five years. 'Has been' must be replaced 'had been' as the first clause of the sentence is in Past Tense. So, we need to use \"Past Perfect  Tense(Had been + V -ing)\" to make the sentence grammatically correct",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -5849,7 +5849,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Select the option that contains a grammatical error in the underlined portion. He was always been a grumpy man so I nevrer liked him and avoided his company. F",
+    "Select the option that contains a grammatical error in the underlined portion. He was always been a grumpy man so I nevrer liked him and avoided his company. ",
     "He was always been a grumpy man, so I never liked him and",
     "He was always been a grumpy man, so I never liked him and",
     "He was always been a grumpy man, so I never liked him and",
@@ -5976,7 +5976,7 @@ const ENG_RAW = [
     "The front part is used for carving",
     "for scratching of whole areas",
     "d",
-    "for scratching of whole areas. Preposition 'of' will be removed ias scratch is a transitive verb and it will not use any prepositiion with it. The will be used before \"whole\". Hence, 'For scratching the whole areas' is the most a appropriate answer. h",
+    "for scratching of whole areas. Preposition 'of' will be removed ias scratch is a transitive verb and it will not use any prepositiion with it. The will be used before \"whole\". Hence, 'For scratching the whole areas' is the most a appropriate answer. ",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -6009,7 +6009,7 @@ const ENG_RAW = [
     "discusses is funny, playing",
     "Much of the art he",
     "c",
-    "discusses is funny, playing. 'Playing' must be replaced with 'playful' as we need to use a predicative adjective : These adjectives come after linking verbs (e.g., \"be,\" \"become,\" \"seem\") and describe the subject of the sentence",
+    "discusses is funny, playing. 'Playing' must be replaced with 'playful' as we need to use a predicative adjective : These adjectives come after linking verbs (.g., \"be,\" \"become,\" \"seem\") and describe the subject of the sentence",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -6053,7 +6053,7 @@ const ENG_RAW = [
     "No error",
     "To treat nightmare disorder,",
     "a",
-    "there is a number. 'Is' must be replaced with 'are' in the given sentence. According to the subject-verb agreement, 'A + Number of + Plural nouns' P innacle always takes plural verbs",
+    "there is a number. 'Is' must be replaced with 'are' in the given sentence. According to the subject-verb agreement, 'A + Number of + Plural nouns'  always takes plural verbs",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -6218,7 +6218,7 @@ const ENG_RAW = [
     "only when they mate.",
     "including rabbits and cats, ovulate",
     "a",
-    "No error. h The sentence is grammatically correct",
+    "No error.  The sentence is grammatically correct",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -6234,7 +6234,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "The Federalists wished to / make the central government / as strong possible. P innacle",
+    "The Federalists wished to / make the central government / as strong possible. ",
     "as strong possible.",
     "The Federalists wished to",
     "No error",
@@ -6273,7 +6273,7 @@ const ENG_RAW = [
     "Can you please",
     "No error",
     "b",
-    "glittery pen black?. Adjectives should be written before the noun (pen) that is being qualified. The general order of adjectives before a noun is the following: Opinion, Size, Shape, Condition, Age, Colour,Pattern, Origin, Material and Purpose. 'Glittery' represents opinion and P innacle 'black' is the color",
+    "glittery pen black?. Adjectives should be written before the noun (pen) that is being qualified. The general order of adjectives before a noun is the following: Opinion, Size, Shape, Condition, Age, Colour,Pattern, Origin, Material and Purpose. 'Glittery' represents opinion and  'black' is the color",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -6306,7 +6306,7 @@ const ENG_RAW = [
     "and cleverest of diplomats.",
     "No error",
     "b",
-    "work he became the slyer. 'The slyer' will be replaced with 'the slyest' as 'slyer' is a comparative form and we need a superlative form of the adjective 'sly' .e. 'slyest' to match the later part of the sentence",
+    "work he became the slyer. 'The slyer' will be replaced with 'the slyest' as 'slyer' is a comparative form and we need a superlative form of the adjective 'sly' .. 'slyest' to match the later part of the sentence",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -6333,7 +6333,7 @@ const ENG_RAW = [
     "Spot the Error"
   ],
   [
-    "Humans have rapidly / changing the balance of / gases in the atmosphere. F",
+    "Humans have rapidly / changing the balance of / gases in the atmosphere. ",
     "Humans have rapidly",
     "changing the balance of",
     "gases in the atmosphere No error",
@@ -6438,7 +6438,7 @@ const ENG_RAW = [
     "No error",
     "things on common.",
     "d",
-    "things on common. a The phrase 'in common' is used to describe similarity between two or more things or persons. The given sentence is talking h about similarity between all of the farmers that were interviewed",
+    "things on common. a The phrase 'in common' is used to describe similarity between two or more things or persons. The given sentence is talking  about similarity between all of the farmers that were interviewed",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -6449,7 +6449,7 @@ const ENG_RAW = [
     "Fires in California is",
     "No error",
     "c",
-    "Fires in California is. e According to the \"Subject-Verb Agreement Rule\", a singular subject always takes a singular verb and a plural subject always takes a plural verb. In the given sentence, 'fires' is a plural subject that will take 'are' as a plural verb",
+    "Fires in California is.  According to the \"Subject-Verb Agreement Rule\", a singular subject always takes a singular verb and a plural subject always takes a plural verb. In the given sentence, 'fires' is a plural subject that will take 'are' as a plural verb",
     "Spot the Error",
     "Spot the Error"
   ],
@@ -6608,7 +6608,7 @@ const ENG_RAW = [
     "comprises",
     "is comprising",
     "c",
-    "comprises. The verb 'comprise' is used withoiut any preposition. 'Comprise' is a stative verb and stative verbs are generally not used in  continuous tense. In the given sentence, 'comprise' is a singular a verb that will take 'comprises' as the singular verb. h",
+    "comprises. The verb 'comprise' is used withoiut any preposition. 'Comprise' is a stative verb and stative verbs are generally not used in  continuous tense. In the given sentence, 'comprise' is a singular a verb that will take 'comprises' as the singular verb. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -6782,7 +6782,7 @@ const ENG_RAW = [
     "resulted for",
     "resulted from",
     "resulted into",
-    "resulted in e",
+    "resulted in ",
     "a",
     "fond of listening to. 'Fond of' is the correct phrase, which means having an affection or liking for something. 'Listen to' is used when hearing any kind of sound",
     "Sentence Improvement",
@@ -7004,7 +7004,7 @@ const ENG_RAW = [
     "by bike",
     "on the bike",
     "c",
-    "by bike. The preposition \"by\" is used to indicate the means of transport without an article (e.g., by car, by bus, by bike)",
+    "by bike. The preposition \"by\" is used to indicate the means of transport without an article (.g., by car, by bus, by bike)",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -7059,7 +7059,7 @@ const ENG_RAW = [
     "to entering the room",
     "of entering the room",
     "b",
-    "from entering the room.  'From' is a fixed preposition used after the verb 'prevent' to show a restriction or stopping someone from doing something. h",
+    "from entering the room.  'From' is a fixed preposition used after the verb 'prevent' to show a restriction or stopping someone from doing something. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -7070,7 +7070,7 @@ const ENG_RAW = [
     "were finishing",
     "had finished",
     "a",
-    "finished. The given sentence is in the past tense, therefore, 'finish' must B be replaced with the past form 'finished'. e",
+    "finished. The given sentence is in the past tense, therefore, 'finish' must B be replaced with the past form 'finished'. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -7163,7 +7163,7 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "The researcher would have written and [publish several] F [reports] in his early thirties if he had not fallen sick",
+    "The researcher would have written and [publish several]  [reports] in his early thirties if he had not fallen sick",
     "published several report",
     "publish several reports",
     "publishing several reports",
@@ -7284,13 +7284,13 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "h The team performed exceptionally well, [since] they had prepared diligently for months",
+    " The team performed exceptionally well, [since] they had prepared diligently for months",
     "Although",
     "While",
     "As",
     "Therefore",
     "c",
-    "as.  'Since' is used to introduce a reason or cause. 'As' is also used to a express the reason for something. h",
+    "as.  'Since' is used to introduce a reason or cause. 'As' is also used to a express the reason for something. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -7499,7 +7499,7 @@ const ENG_RAW = [
     "even more significant than previously predicted",
     "No substitution required",
     "c",
-    "even more significant than previously predicted. Comparative degree is used withi 'than'. Therefore, 'much' must be replaced with 'more'. The giiven sentence needs an adjective 'significant' to describea the noun 'consequence', not the adverb 'consequently'. h",
+    "even more significant than previously predicted. Comparative degree is used withi 'than'. Therefore, 'much' must be replaced with 'more'. The giiven sentence needs an adjective 'significant' to describea the noun 'consequence', not the adverb 'consequently'. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -7620,7 +7620,7 @@ const ENG_RAW = [
     "does he agree",
     "is he agreeing",
     "c",
-    "does he agree. When sentences begin with negative adverbs like 'Hardly', 'Rarely', 'Seldom', etc., inversion of the subject and auxiliary verb is required. For simple present tense, the auxriliary verb 'do' or 'does' is used. Since the subject is 'he' (singular), 'does' is F required",
+    "does he agree. When sentences begin with negative adverbs like 'Hardly', 'Rarely', 'Seldom', etc., inversion of the subject and auxiliary verb is required. For simple present tense, the auxriliary verb 'do' or 'does' is used. Since the subject is 'he' (singular), 'does' is  required",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -7774,7 +7774,7 @@ const ENG_RAW = [
     "comprises",
     "is comprising",
     "c",
-    "comprises. The verb 'comprise' is used withoiut any preposition. 'Comprise' is a stative verb and stative verbs are generally not used in  continuous tense. In the given sentence, 'comprise' is a singular a verb that will take 'comprises' as the singular verb. h",
+    "comprises. The verb 'comprise' is used withoiut any preposition. 'Comprise' is a stative verb and stative verbs are generally not used in  continuous tense. In the given sentence, 'comprise' is a singular a verb that will take 'comprises' as the singular verb. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -7948,7 +7948,7 @@ const ENG_RAW = [
     "resulted for",
     "resulted from",
     "resulted into",
-    "resulted in e",
+    "resulted in ",
     "a",
     "fond of listening to. 'Fond of' is the correct phrase, which means having an affection or liking for something. 'Listen to' is used when hearing any kind of sound",
     "Sentence Improvement",
@@ -8170,7 +8170,7 @@ const ENG_RAW = [
     "by bike",
     "on the bike",
     "c",
-    "by bike. The preposition \"by\" is used to indicate the means of transport without an article (e.g., by car, by bus, by bike)",
+    "by bike. The preposition \"by\" is used to indicate the means of transport without an article (.g., by car, by bus, by bike)",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -8225,7 +8225,7 @@ const ENG_RAW = [
     "to entering the room",
     "of entering the room",
     "b",
-    "from entering the room.  'From' is a fixed preposition used after the verb 'prevent' to show a restriction or stopping someone from doing something. h",
+    "from entering the room.  'From' is a fixed preposition used after the verb 'prevent' to show a restriction or stopping someone from doing something. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -8236,7 +8236,7 @@ const ENG_RAW = [
     "were finishing",
     "had finished",
     "a",
-    "finished. The given sentence is in the past tense, therefore, 'finish' must B be replaced with the past form 'finished'. e",
+    "finished. The given sentence is in the past tense, therefore, 'finish' must B be replaced with the past form 'finished'. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -8329,7 +8329,7 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "The researcher would have written and [publish several] F [reports] in his early thirties if he had not fallen sick",
+    "The researcher would have written and [publish several]  [reports] in his early thirties if he had not fallen sick",
     "published several report",
     "publish several reports",
     "publishing several reports",
@@ -8450,13 +8450,13 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "h The team performed exceptionally well, [since] they had prepared diligently for months",
+    " The team performed exceptionally well, [since] they had prepared diligently for months",
     "Although",
     "While",
     "As",
     "Therefore",
     "c",
-    "as.  'Since' is used to introduce a reason or cause. 'As' is also used to a express the reason for something. h",
+    "as.  'Since' is used to introduce a reason or cause. 'As' is also used to a express the reason for something. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -8665,7 +8665,7 @@ const ENG_RAW = [
     "even more significant than previously predicted",
     "No substitution required",
     "c",
-    "even more significant than previously predicted. Comparative degree is used withi 'than'. Therefore, 'much' must be replaced with 'more'. The giiven sentence needs an adjective 'significant' to describea the noun 'consequence', not the adverb 'consequently'. h",
+    "even more significant than previously predicted. Comparative degree is used withi 'than'. Therefore, 'much' must be replaced with 'more'. The giiven sentence needs an adjective 'significant' to describea the noun 'consequence', not the adverb 'consequently'. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -8786,7 +8786,7 @@ const ENG_RAW = [
     "does he agree",
     "is he agreeing",
     "c",
-    "does he agree. When sentences begin with negative adverbs like 'Hardly', 'Rarely', 'Seldom', etc., inversion of the subject and auxiliary verb is required. For simple present tense, the auxriliary verb 'do' or 'does' is used. Since the subject is 'he' (singular), 'does' is F required",
+    "does he agree. When sentences begin with negative adverbs like 'Hardly', 'Rarely', 'Seldom', etc., inversion of the subject and auxiliary verb is required. For simple present tense, the auxriliary verb 'do' or 'does' is used. Since the subject is 'he' (singular), 'does' is  required",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -9101,7 +9101,7 @@ const ENG_RAW = [
   [
     "Spreading awareness about the rights of the consumers and the relief open to them in case they did not get their money's worth of goods and service has rightly been identified as the first priority",
     "were unable to get their money's worth",
-    "No substitution F",
+    "No substitution ",
     "did not getting their money's worth",
     "will not get their money's worth  ",
     "a",
@@ -9221,12 +9221,12 @@ const ENG_RAW = [
   ],
   [
     "The programme on TV was now shown the blurring faces B of the inmates of the rehabilitation centre",
-    "were now showing the blurred faces of the inmates of the e",
+    "were now showing the blurred faces of the inmates of the ",
     "was now showing the blurred faces of the inmates of the",
     "were now showing the blurring faces of the inmates from the",
     "was now showing the blurred faces of the inmates upon the",
     "b",
-    "was now showing the blurred faces of the inmates. h of the rehabilitation centre 'Singular Sub. + was + V ' is grammatically the correct structure B for a sentence which is in the past continuous tense",
+    "was now showing the blurred faces of the inmates.  of the rehabilitation centre 'Singular Sub. + was + V ' is grammatically the correct structure B for a sentence which is in the past continuous tense",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -9457,7 +9457,7 @@ const ENG_RAW = [
     "Are seeking",
     "Seeking",
     "a",
-    "Sought . 'Sought' is the correct vaerb to use here. 'Sought' is the past form of 'seek', indicating simple past tense. h",
+    "Sought . 'Sought' is the correct vaerb to use here. 'Sought' is the past form of 'seek', indicating simple past tense. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -9545,7 +9545,7 @@ const ENG_RAW = [
     "casually due to a growth",
     "owing primarily to a rise",
     "d",
-    "owing primarily to a rise. 'Owing to' means because of & 'primarily' means mainly. 'Rise' means increase in number. The given sentence states that the food intolerance industry has grown dramatically in the previous decade, owing primarily to a rise in Coeliac and Crohn's disease cases, as well as increasing awareness among health-conscious clients. eduquity-based pattern (ebp) Questions (286 to 376)",
+    "owing primarily to a rise. 'Owing to' means because of & 'primarily' means mainly. 'Rise' means increase in number. The given sentence states that the food intolerance industry has grown dramatically in the previous decade, owing primarily to a rise in Coeliac and Crohn's disease cases, as well as increasing awareness among health-conscious clients.",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -9567,7 +9567,7 @@ const ENG_RAW = [
     "as he had been addicted in",
     "as he had been addicted to",
     "d",
-    "as he had been adidicted to. 'To' is a fixed prepositioan used after the verb 'addicted'. h",
+    "as he had been adidicted to. 'To' is a fixed prepositioan used after the verb 'addicted'. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -9578,7 +9578,7 @@ const ENG_RAW = [
     "persuasive",
     "credible",
     "a",
-    "credulous. 'Credulous' means willing to believe or trust too readily. The B given sentence states that the credulous investors believed in every word the analysts said. Hence, 'credulous' is the most e appropriate answer",
+    "credulous. 'Credulous' means willing to believe or trust too readily. The B given sentence states that the credulous investors believed in every word the analysts said. Hence, 'credulous' is the most  appropriate answer",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -9671,7 +9671,7 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "Select the option that can substitute/replace the h bracketed word correctly and complete the sentence. I said I (don't) understand",
+    "Select the option that can substitute/replace the  bracketed word correctly and complete the sentence. I said I (don't) understand",
     "doesn't",
     "am doing",
     "didn't",
@@ -9699,7 +9699,7 @@ const ENG_RAW = [
     "was costly",
     "will be costly",
     "b",
-    "is costlier r. We use a comparative degree with 'than' to make a comparison F between two things. 'Costlier' is the correct comparative degree of 'costly'",
+    "is costlier r. We use a comparative degree with 'than' to make a comparison  between two things. 'Costlier' is the correct comparative degree of 'costly'",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -9809,7 +9809,7 @@ const ENG_RAW = [
     "does not break",
     "did not breaking",
     "c",
-    "does not break . 'Do/does/did + V ' is thae correct grammatical structure. h",
+    "does not break . 'Do/does/did + V ' is thae correct grammatical structure. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -9963,7 +9963,7 @@ const ENG_RAW = [
     "away",
     "through",
     "d",
-    "through r. 'Through' means from one side to the other. The given sentence F states that it will take two hours to walk through the forest. Hence, 'through' is the most app answer",
+    "through r. 'Through' means from one side to the other. The given sentence  states that it will take two hours to walk through the forest. Hence, 'through' is the most app answer",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -10062,7 +10062,7 @@ const ENG_RAW = [
     "promotes sharing of tradition",
     "No improvement required",
     "a",
-    "promotes sharing of traditional. According to the \"Subject-Verb Agreement Rule\", a singular h subject always takes a singular verb. At the end of a singular verb, s/es is used. Similarly, 'The annual seed festival' is a B singular subject that will take 'promotes' as a singular verb",
+    "promotes sharing of traditional. According to the \"Subject-Verb Agreement Rule\", a singular  subject always takes a singular verb. At the end of a singular verb, s/es is used. Similarly, 'The annual seed festival' is a B singular subject that will take 'promotes' as a singular verb",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -10133,7 +10133,7 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "The boy watched a sci-fi movie in the lieu of playing in F the game zone",
+    "The boy watched a sci-fi movie in the lieu of playing in  the game zone",
     "on lieu of playing",
     "in lieu off playing",
     "in lieu of play",
@@ -10227,7 +10227,7 @@ const ENG_RAW = [
     "No substitution required",
     "would the next letter come",
     "b",
-    "the next letter would come. The correct structure of a clause is 'Subject r+ modal + main verb'. 'The next letter' is the subject of the clause, so it will be F followed by modal 'would' and the main verb 'come'.  ",
+    "the next letter would come. The correct structure of a clause is 'Subject r+ modal + main verb'. 'The next letter' is the subject of the clause, so it will be  followed by modal 'would' and the main verb 'come'.  ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -10326,7 +10326,7 @@ const ENG_RAW = [
     "habit",
     "oddity",
     "c",
-    "Habit. 'Habit' means something that you do often and regularly. The B given sentence states that it is my habit to get up early in the morning. e",
+    "Habit. 'Habit' means something that you do often and regularly. The B given sentence states that it is my habit to get up early in the morning. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -10480,7 +10480,7 @@ const ENG_RAW = [
     "Callous",
     "Foolish",
     "b",
-    "Intelligent. 'Intelligent' means someone who is smart or knowledgeable. The given sentence states that Mr. Sen is intelligent enough to handle his professional hazards. r eduquity-based pattern (ebp) Questions (377 to 467)  ",
+    "Intelligent. 'Intelligent' means someone who is smart or knowledgeable. The given sentence states that Mr. Sen is intelligent enough to handle his professional hazards.",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -10584,7 +10584,7 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "This serum contains ingredients enabling the hair to grow. h",
+    "This serum contains ingredients enabling the hair to grow. ",
     "for growth hair",
     "the enable grow hair",
     "for growing many hair",
@@ -10595,7 +10595,7 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "She argued against the unnecessary split in the e committee",
+    "She argued against the unnecessary split in the  committee",
     "combination",
     "mix",
     "division",
@@ -10689,7 +10689,7 @@ const ENG_RAW = [
     "completed",
     "concluded",
     "d",
-    "concluded. h 'Concluded' means to bring something to an end or finish, particularly in a formal context. The given sentence states that B the meeting concluded with a vote of thanks. e",
+    "concluded.  'Concluded' means to bring something to an end or finish, particularly in a formal context. The given sentence states that B the meeting concluded with a vote of thanks. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -10863,7 +10863,7 @@ const ENG_RAW = [
     "simple language",
     "lucid language",
     "prosaic language",
-    "lyrical language h",
+    "lyrical language ",
     "a",
     "Take it with a grain of salt- regard it as exaggerated. and not completely true. r",
     "Sentence Improvement",
@@ -10986,7 +10986,7 @@ const ENG_RAW = [
     "love to work",
     "linger at work",
     "c",
-    "love to work. e The given sentence talks about a person who is not a beggar by choice. This means he would love to work if somebody could employ him",
+    "love to work.  The given sentence talks about a person who is not a beggar by choice. This means he would love to work if somebody could employ him",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -11101,7 +11101,7 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "Even after becoming bankrupt, Charlie is able to maintain h an outward show",
+    "Even after becoming bankrupt, Charlie is able to maintain  an outward show",
     "bell the cat",
     "cut a sorry figure",
     "bring down the house",
@@ -11250,7 +11250,7 @@ const ENG_RAW = [
     "elections at a sweeping majority",
     "elections by a sweeping majority",
     "d",
-    "elections by a sweeping majority 'By' is used to indicate the amount or extent of something. In the. given sentence, 'by' has been used to indicate the amount of e majority in the elections",
+    "elections by a sweeping majority 'By' is used to indicate the amount or extent of something. In the. given sentence, 'by' has been used to indicate the amount of  majority in the elections",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -11266,7 +11266,7 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "Before she began, she asked the teacher whether she F write with a pen or a pencil",
+    "Before she began, she asked the teacher whether she  write with a pen or a pencil",
     "she wrote",
     "she can write",
     "she should write",
@@ -11369,7 +11369,7 @@ const ENG_RAW = [
     "secret enemies",
     "blood relatives",
     "office colleagues",
-    "special students h",
+    "special students ",
     "c",
     "melts fast. 'Fastly' is an incorrect word. 'Fast' is an adverb which modifies the verb 'melts'",
     "Sentence Improvement",
@@ -11437,7 +11437,7 @@ const ENG_RAW = [
     "between I and you",
     "between you and me",
     "d",
-    "between you and me. A preposition takes an objective case pronoun after it. 'Between' is a preposition that will take 'me' instead of 'I'. eduquity-based pattern (ebp) Questions (468 to 558)",
+    "between you and me. A preposition takes an objective case pronoun after it. 'Between' is a preposition that will take 'me' instead of 'I'",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -11719,7 +11719,7 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "I like to read books, but my brother prefers [to watching] h movies",
+    "I like to read books, but my brother prefers [to watching]  movies",
     "No substitution",
     "to watch",
     "in watching",
@@ -11730,7 +11730,7 @@ const ENG_RAW = [
     "Sentence Improvement"
   ],
   [
-    "This case is serious. You need to [look into] this matter; e otherwise, the situation will get out of control soon",
+    "This case is serious. You need to [look into] this matter;  otherwise, the situation will get out of control soon",
     "look after",
     "No substitution",
     "look up",
@@ -11835,7 +11835,7 @@ const ENG_RAW = [
     "until the project",
     "in the project",
     "d",
-    "in the project. 'In' is used to indicate involvement while 'beside' is used to show e that two things are close to each other. The given passage talks about the impact of unexpected change in the project",
+    "in the project. 'In' is used to indicate involvement while 'beside' is used to show  that two things are close to each other. The given passage talks about the impact of unexpected change in the project",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -12040,7 +12040,7 @@ const ENG_RAW = [
   [
     "[No sooner did he finished] his examination than he left B for his cricket training centre",
     "no sooner did he finish",
-    "no sooner than he finished e",
+    "no sooner than he finished ",
     "no sooner than he did finished",
     "no sooner had he finish",
     "a",
@@ -12132,7 +12132,7 @@ const ENG_RAW = [
     "doesn't she?",
     "do she?",
     "c",
-    "doesn't she?. According to the \"Subject-Verb Agreement Rule\", a singular e subject always takes a singular verb and a plural subject always takes a plural verb. In the given sentence, 'she' is a singular pronoun that will take 'does' as a singular verb",
+    "doesn't she?. According to the \"Subject-Verb Agreement Rule\", a singular  subject always takes a singular verb and a plural subject always takes a plural verb. In the given sentence, 'she' is a singular pronoun that will take 'does' as a singular verb",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -12341,12 +12341,12 @@ const ENG_RAW = [
     "in",
     "No substitution required",
     "a",
-    "for. \"For\" is used for a fixed period ofi time(countable) like years/3 months/4 days/8 hours and for an activity that happened in a  recent time. Similarly, in the given sentence, we can count 'a a week'(one). h eduquity-based pattern (ebp) BQuestions (559 to 649) Q.55e9. Peter was brought in the penalty area. (a) was brought down of the (b) was brought of the (c) was brought on the (d) was brought down in the",
+    "for. \"For\" is used for a fixed period ofi time(countable) like years/3 months/4 days/8 hours and for an activity that happened in a  recent time. Similarly, in the given sentence, we can count 'a a week'(one).",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
   [
-    "Peter [was brought in the] penalty area. e",
+    "Peter [was brought in the] penalty area. ",
     "was brought down of the",
     "was brought of the",
     "was brought on the",
@@ -12484,7 +12484,7 @@ const ENG_RAW = [
     "continued to study for his upcoming exam",
     "continues studying for his upcoming exam",
     "c",
-    "continued to study for his upcoming exam. The given sentence contains a verb in past form .e. \"was exhausted\" so we will use simple past tense(V ) in the latter part",
+    "continued to study for his upcoming exam. The given sentence contains a verb in past form .. \"was exhausted\" so we will use simple past tense(V ) in the latter part",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -12495,7 +12495,7 @@ const ENG_RAW = [
     "prefigure",
     "proliferate",
     "c",
-    "Prefigure - to give an advance indication or warning. of something. Predict - to forecast or foretell an event or outcome. Deliberate - to think carefully and consider all aspects before  making a decision.  Precipitate - to cause something to happen suddenly or a unexpectedly. Proliferate - to cause something to happen suddenly or unexpectedly. h",
+    "Prefigure - to give an advance indication or warning. of something. Predict - to forecast or foretell an event or outcome. Deliberate - to think carefully and consider all aspects before  making a decision.  Precipitate - to cause something to happen suddenly or a unexpectedly. Proliferate - to cause something to happen suddenly or unexpectedly. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -12601,7 +12601,7 @@ const ENG_RAW = [
   [
     "The health-care system is in transition [at those moment]",
     "at that moments",
-    "at the moment e",
+    "at the moment ",
     "at a moments",
     "at these moment",
     "b",
@@ -12737,7 +12737,7 @@ const ENG_RAW = [
     "refuse some",
     "lay down some",
     "b",
-    "lay off somea. 'Lay off' means to discharge an employee temporarily or permanently because of shortage of work or funds. The given h sentence states that the company is discharging some employees. Sol.e597.(c) it is evident that a lot more women 'Subject + Verb + Object/Complement' is the correct grammatical structure of a sentence",
+    "lay off somea. 'Lay off' means to discharge an employee temporarily or permanently because of shortage of work or funds. The given  sentence states that the company is discharging some employees. Sol.e597.(c) it is evident that a lot more women 'Subject + Verb + Object/Complement' is the correct grammatical structure of a sentence",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -12946,7 +12946,7 @@ const ENG_RAW = [
     "price",
     "prays",
     "d",
-    "Prays. 'Preys' must be replaced with 'prays' as 'pray' means to talk to h God or a higher power. While 'Prey' means an animal that is caught and killed by another for food. Hence, 'prays' is the most B appropriate answer. Sol.e618.(c) via various forms The term 'means' means a method used for doing something such as means of transport. Whereas the term 'forms' means a particular type of variety of something. In the given sentence, various types of media have been listed, such as television, newspapers and films",
+    "Prays. 'Preys' must be replaced with 'prays' as 'pray' means to talk to  God or a higher power. While 'Prey' means an animal that is caught and killed by another for food. Hence, 'prays' is the most B appropriate answer. Sol.e618.(c) via various forms The term 'means' means a method used for doing something such as means of transport. Whereas the term 'forms' means a particular type of variety of something. In the given sentence, various types of media have been listed, such as television, newspapers and films",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -13628,7 +13628,7 @@ const ENG_RAW = [
     "Plots to dispose of him came",
     "Plots which dispose him came",
     "c",
-    "Plots to dispose of him came. The phrase \"dispose of\" meanis to get rid of or eliminate someone or something. In thiis sentence, the sentence suggests that there were plots ora plans to eliminate or get rid of him, but those plans ultimately failed or had no result. h",
+    "Plots to dispose of him came. The phrase \"dispose of\" meanis to get rid of or eliminate someone or something. In thiis sentence, the sentence suggests that there were plots ora plans to eliminate or get rid of him, but those plans ultimately failed or had no result. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -13826,7 +13826,7 @@ const ENG_RAW = [
     "No improvement",
     "hair shortest",
     "a",
-    "We cannot write the past form of the uncountable. B noun 'hair'. e",
+    "We cannot write the past form of the uncountable. B noun 'hair'. ",
     "Sentence Improvement",
     "Sentence Improvement"
   ],
@@ -14276,7 +14276,7 @@ const ENG_RAW = [
     "Narration"
   ],
   [
-    "She announced that she had completed the challenging a project. h",
+    "She announced that she had completed the challenging a project. ",
     "\"I completed the challenging project,\" she announced.",
     "\"The challenging project has been completed by her,\"",
     "\"I have completed the challenging project,\" she announced.",
@@ -14793,9 +14793,9 @@ const ENG_RAW = [
     "Narration"
   ],
   [
-    "The teacher advised the students to work hard for their e.",
-    "The teacher said, \"You should work hard for your e.\"",
-    "The teacher said to the students, \"Work hard for your e.\"",
+    "The teacher advised the students to work hard for their .",
+    "The teacher said, \"You should work hard for your .\"",
+    "The teacher said to the students, \"Work hard for your .\"",
     "The teacher said, \"The students must work hard for their",
     "The teacher told the students, \"You will work hard for your",
     "a",
@@ -14925,7 +14925,7 @@ const ENG_RAW = [
     "Narration"
   ],
   [
-    "The professor remarked that the theory had several limitations. e",
+    "The professor remarked that the theory had several limitations. ",
     "The professor said, \"The theory has several limitations.\"",
     "The professor said, \"The theory had several limitations.\"",
     "He said, \"This theory is full of errors.\"",
@@ -15453,7 +15453,7 @@ const ENG_RAW = [
     "Narration"
   ],
   [
-    "A sentence is provided in indirect speech. From the four e given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He inquired whether, considering the recent policy changes, the eligibility criteria would be altered.",
+    "A sentence is provided in indirect speech. From the four  given options, choose the one that most accurately conveys the sentence in its corresponding direct speech. He inquired whether, considering the recent policy changes, the eligibility criteria would be altered.",
     "\"Would the eligibility criteria be altered due to the recent",
     "\"The eligibility criteria are altered because of policy changes,",
     "\"Could it be possible that the eligibility policy be cancelled?\"",
@@ -15541,7 +15541,7 @@ const ENG_RAW = [
     "Narration"
   ],
   [
-    "A sentence is provided in direct speech. From the four B given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech. e \"May I draw your attention to the errors in section two?\" the auditor said formally.",
+    "A sentence is provided in direct speech. From the four B given options, choose the one that most accurately conveys the sentence in its corresponding indirect speech.  \"May I draw your attention to the errors in section two?\" the auditor said formally.",
     "The auditor formally asked may he draw attention to errors in",
     "The auditor formally stated that he may draw attention to the",
     "The auditor formally inquired whether he might draw their",
@@ -15765,7 +15765,7 @@ const ENG_RAW = [
     "Active & Passive Voice"
   ],
   [
-    "Did the committee finalize the annual budget report? h",
+    "Did the committee finalize the annual budget report? ",
     "Has the annual budget report been finalized by the",
     "Was the annual budget report being finalized by the",
     "Weas the annual budget report finalized by the committee?",
@@ -15875,7 +15875,7 @@ const ENG_RAW = [
     "Active & Passive Voice"
   ],
   [
-    "The techniciansa will be installing the new fibre-optic cables all morning. h",
+    "The techniciansa will be installing the new fibre-optic cables all morning. ",
     "The new fibre-optic cables will be installed by the technicians",
     "The new fibre-optic cables will have been installed by the",
     "Tehe new fibre-optic cables will be being installed by the",
@@ -16348,7 +16348,7 @@ const ENG_RAW = [
     "Active & Passive Voice"
   ],
   [
-    "The evidence was believed to have been tampered with by F unknown persons.  ",
+    "The evidence was believed to have been tampered with by  unknown persons.  ",
     "The evidence tampered with unknown persons, as believed.",
     "It was believed that unknown persons had tampered with the",
     "Someone believed the evidence was tampering with",
@@ -16513,7 +16513,7 @@ const ENG_RAW = [
     "Active & Passive Voice"
   ],
   [
-    "Change the following from active to passive: F She placed the keys on the glass table near the window.  ",
+    "Change the following from active to passive:  She placed the keys on the glass table near the window.  ",
     "The keys were placed on the glass table near the window by",
     "The glass table was placed with the keys near the window by",
     "The keys had been placed on the glass table near the window",
@@ -16975,7 +16975,7 @@ const ENG_RAW = [
     "Active & Passive Voice"
   ],
   [
-    "Convert the sentence provided below from its passive voice structure to an active voice structure: e The laboratory findings were being converted into statistical charts by data analysts.",
+    "Convert the sentence provided below from its passive voice structure to an active voice structure:  The laboratory findings were being converted into statistical charts by data analysts.",
     "Data analysts had converted the laboratory findings into",
     "Data analysts are converting the laboratory findings into",
     "Data analysts were converting the laboratory findings into",
@@ -17332,7 +17332,7 @@ const ENG_RAW = [
       "Fill in the Blanks"
     ],
     [
-      "e If not for the early warning system, the city would have _____significant dramage from the tsunami.",
+      " If not for the early warning system, the city would have _____significant dramage from the tsunami.",
       "sustained",
       "avoided",
       "prevented",
@@ -18481,7 +18481,7 @@ const ENG_RAW = [
       "When one linguistic expression refers back to another expression previously mentioned in the text, it is known as _____m reference.",
       "cataphoric",
       "anaphoric",
-      "direct e",
+      "direct ",
       "nominal",
       "b",
       "anaphoric. Anaphoric reference occurs when a word refers back to something mentioned",
@@ -19496,7 +19496,7 @@ const ENG_RAW = [
       "warm",
       "sympathetic",
       "a",
-      "brutal. 'Brutal' means savagely violent. The given sentence states that both the criminals were cruel and brutal. eduquity-based pattern (ebp) Questions (339 to 419)",
+      "brutal. 'Brutal' means savagely violent. The given sentence states that both the criminals were cruel and brutal.",
       "Fill in the Blanks",
       "Fill in the Blanks"
     ],
@@ -20288,7 +20288,7 @@ const ENG_RAW = [
       "the",
       "a",
       "b",
-      "No article required. 'Tea' is an uncountable noun and we generally do not use any article before uncountable nouns. eduquity-based pattern (ebp) Questions (420 to 501)",
+      "No article required. 'Tea' is an uncountable noun and we generally do not use any article before uncountable nouns.",
       "Fill in the Blanks",
       "Fill in the Blanks"
     ],
@@ -20805,7 +20805,7 @@ const ENG_RAW = [
       "supported",
       "dramatised",
       "a",
-      "Take. 'Take' is commonly used when referring to students participating in or attempting e. The given sentence states that the Ministry of education has announced that students can take the Board Examinations twice",
+      "Take. 'Take' is commonly used when referring to students participating in or attempting . The given sentence states that the Ministry of education has announced that students can take the Board Examinations twice",
       "Fill in the Blanks",
       "Fill in the Blanks"
     ],
@@ -21047,7 +21047,7 @@ const ENG_RAW = [
       "rain",
       "reign",
       "d",
-      "reign. 'Reign' means the period during which somebody is in charge of an organisation. The given sentence states that the CEO was praised for her innovative leadership during the time she was in charge of the company. eduquity-based pattern (ebp) Questions (502 to 582)",
+      "reign. 'Reign' means the period during which somebody is in charge of an organisation. The given sentence states that the CEO was praised for her innovative leadership during the time she was in charge of the company.",
       "Fill in the Blanks",
       "Fill in the Blanks"
     ],
@@ -21080,7 +21080,7 @@ const ENG_RAW = [
       "pall",
       "peel",
       "b",
-      "e pale. 'Pale' means having a very light skin colouer due to sickness. The given sentence states that the patient had a light skin colour and looked tired",
+      " pale. 'Pale' means having a very light skin colouer due to sickness. The given sentence states that the patient had a light skin colour and looked tired",
       "Fill in the Blanks",
       "Fill in the Blanks"
     ],
@@ -21806,7 +21806,7 @@ const ENG_RAW = [
       "shone",
       "burned",
       "c",
-      "Shone. The word 'shone' is the past tense of the verb 'shine'. The verb 'shine' means to emit light. The given sentence states that Today is cloudy, but yesterday the sun shone. eduquity-based pattern (ebp) Questions (583 to 656)",
+      "Shone. The word 'shone' is the past tense of the verb 'shine'. The verb 'shine' means to emit light. The given sentence states that Today is cloudy, but yesterday the sun shone.",
       "Fill in the Blanks",
       "Fill in the Blanks"
     ],
@@ -31285,7 +31285,7 @@ const ENG_RAW = [
     "Paleographer",
     "Philologist",
     "c",
-    "**Paleographer** — a person who studies ancient writings and inscriptions | **Archaeologist** — a person who studies human history and prehistory through the excavation of sites and the analysis of artefacts and other physical remains | **Epigraphist** — a person who studies inscriptions, which are writings engraved m on hard surfaces like stone or metal | **Philologist** — a person who studies language in historical sources, such as e literature and written records. Sol.1e7.(d) Esoteric- able to be understood by only a few people who r have special knowledge or interest | **Opaque** — unable to be understood",
+    "**Paleographer** — a person who studies ancient writings and inscriptions | **Archaeologist** — a person who studies human history and prehistory through the excavation of sites and the analysis of artefacts and other physical remains | **Epigraphist** — a person who studies inscriptions, which are writings engraved m on hard surfaces like stone or metal | **Philologist** — a person who studies language in historical sources, such as  literature and written records. Sol.1e7.(d) Esoteric- able to be understood by only a few people who r have special knowledge or interest | **Opaque** — unable to be understood",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -31428,7 +31428,7 @@ const ENG_RAW = [
     "Stratocracy",
     "Plutocracy",
     "c",
-    "**Stratocracy** — a government or state ruled directly by the military | **Bureaucracy** — a government run by officials or administrators | **Autocracy** — rule by one person with absolute power | **Plutocracy** — a government controlled by e the wealthy. Sol.3e5.(a) Mint - a place where coins, medals, or tokens are made | **Foundry** — a factory for casting metal",
+    "**Stratocracy** — a government or state ruled directly by the military | **Bureaucracy** — a government run by officials or administrators | **Autocracy** — rule by one person with absolute power | **Plutocracy** — a government controlled by  the wealthy. Sol.3e5.(a) Mint - a place where coins, medals, or tokens are made | **Foundry** — a factory for casting metal",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -31604,7 +31604,7 @@ const ENG_RAW = [
     "diary",
     "gazette",
     "c",
-    "**Epic** — a long poem, typically one derived from ancient oral tradition, narrating the deeds and adventures of heroic or legendary figurems or the history of a nation | **Souvenir** — a thing that is kept as a reminder ofe a person, place, or event | **Gazette** — a newspaper or official journal. e",
+    "**Epic** — a long poem, typically one derived from ancient oral tradition, narrating the deeds and adventures of heroic or legendary figurems or the history of a nation | **Souvenir** — a thing that is kept as a reminder ofe a person, place, or event | **Gazette** — a newspaper or official journal. ",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -31780,7 +31780,7 @@ const ENG_RAW = [
     "Schema",
     "Clone",
     "d",
-    "**Clone** — an organism that is e genetically identical to another organism | **Blueprint** — a design plan or other e technical drawing | **Prototype** — a first or preliminary version r of a device or vehicle from which other forms are developed | **Schema** — a representation of a plan or theory in the form of an outline or model",
+    "**Clone** — an organism that is  genetically identical to another organism | **Blueprint** — a design plan or other  technical drawing | **Prototype** — a first or preliminary version r of a device or vehicle from which other forms are developed | **Schema** — a representation of a plan or theory in the form of an outline or model",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -32044,7 +32044,7 @@ const ENG_RAW = [
     "cenotaphs",
     "coffins",
     "c",
-    "**Cenotaph** — the monuments set up for people who were buried in other countries | **Grave** — a hole dug in the ground to receive a coffin or dead body, typically marked by a stone or mound | **Cemetery** — an area of ground in which m dead bodies are buried | **Coffin** — a long, narrow box, typically of wood, in which a dead body is buried or e cremated. Sol.2e02.(d) Verbatim- exactly the same words as were used originally | **Factual** — based on or containing facts",
+    "**Cenotaph** — the monuments set up for people who were buried in other countries | **Grave** — a hole dug in the ground to receive a coffin or dead body, typically marked by a stone or mound | **Cemetery** — an area of ground in which m dead bodies are buried | **Coffin** — a long, narrow box, typically of wood, in which a dead body is buried or  cremated. Sol.2e02.(d) Verbatim- exactly the same words as were used originally | **Factual** — based on or containing facts",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -32242,7 +32242,7 @@ const ENG_RAW = [
     "Gardener",
     "Florist",
     "d",
-    "**Florist** — a person who sells and arranges cut flowers | **Horticulturist** — a person who studies or grows garden plants | **Botanist** — an expert in or student of the scientific study of plants | **Gardener** — somemone who works in a garden, growing and taking care of plants. e",
+    "**Florist** — a person who sells and arranges cut flowers | **Horticulturist** — a person who studies or grows garden plants | **Botanist** — an expert in or student of the scientific study of plants | **Gardener** — somemone who works in a garden, growing and taking care of plants. ",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -32451,7 +32451,7 @@ const ENG_RAW = [
     "A person who cannot read and write",
     "Highly rated thing",
     "c",
-    "**Illiterate** — a person who e cannot read and write. r",
+    "**Illiterate** — a person who  cannot read and write. r",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -32660,7 +32660,7 @@ const ENG_RAW = [
     "liberalism",
     "communism",
     "a",
-    "**Nepotism** — undue favour to one’s own relative during the hiring process | **Racism** — the practice of discriminating against people based on their race or m ethnic background | **Liberalism** — a political and social philosophy that promotes individual e rights, civil liberties, democracy, and free enterprise | **Communism** — the belief in a society without different social classes. r",
+    "**Nepotism** — undue favour to one’s own relative during the hiring process | **Racism** — the practice of discriminating against people based on their race or m ethnic background | **Liberalism** — a political and social philosophy that promotes individual  rights, civil liberties, democracy, and free enterprise | **Communism** — the belief in a society without different social classes. r",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -32748,7 +32748,7 @@ const ENG_RAW = [
     "Shed",
     "Hangar",
     "d",
-    "**Hangar** — a place to park aeroplanes | **Hanger** — a shaped piece of wood, plastic, or metal with a hook at the top, from which clothes may be hung | **Depot** — a place for the storage of large quantities of equipment, food, or goods | **Shed** — a simple roofed structure used for garden storage, to shelter animals, or as a workshop. C Q.273. Athens was suffering under the rule of a powerful small group that had no concern for the people's welfare. (a) a democracy (b) an oligarchy (c) a monarchy (d) a missionary Q.274. The evening time when the sun has just set and it is almost dark. (a) Dusk (b) Night (c) Dawn (d) Day break Q.275. Dealing with things in a practical and sensible way (a) Pragmatic (b) Sceptic (c) Stoic (d) Cynic Q.276. Anything pertaining to cats (a) Bovine (b) Canine (c) Taurine (d) Feline Q.277. That which is no longer in existence (a) Extinct (b) Removed (c) Vanished (d) Destroyed Q.278. We, as human beings, have a tendency of believing in the things that can be seen and touched. (a) impalpable (b) spiritual (c) inexpressible (d) tangible Q.279. Fear of snakes (a) Claustrophobia (b) Syngenesophobia (c) Xenophobia (d) Ophidiophobia Q.280. A performer’s first public appearance (a) Foundation (b) Debut (c) Premise (d) Dawn Q.281. To go through an area making a lot of noise and causing damage (a) Brutality (b) Cacophony (c) Violence (d) Rampage Q.282. The ship launched out on a journey by water or sea of discovery. (a) voyage (b) rendezvous (c) verso (d) vespers Q.283. The line, 'Round the rugged rocks the ragged rascal ran' uses the repetition of usually initial consonant sounds in two or more neighbouring words or syllables. (a) alliteration (b) epithet (c) simile (d) allegory Q.284. The soldier struck the enemy with the short sword fixed onto the end of the gun. (a) Baron (b) Bayonet (c) Bigot (d) Baton Q.285. His parents didn’t allow him to enrol in the arts college because he is a xams_Pdfss (c) Dilettante (d) Ignoramus Q.286. Loud enough to be heard. (a) Audible (b) Audit (c) Audacious (d) Audacity Q.287. Study of flying airplanes (a) Aviation (b) Alchemy (c) Astronomy (d) Acoustics Q.288. Hospital for people with mental illnesses (a) Druggist (b) Shelter (c) Asylum (d) Hangar Q.289. These glass windows are so old and one can't even see through them, they need to be replaced. (a) Black (b) Opaque (c) Dirty (d) Transparent Q.290. A professional rider in horse races (a) Batsman (b) Jockey (c) Stuntman (d) Southpaw Q.291. A woman having more than one husband at the same time (a) Monogamy (b) Polymathy (c) Polyandry (d) Endogamy Q.292. Attempmting to impress by affecting greater importance or merit than is actually possessed (a) Airy (b) Pretentious e (c) Glorious (d) Imperious e Q.293. A society or company provides these convenient features r (a) Equipment (b) Facilitate (c) Amenities (d) System Q.294. A story intended to teach moral lessons (a) Parable (b) Parole (c) Parasite (d) Parboil Q.295. Feeling of being in a place before having already experienced the present situation (a) Spirituality (b) Delusion (c) Deja-vu (d) Illusion Q.296. An unpleasant mixture of loud sounds. (a) Irony (b) Cacophony (c) Harmony (d) Hegemony Q.297. An open space usually rectangular and enclosed in a building (a) Quinton (b) Quadrangle (c) Quintessential (d) Quadruped Q.298. The act or process of going from the simple or basic to the complex or advanced. Q.299. One who believes in the existence of God (a) Atheist (b) Fatalist (c) Protagonist (d) Theist Q.300. A deal of agreement done in a company or firm. (a) Conformity (b) Acceptance (c) Contract (d) Concurrence Q.301. The doctor who deals with the female reproductive system. (a) Orthodontist (b) Cardiologist (c) Ophthalmologist (d) Gynaecologist Q.302. A lover of mankind (a) Recluse (b) Cynic (c) Psychiatrist (d) Philanthropist  Q.303. Weak and cowardly  (a) Timid (b) Meek a (c) Pusillanimous (d) Anxious Q.304. An area/place in which dead bodies are buried (a) Clementi (b) Cemetery (c) Mansion (d) Demise Q.305. He was promoted to a higher position in the first year due to his careful nature and hard-working efforts. (a) extraordinary (b) diligence (c) elegance (d) business mindednes Q.306. A lively, cheerful outgoing person. (a) Extrovert (b) Ambivert (c) Introvert (d) Orator Q.307. The study of Man (a) Anthropology (b) Biography (c) Autobiography (d) Biology Q.308. Rajan’s caused extremely painful headaches. (a) excruciating (b) devastating (c) horrible (d) extreme Q.309. A film shown during the day, especially in the afternoon (a) Theatre (b) Dramatics (c) Matinee (d) Cinema Q.310. Select the option that can be used as a one-word substitute for the italicised segment in the given sentence. Tin is easy to shape in any desired form. (a) rigid (b) immutable (c) malleable (d) gullible Q.311. A list of books (a) Bibliography (b) Catalogue (c) Lexicon (d) Manuscript Q.312. The period of time in a person's C (a) Teenage (b) Adolescence (c) Childhood (d) Adultery Q.313. There was a huge fire for celebration on the occasion of Diwali. (a) Flash (b) Bonfire (c) Lohri (d) Firecracker Q.314. Consonance of sounds. (a) Orchestration (b) Woodwinds (c) Symphony (d) Troupe Q.315. A doubtful look or examination of one's motives. (a) Introspect (b) Suspect (c) Circumspect (d) Retrospect Q.316. Vivacious and enthusiastic (a) Introverted (b) Brazen (c) Rowdy (d) Effervescent Q.317. Dwarfed varieties of trees and shrubs in pots (a) Bonafide (b) Bonsai (c) Orchard (d) Botanical Q.318. The patronage bestowed in consideration of family relationships and not of merit. (a) Egotism (b) Neologism (c) Mannerism (d) Nepotism Q.319. A place for storage of arms and ammunition (a) Mint (b) Monastery (c) Scullery (d) Arsenal Q.320. Words inscribed on a tomb. (a) Prologue (b) Epilogue (c) Post-script (d) Epitaph Q.321. Fertile watery place in a desert (a) Ode (b) Obsolete (c) Obscure (d) Oasis Q.322. Someone who speaks more than one language (a) Polyglot (b) Insolvent (c) Heretic (d) Fatalist Q.323. A news article that reports the recent death of a person. (a) Centenary (b) Culinary (c) Mortuary (d) Obituary Q.324. The original inhabitants of a country (a) Aborigines (b) Primitive (c) Citizens (d) Aliens Q.325. The approach or style of teaching (a) Platform (b) Pedagogy (c) Philology (d) Media Q.326. Choose the most appropriate meaning of the underlined phrase. xams_Pdfss (a) To stay safe during difficulty (b) To keep one’s chin clean and moist (c) To save others during difficult times (d) To stay cheerful during difficult times Q.327. Referring to something from the past of high quality (a) Outdated (b) Vintage (c) Culture (a) Epoch Q.328.During vacations, Geeta saw a saltwater lake separated from the sea by rocks and sand where she did kayak for the first time. (a) sea (b) ditch (c) lagoon (d) river Q.329. The liberal leadership simply joined the ranks of the existing government by the few. (a) Plutocracy (b) Oligarchy (c) Democracy (d) Autocracy Q.330. A person who is filled with excessive enthusiasm (a) Horticulturist (b) Narcissist (c) Extrovert (d) Introvert Q.331. I do not like him because he always disapproves the things or opinions of others. (a) is jealous of other people (b) is critical of omthers (c) is insensitive of others feelings (d) is a hate monger e Q.332. A soldier who fights for the sake of money e (a) Marine (b) Mercenary (rc) Admiral (d) Veteran Q.333. Madness or obsession with males (a) Loquacious (b) Andromania (c) Polygamy (d) Misandrist Q.334. A mythological animal with one horn on its forehead (a) Unific (b) Unipod (c) Unicameral (d) Unicorn Q.335. One who does not express himself freely. (a) Outgoing (b) Introvert (c) Approachable (d) Immodest Q.336. Select the word which means the same as the group of words underlined in the given sentence. Today, a man who betrayed his own country in exchange for money was the topic of every news report. (a) Gangster (b) Traitor (c) Terrorist (d) Conman Q.337. Select the most appropriate option that can substitute the underlined segment in the given sentence. (a) bidialectical (b) lingual (c) bilingual (d) bicultural Q.338. Modesty or shyness resulting from a lack of self-confidence (a) Determination (b) Assurance (c) Conviction (d) Diffidence Q.339. A person who is critical of the motives of others (a) Cynic (b) Chauffeur (c) Curator (d) Interviewer Q.340. A person who is a lover of women. (a) Monogamist (b) Misogynist (c) Philologist (d) Philogynist Q.341. Someone who does not care about rules  (a) Nonconformist (b) Illegitimate  (c) Tyrant (d) Vampire a Q.342. The state or condition of not being in agreement, accordance, or in harmony (a) Liquidity (b) Incongruence (c) Congeniality (d) Diplomacy Q.343. Speech without prior preparation (a) Debate (b) Extempore (c) Lecture (d) Rambling Q.344. The reasons or intentions that cause a particular set of beliefs or actions (a) Rationale (b) Practical (c) Thinkable (d) Motive Q.345. To move into or through something (a) Perpetuate (b) Penetrate (c) Transparent (d) Cross Q.346. A judgement or verdict that a person is not guilty of the crime with which he has been charged (a) Petition (b) Appellant (c) Acquittal (d) Writ Q.347. Ms Marry is a barbarous lady. (a) dull (b) calm (c) matured (d) brutal Q.348. She was engaged to be married to him. (a) betrothed (b) betrayed (c) bestowed (d) baptised Q.349. A person who eats meat but not seafood or fish (a) Herbivorous (b) Carnitarian (c) Carnivorous (d) Omnivorous Q.350. Inscription on a person's grave (a) Monograph (b) Epistle (c) Prologue (d) Epitaph C (a) Claustrophobia (b) Acrophobia (c) Glossophobia (d) Selenophobia Q.352. To frighten or threaten someone, usually in order to persuade the person to do something he or she does not wish to do (a) Intimidate (b) Forceless (c) Compel (d) Authoritative Q.353.That which cannot be satisfied (a) Stubborn (b) Insatiable (c) Drastic (d) Prickly Q.354. An absolute government by one man (a) Supremacy (b) Communism (c) Aristocracy (d) Autocracy Q.355. A person in charge of the old people’s home or a hostel (a) Watchman (b) Guard (c) Warder (d) Warden Q.356. Liable to be easily broken (a) Amateur (b) Brittle (c) Tenacious (d) Precious Q.357. Select the most appropriate option to substitute the underlined segment. Ruby fell victim to the green eyed monster. (a) love (b) flattery (c) jealousy (d) hatred Q.358. A person who physically travels in space. (a) Anarchist (b) Pilot (c) Astrologer (d) Astronaut Solutions :-",
+    "**Hangar** — a place to park aeroplanes | **Hanger** — a shaped piece of wood, plastic, or metal with a hook at the top, from which clothes may be hung | **Depot** — a place for the storage of large quantities of equipment, food, or goods | **Shed** — a simple roofed structure used for garden storage, to shelter animals, or as a workshop. C Q.273. Athens was suffering under the rule of a powerful small group that had no concern for the people's welfare. (a) a democracy (b) an oligarchy (c) a monarchy (d) a missionary Q.274. The evening time when the sun has just set and it is almost dark. (a) Dusk (b) Night (c) Dawn (d) Day break Q.275. Dealing with things in a practical and sensible way (a) Pragmatic (b) Sceptic (c) Stoic (d) Cynic Q.276. Anything pertaining to cats (a) Bovine (b) Canine (c) Taurine (d) Feline Q.277. That which is no longer in existence (a) Extinct (b) Removed (c) Vanished (d) Destroyed Q.278. We, as human beings, have a tendency of believing in the things that can be seen and touched. (a) impalpable (b) spiritual (c) inexpressible (d) tangible Q.279. Fear of snakes (a) Claustrophobia (b) Syngenesophobia (c) Xenophobia (d) Ophidiophobia Q.280. A performer’s first public appearance (a) Foundation (b) Debut (c) Premise (d) Dawn Q.281. To go through an area making a lot of noise and causing damage (a) Brutality (b) Cacophony (c) Violence (d) Rampage Q.282. The ship launched out on a journey by water or sea of discovery. (a) voyage (b) rendezvous (c) verso (d) vespers Q.283. The line, 'Round the rugged rocks the ragged rascal ran' uses the repetition of usually initial consonant sounds in two or more neighbouring words or syllables. (a) alliteration (b) epithet (c) simile (d) allegory Q.284. The soldier struck the enemy with the short sword fixed onto the end of the gun. (a) Baron (b) Bayonet (c) Bigot (d) Baton Q.285. His parents didn’t allow him to enrol in the arts college because he is a xams_Pdfss (c) Dilettante (d) Ignoramus Q.286. Loud enough to be heard. (a) Audible (b) Audit (c) Audacious (d) Audacity Q.287. Study of flying airplanes (a) Aviation (b) Alchemy (c) Astronomy (d) Acoustics Q.288. Hospital for people with mental illnesses (a) Druggist (b) Shelter (c) Asylum (d) Hangar Q.289. These glass windows are so old and one can't even see through them, they need to be replaced. (a) Black (b) Opaque (c) Dirty (d) Transparent Q.290. A professional rider in horse races (a) Batsman (b) Jockey (c) Stuntman (d) Southpaw Q.291. A woman having more than one husband at the same time (a) Monogamy (b) Polymathy (c) Polyandry (d) Endogamy Q.292. Attempmting to impress by affecting greater importance or merit than is actually possessed (a) Airy (b) Pretentious  (c) Glorious (d) Imperious  Q.293. A society or company provides these convenient features r (a) Equipment (b) Facilitate (c) Amenities (d) System Q.294. A story intended to teach moral lessons (a) Parable (b) Parole (c) Parasite (d) Parboil Q.295. Feeling of being in a place before having already experienced the present situation (a) Spirituality (b) Delusion (c) Deja-vu (d) Illusion Q.296. An unpleasant mixture of loud sounds. (a) Irony (b) Cacophony (c) Harmony (d) Hegemony Q.297. An open space usually rectangular and enclosed in a building (a) Quinton (b) Quadrangle (c) Quintessential (d) Quadruped Q.298. The act or process of going from the simple or basic to the complex or advanced. Q.299. One who believes in the existence of God (a) Atheist (b) Fatalist (c) Protagonist (d) Theist Q.300. A deal of agreement done in a company or firm. (a) Conformity (b) Acceptance (c) Contract (d) Concurrence Q.301. The doctor who deals with the female reproductive system. (a) Orthodontist (b) Cardiologist (c) Ophthalmologist (d) Gynaecologist Q.302. A lover of mankind (a) Recluse (b) Cynic (c) Psychiatrist (d) Philanthropist  Q.303. Weak and cowardly  (a) Timid (b) Meek a (c) Pusillanimous (d) Anxious Q.304. An area/place in which dead bodies are buried (a) Clementi (b) Cemetery (c) Mansion (d) Demise Q.305. He was promoted to a higher position in the first year due to his careful nature and hard-working efforts. (a) extraordinary (b) diligence (c) elegance (d) business mindednes Q.306. A lively, cheerful outgoing person. (a) Extrovert (b) Ambivert (c) Introvert (d) Orator Q.307. The study of Man (a) Anthropology (b) Biography (c) Autobiography (d) Biology Q.308. Rajan’s caused extremely painful headaches. (a) excruciating (b) devastating (c) horrible (d) extreme Q.309. A film shown during the day, especially in the afternoon (a) Theatre (b) Dramatics (c) Matinee (d) Cinema Q.310. Select the option that can be used as a one-word substitute for the italicised segment in the given sentence. Tin is easy to shape in any desired form. (a) rigid (b) immutable (c) malleable (d) gullible Q.311. A list of books (a) Bibliography (b) Catalogue (c) Lexicon (d) Manuscript Q.312. The period of time in a person's C (a) Teenage (b) Adolescence (c) Childhood (d) Adultery Q.313. There was a huge fire for celebration on the occasion of Diwali. (a) Flash (b) Bonfire (c) Lohri (d) Firecracker Q.314. Consonance of sounds. (a) Orchestration (b) Woodwinds (c) Symphony (d) Troupe Q.315. A doubtful look or examination of one's motives. (a) Introspect (b) Suspect (c) Circumspect (d) Retrospect Q.316. Vivacious and enthusiastic (a) Introverted (b) Brazen (c) Rowdy (d) Effervescent Q.317. Dwarfed varieties of trees and shrubs in pots (a) Bonafide (b) Bonsai (c) Orchard (d) Botanical Q.318. The patronage bestowed in consideration of family relationships and not of merit. (a) Egotism (b) Neologism (c) Mannerism (d) Nepotism Q.319. A place for storage of arms and ammunition (a) Mint (b) Monastery (c) Scullery (d) Arsenal Q.320. Words inscribed on a tomb. (a) Prologue (b) Epilogue (c) Post-script (d) Epitaph Q.321. Fertile watery place in a desert (a) Ode (b) Obsolete (c) Obscure (d) Oasis Q.322. Someone who speaks more than one language (a) Polyglot (b) Insolvent (c) Heretic (d) Fatalist Q.323. A news article that reports the recent death of a person. (a) Centenary (b) Culinary (c) Mortuary (d) Obituary Q.324. The original inhabitants of a country (a) Aborigines (b) Primitive (c) Citizens (d) Aliens Q.325. The approach or style of teaching (a) Platform (b) Pedagogy (c) Philology (d) Media Q.326. Choose the most appropriate meaning of the underlined phrase. xams_Pdfss (a) To stay safe during difficulty (b) To keep one’s chin clean and moist (c) To save others during difficult times (d) To stay cheerful during difficult times Q.327. Referring to something from the past of high quality (a) Outdated (b) Vintage (c) Culture (a) Epoch Q.328.During vacations, Geeta saw a saltwater lake separated from the sea by rocks and sand where she did kayak for the first time. (a) sea (b) ditch (c) lagoon (d) river Q.329. The liberal leadership simply joined the ranks of the existing government by the few. (a) Plutocracy (b) Oligarchy (c) Democracy (d) Autocracy Q.330. A person who is filled with excessive enthusiasm (a) Horticulturist (b) Narcissist (c) Extrovert (d) Introvert Q.331. I do not like him because he always disapproves the things or opinions of others. (a) is jealous of other people (b) is critical of omthers (c) is insensitive of others feelings (d) is a hate monger  Q.332. A soldier who fights for the sake of money  (a) Marine (b) Mercenary (rc) Admiral (d) Veteran Q.333. Madness or obsession with males (a) Loquacious (b) Andromania (c) Polygamy (d) Misandrist Q.334. A mythological animal with one horn on its forehead (a) Unific (b) Unipod (c) Unicameral (d) Unicorn Q.335. One who does not express himself freely. (a) Outgoing (b) Introvert (c) Approachable (d) Immodest Q.336. Select the word which means the same as the group of words underlined in the given sentence. Today, a man who betrayed his own country in exchange for money was the topic of every news report. (a) Gangster (b) Traitor (c) Terrorist (d) Conman Q.337. Select the most appropriate option that can substitute the underlined segment in the given sentence. (a) bidialectical (b) lingual (c) bilingual (d) bicultural Q.338. Modesty or shyness resulting from a lack of self-confidence (a) Determination (b) Assurance (c) Conviction (d) Diffidence Q.339. A person who is critical of the motives of others (a) Cynic (b) Chauffeur (c) Curator (d) Interviewer Q.340. A person who is a lover of women. (a) Monogamist (b) Misogynist (c) Philologist (d) Philogynist Q.341. Someone who does not care about rules  (a) Nonconformist (b) Illegitimate  (c) Tyrant (d) Vampire a Q.342. The state or condition of not being in agreement, accordance, or in harmony (a) Liquidity (b) Incongruence (c) Congeniality (d) Diplomacy Q.343. Speech without prior preparation (a) Debate (b) Extempore (c) Lecture (d) Rambling Q.344. The reasons or intentions that cause a particular set of beliefs or actions (a) Rationale (b) Practical (c) Thinkable (d) Motive Q.345. To move into or through something (a) Perpetuate (b) Penetrate (c) Transparent (d) Cross Q.346. A judgement or verdict that a person is not guilty of the crime with which he has been charged (a) Petition (b) Appellant (c) Acquittal (d) Writ Q.347. Ms Marry is a barbarous lady. (a) dull (b) calm (c) matured (d) brutal Q.348. She was engaged to be married to him. (a) betrothed (b) betrayed (c) bestowed (d) baptised Q.349. A person who eats meat but not seafood or fish (a) Herbivorous (b) Carnitarian (c) Carnivorous (d) Omnivorous Q.350. Inscription on a person's grave (a) Monograph (b) Epistle (c) Prologue (d) Epitaph C (a) Claustrophobia (b) Acrophobia (c) Glossophobia (d) Selenophobia Q.352. To frighten or threaten someone, usually in order to persuade the person to do something he or she does not wish to do (a) Intimidate (b) Forceless (c) Compel (d) Authoritative Q.353.That which cannot be satisfied (a) Stubborn (b) Insatiable (c) Drastic (d) Prickly Q.354. An absolute government by one man (a) Supremacy (b) Communism (c) Aristocracy (d) Autocracy Q.355. A person in charge of the old people’s home or a hostel (a) Watchman (b) Guard (c) Warder (d) Warden Q.356. Liable to be easily broken (a) Amateur (b) Brittle (c) Tenacious (d) Precious Q.357. Select the most appropriate option to substitute the underlined segment. Ruby fell victim to the green eyed monster. (a) love (b) flattery (c) jealousy (d) hatred Q.358. A person who physically travels in space. (a) Anarchist (b) Pilot (c) Astrologer (d) Astronaut Solutions :-",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -32836,7 +32836,7 @@ const ENG_RAW = [
     "Premise",
     "Dawn",
     "b",
-    "**Debut** — a performer’s first public appearance | **Foundation** — an underlying basis or e principle | **Premise** — an idea or theory on which a e statement or action is based | **Dawn** — the first appearance of light in the r sky before sunrise",
+    "**Debut** — a performer’s first public appearance | **Foundation** — an underlying basis or  principle | **Premise** — an idea or theory on which a  statement or action is based | **Dawn** — the first appearance of light in the r sky before sunrise",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -33023,7 +33023,7 @@ const ENG_RAW = [
     "Protagonist",
     "Theist",
     "d",
-    "**Theist** — one who believes in the existence of God | **Atheist** — one who does not believe in the existence of God | **Fatalist** — relating to or characteristic of m the belief that all events are predetermined and therefore inevitable | **Protagonist** — the main character in a play, e film or book. Sol.3e00.(c) Contract - a deal of agreement done in a company or firm | **Conformity** — compliance with standards, rules, or laws",
+    "**Theist** — one who believes in the existence of God | **Atheist** — one who does not believe in the existence of God | **Fatalist** — relating to or characteristic of m the belief that all events are predetermined and therefore inevitable | **Protagonist** — the main character in a play,  film or book. Sol.3e00.(c) Contract - a deal of agreement done in a company or firm | **Conformity** — compliance with standards, rules, or laws",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -33232,7 +33232,7 @@ const ENG_RAW = [
     "Obscure",
     "Oasis",
     "d",
-    "**Oasis** — fertile watery place in a desert | **Ode** — a kind of poem, usually praising e something | **Obsolete** — no longer useful because e something better has replaced it | **Orbscure** — not easy to see or understand",
+    "**Oasis** — fertile watery place in a desert | **Ode** — a kind of poem, usually praising  something | **Obsolete** — no longer useful because  something better has replaced it | **Orbscure** — not easy to see or understand",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -33452,7 +33452,7 @@ const ENG_RAW = [
     "Congeniality",
     "Diplomacy",
     "b",
-    "**Incongruence** — the state or condition of not being in agreement, accordance, or in harmony | **Liquidity** — the fact of being able to be changed into cash easily | **Congeniality** — the quality of being friendly, pleasant, or agreeable | **Diplomacy** — the art of dealing with people in a sensitivee and tactful way. e",
+    "**Incongruence** — the state or condition of not being in agreement, accordance, or in harmony | **Liquidity** — the fact of being able to be changed into cash easily | **Congeniality** — the quality of being friendly, pleasant, or agreeable | **Diplomacy** — the art of dealing with people in a sensitivee and tactful way. ",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -33617,7 +33617,7 @@ const ENG_RAW = [
     "Astrologer",
     "Astronaut",
     "d",
-    "**Astronaut** — a person who physically travels in space | **Anarchist** — a person who rebels against any authority, established order, or ruling power | **Pilot** — a person who flies an aircraft | **Astrologer** — someone who predicts the future by the positions of the planets and Sun and Moon. Q.359. Book written by an author on his own life (a) Biography (b) Historiography (c) Autobiography (d) Anthology Q.360. No longer in existence or use (a) Omnipotent (b) Outpour (c) Obscure (d) Obsolete Q.361. The killing of one’s sister (a) Sororicide (b) Uxoricide (c) Parricide (d) Regicide Q.362. An act of copying the behavior or speech of other people. (a) Pedantry (b) Mimicry (c) Oratory (d) Parody Q.363. Beliefs or incidents that happen in a way which cannot be explained by reason or science. (a) Marvels (b) Wonders (c) Science totems (d) Superstitions Q.364. A person who renounces a religious or political belief or principle. (a) Agnostic (b) Ascetic (c) Apostate (d) Atheist Q.365. Crime of kmilling a king (a) Pesticide (b) Regicide (c) Homicide (d) Genocide Q.366. A estudy of the conditions and structure of the earth e (a) Geology (b) Geography (c) Meteorology (d) Biology r Q.367. Great tiredness (a) Vigour (b) Rejuvenation (c) Fatigue (d) Potent Q.368.The science of teaching (a) Technology (b) Astrology (c) Pedagogy (d) Zoology Q.369. A person who investigates, reports on, and helps settle complaints (a) Spokesman (b) Bildungsroman (c) Ombudsman (d) Superhuman Q.370. A speech in a play that the character speaks to himself or herself or to the people watching rather than to the other characters (a) Soliloquy (b) Scream (c) Eloquence (d) Dogmatic Q.371. The arrangement of events or dates in the order of their occurrence. (a) Chronology (b) Topography (c) Plutocracy (d) Allegory Q.372. The inability to obtain adequate (c) Insomnia (d) Pyromania Q.373. A drug or other substance that induces sleep (a) Energetic (b) Reviver (c) Stimulant (d) Sedative Q.374.A sudden violent event that brings about great loss or destruction (a) Blockbuster (b) Farce (c) Intrigue (d) Catastrophe Q.375. Someone who has too much admiration for himself or herself (a) Narcissist (b) Pantheist (c) Misogamist (d) Misanthropist Q.376. the husks of corn or other grains separated by winnowing or threshing. (a) hay (ib) peel (c) fodder (d) chaff  Q.377. irrational fear of water a (a) claustrophobia (b) acrophobia (c) cacophobia (d) hydrophobia Q.378. one who is skilled and eloquent in public speaking (a) lecturer (b) spokesperson (c) orator (d) actor Q.379. a legal document authorizing the police or another body to make an arrest or search premises (a) decree (b) warrant (c) licence (d) permit Q.380. a statement open to more than one interpretation (a) explicit (b) palpable (c) tangible (d) ambiguous Q.381. to skip about playfully (a) trundle (b) scramble (c) gambol (d) amble Q.382. Natural talent for something (a) flavour (b) favour (c) feeling (d) flair Q.383. a wooden frame for holding an artist's work while it is being painted or drawn (a) lectern (b) platform (c) easel (d) podium Q.384. There is a place for grains in the backyard of this house. (a) apiary (b) archive (c) granary (d) dormitory Q.385. She was known for her ability to communicate effectively and express herself clearly in writing and speaking. (a) incoherence (b) articulation (c) mumbling (d) rambling C means of livelihood left. (a) Worker (b) Mason (c) Pauper (d) Unemployed Q.387. Working or operating quickly and effectively in an organised way (a) Effusive (b) Extensive (c) Excellent (d) Efficient Q.388. How did you become interested in learning the art of producing beautiful handwriting? (a) Calligraphy (b) Lexicography (c) Graphology (d) Demography Q.389. A notice of the death of a person, often with a biographical sketch, as in a newspaper. (a) Obituary (b) Elegy (c) Oblivion (d) Advertisement Q.390. One who settles in another country (a) Traveller (b) Resident (c) Refugee (d) Immigrant Q.391. Study of science of insects (a) Microbiology (b) Anthropology (c) Ecology (d) Entomology Q.392. Payal’s father was seen desperately searching for the medicine that can counteract the effect of a venomous snakebite in Parul’s left hand. (a) remedy (b) antiseptic (c) antidote (d) anti-serum Q.393. Happening repeatedly (a) Recurrent (b) Rapport (c) Regression (d) Recuperate Q.394. A keeper or custodian of a museum or other collection (a) Cartographer (b) Chauffeur (c) Curator (d) Calligrapher Q.395. A pretence of having a virtuous character, moral or religious beliefs or principles, etc., that one does not really possess. (a) Gullibility (b) Shrewdness (c) Naivety (d) Hypocrisy Q.396. A state of intense happiness and self-confidence. (a) Euphoria (b) Touché (c) Intoxication (d) Oblivion Q.397. To criticise someone severely (a) Rate (b) Chastise (c) Scoff (d) Remonstrate Q.398. Huge fire for celebration (a) Agenda (b) Campaign (c) Bonfire (d) Crossfire xams_Pdfss (of a cat). (a) To meow (b) To buzz (c) To roar (d) To purr Q.400. Minimum people needed for a meeting (a) Forum (b) Quorum (c) Addendum (d) Decorum Q.401. A place where coins are made (a) Mint (b) Post Office (c) Grove (d) Trough Q.402. Something of monstrous size or power (a) Heavyweight (b) Bulk (c) Amazon (d) Behemoth Q.403. An ability to do several things at the same time. (a) Unitasking (b) Indictment (c) Blasphemy (d) Multitasking Q.404. Spoken or done without any previous thought or preparation (a) Inaugural (b) Extempore (c) Initiative (d) Maiden Q.405. Someone who pretends to have certain moral standards while secretively that person practices those very moral lapses. m (a) Actor (b) Hypocrite (c) Sinner (d) Spy Q.406. The compulsion to tell lies e (a) Mythomania (b) Nymphomania (c) Megalomania (d) Pyromania e Q.407. A disease prevalent in a r community or a specific region at a specific time, affecting a large area. (a) Eradicate (b) Epidemic (c) Pandemic (d) Endemic Q.408. He was not willing to attend the technical session of the conference. (a) comprehensive (b) reluctant (c) dejecting (d) curious Q.409. To have a strong emotional effect on. (a) To overwhelm (b) To yield (c) To smother (d) To forfeit Q.410. Very attractive and easy to feel love for (a) Adorable (b) Flamboyant (c) Laudable (d) Mysterious Q.411. An animal or a person that eats all types of food, especially plants and meat (a) Vegetarian (b) Omnivore (c) Herbivore (d) Carnivore Q.412. Extremely beautiful, elaborate or (c) Proficient (d) Deficient Q.413. A structure in the garden where climbing plants can grow and people can walk under (a) Pergola (b) Tomb (c) Outhouse (d) Treehouse Q.414. A collection of historical documents or records providing information about a place, institution, or group of people (a) Asylum (b) Museum (c) Apostate (d) Archive Q.415. Centre of public attention (a) Limelight (b) Ambiguity (c) Fuzziness (d) Obscurity Q.416. One who goes from place to  place, begging  (a) Malleable (b) Mendicant a (c) Meticulous (d) Misogamist Q.417. To tell the nature of a disease by its symptoms. (a) Design (b) Diagnosis (c) Decisive (d) Dosage Q.418. A book published after author's death. (a) Predecessor publication (b) Posthumous publication (c) Supernatural publication (d) Posthuman publication Q.419. Requiring exceptional skill or caution in performance or handling (a) Blunt (b) Abstract (c) Sustainable (d) Tricky Q.420. An act of exchanging information (a) Touch (b) Hold (c) Collaboration (d) Communication Q.421. To go away suddenly and secretly in order to escape from somewhere (a) Abscond (b) Vanish (c) Excavate (d) Extradite Q.422. Many people fought to put an end to slavery during the civil war. (a) abolish (b) absorb (c) abide (d) abduct Q.423. Study of sound and sound waves (a) Botany (b) Physics (c) Demography (d) Acoustics Q.424. The action of formally accusing a public official of a serious offence (a) Impeachment (b) Condemnation (c) Summon (d) Allegation Q.425. A number which is used to divide C (c) Remainder (d) Divisor Q.426. A person who loves or collects books (a) Anglophile (b) Heliophile (c) Paedophile (d) Bibliophile Q.427. Group of bees (a) Gaggle (b) Shoal (c) Swarm (d) Pack Q.428. He simply continued to say something in order to convey information in a calm voice. (a) dictate (b) teach (c) speak (d) spell Q.429. A thing which happens every two years (a) Century (b) Annual (c) Biennial (d) Bi-monthly Q.430. A person who is known for his hatred towards the entire mankind. (a) Insolvent (b) Philogynist (c) Mercenary (d) Misanthrope Q.431. A poem of lamentation on the death of someone loved and admired. (a) Soliloquy (b) Elegy (c) Tragedy (d) Epitaph Q.432. Killing of one's own father (a) Matricide (b) Filicide (c) Patricide (d) Suicide Q.433. She proposed to write the life history of the famous poet. (a) novel (b) biography (c) mythology (d) autobiography Q.434. Raymond has opted the study of religion as his major subject in graduation. (a) Psephology (b) Philology (c) Theology (d) Psychology Q.435. An examination of a body after death (a) Post room (b) Post death (c) Post partum (d) Post mortem Q.436. Hundreds of people were removed from a place by the government recently due to a war-like situation. (a) assassinated (b) evacuated (c) invaded (d) terminated Q.437. A person living in solitude like a saint for religious practices. (a) Hermit (b) Cretin (c) Heir (d) Heretic Q.438. One who lends money to others at a very high rate of interest. (a) Curator (b) Bankrupt (c) Usurer (d) Numismatist Q.439. I suppose dancing that well would xams_Pdfss (c) practice (d) perception Q.440. A small shop that sells fashionable clothes (a) Boutique (b) Store (c) Tailoring (d) Couture Q.441. Pause indecisively (a) Hibernate (b) Hesitate (c) Hoist (d) Hobble Q.442. Endless period of time (a) Eternity (b) Longevity (c) Impurity (d) Frailty Q.443. Pandemics have often been caused by a disease that spreads by physical touch or contact. (a) are contagious (b) are vigorous (c) are robust (d) are fastidious Q.444. A person who regards the whole world as his country (a) Cosmopolitan (b) Pacifist (c) Contemporary (d) Celibate Solutions :-",
+    "**Astronaut** — a person who physically travels in space | **Anarchist** — a person who rebels against any authority, established order, or ruling power | **Pilot** — a person who flies an aircraft | **Astrologer** — someone who predicts the future by the positions of the planets and Sun and Moon. Q.359. Book written by an author on his own life (a) Biography (b) Historiography (c) Autobiography (d) Anthology Q.360. No longer in existence or use (a) Omnipotent (b) Outpour (c) Obscure (d) Obsolete Q.361. The killing of one’s sister (a) Sororicide (b) Uxoricide (c) Parricide (d) Regicide Q.362. An act of copying the behavior or speech of other people. (a) Pedantry (b) Mimicry (c) Oratory (d) Parody Q.363. Beliefs or incidents that happen in a way which cannot be explained by reason or science. (a) Marvels (b) Wonders (c) Science totems (d) Superstitions Q.364. A person who renounces a religious or political belief or principle. (a) Agnostic (b) Ascetic (c) Apostate (d) Atheist Q.365. Crime of kmilling a king (a) Pesticide (b) Regicide (c) Homicide (d) Genocide Q.366. A estudy of the conditions and structure of the earth  (a) Geology (b) Geography (c) Meteorology (d) Biology r Q.367. Great tiredness (a) Vigour (b) Rejuvenation (c) Fatigue (d) Potent Q.368.The science of teaching (a) Technology (b) Astrology (c) Pedagogy (d) Zoology Q.369. A person who investigates, reports on, and helps settle complaints (a) Spokesman (b) Bildungsroman (c) Ombudsman (d) Superhuman Q.370. A speech in a play that the character speaks to himself or herself or to the people watching rather than to the other characters (a) Soliloquy (b) Scream (c) Eloquence (d) Dogmatic Q.371. The arrangement of events or dates in the order of their occurrence. (a) Chronology (b) Topography (c) Plutocracy (d) Allegory Q.372. The inability to obtain adequate (c) Insomnia (d) Pyromania Q.373. A drug or other substance that induces sleep (a) Energetic (b) Reviver (c) Stimulant (d) Sedative Q.374.A sudden violent event that brings about great loss or destruction (a) Blockbuster (b) Farce (c) Intrigue (d) Catastrophe Q.375. Someone who has too much admiration for himself or herself (a) Narcissist (b) Pantheist (c) Misogamist (d) Misanthropist Q.376. the husks of corn or other grains separated by winnowing or threshing. (a) hay (ib) peel (c) fodder (d) chaff  Q.377. irrational fear of water a (a) claustrophobia (b) acrophobia (c) cacophobia (d) hydrophobia Q.378. one who is skilled and eloquent in public speaking (a) lecturer (b) spokesperson (c) orator (d) actor Q.379. a legal document authorizing the police or another body to make an arrest or search premises (a) decree (b) warrant (c) licence (d) permit Q.380. a statement open to more than one interpretation (a) explicit (b) palpable (c) tangible (d) ambiguous Q.381. to skip about playfully (a) trundle (b) scramble (c) gambol (d) amble Q.382. Natural talent for something (a) flavour (b) favour (c) feeling (d) flair Q.383. a wooden frame for holding an artist's work while it is being painted or drawn (a) lectern (b) platform (c) easel (d) podium Q.384. There is a place for grains in the backyard of this house. (a) apiary (b) archive (c) granary (d) dormitory Q.385. She was known for her ability to communicate effectively and express herself clearly in writing and speaking. (a) incoherence (b) articulation (c) mumbling (d) rambling C means of livelihood left. (a) Worker (b) Mason (c) Pauper (d) Unemployed Q.387. Working or operating quickly and effectively in an organised way (a) Effusive (b) Extensive (c) Excellent (d) Efficient Q.388. How did you become interested in learning the art of producing beautiful handwriting? (a) Calligraphy (b) Lexicography (c) Graphology (d) Demography Q.389. A notice of the death of a person, often with a biographical sketch, as in a newspaper. (a) Obituary (b) Elegy (c) Oblivion (d) Advertisement Q.390. One who settles in another country (a) Traveller (b) Resident (c) Refugee (d) Immigrant Q.391. Study of science of insects (a) Microbiology (b) Anthropology (c) Ecology (d) Entomology Q.392. Payal’s father was seen desperately searching for the medicine that can counteract the effect of a venomous snakebite in Parul’s left hand. (a) remedy (b) antiseptic (c) antidote (d) anti-serum Q.393. Happening repeatedly (a) Recurrent (b) Rapport (c) Regression (d) Recuperate Q.394. A keeper or custodian of a museum or other collection (a) Cartographer (b) Chauffeur (c) Curator (d) Calligrapher Q.395. A pretence of having a virtuous character, moral or religious beliefs or principles, etc., that one does not really possess. (a) Gullibility (b) Shrewdness (c) Naivety (d) Hypocrisy Q.396. A state of intense happiness and self-confidence. (a) Euphoria (b) Touché (c) Intoxication (d) Oblivion Q.397. To criticise someone severely (a) Rate (b) Chastise (c) Scoff (d) Remonstrate Q.398. Huge fire for celebration (a) Agenda (b) Campaign (c) Bonfire (d) Crossfire xams_Pdfss (of a cat). (a) To meow (b) To buzz (c) To roar (d) To purr Q.400. Minimum people needed for a meeting (a) Forum (b) Quorum (c) Addendum (d) Decorum Q.401. A place where coins are made (a) Mint (b) Post Office (c) Grove (d) Trough Q.402. Something of monstrous size or power (a) Heavyweight (b) Bulk (c) Amazon (d) Behemoth Q.403. An ability to do several things at the same time. (a) Unitasking (b) Indictment (c) Blasphemy (d) Multitasking Q.404. Spoken or done without any previous thought or preparation (a) Inaugural (b) Extempore (c) Initiative (d) Maiden Q.405. Someone who pretends to have certain moral standards while secretively that person practices those very moral lapses. m (a) Actor (b) Hypocrite (c) Sinner (d) Spy Q.406. The compulsion to tell lies  (a) Mythomania (b) Nymphomania (c) Megalomania (d) Pyromania  Q.407. A disease prevalent in a r community or a specific region at a specific time, affecting a large area. (a) Eradicate (b) Epidemic (c) Pandemic (d) Endemic Q.408. He was not willing to attend the technical session of the conference. (a) comprehensive (b) reluctant (c) dejecting (d) curious Q.409. To have a strong emotional effect on. (a) To overwhelm (b) To yield (c) To smother (d) To forfeit Q.410. Very attractive and easy to feel love for (a) Adorable (b) Flamboyant (c) Laudable (d) Mysterious Q.411. An animal or a person that eats all types of food, especially plants and meat (a) Vegetarian (b) Omnivore (c) Herbivore (d) Carnivore Q.412. Extremely beautiful, elaborate or (c) Proficient (d) Deficient Q.413. A structure in the garden where climbing plants can grow and people can walk under (a) Pergola (b) Tomb (c) Outhouse (d) Treehouse Q.414. A collection of historical documents or records providing information about a place, institution, or group of people (a) Asylum (b) Museum (c) Apostate (d) Archive Q.415. Centre of public attention (a) Limelight (b) Ambiguity (c) Fuzziness (d) Obscurity Q.416. One who goes from place to  place, begging  (a) Malleable (b) Mendicant a (c) Meticulous (d) Misogamist Q.417. To tell the nature of a disease by its symptoms. (a) Design (b) Diagnosis (c) Decisive (d) Dosage Q.418. A book published after author's death. (a) Predecessor publication (b) Posthumous publication (c) Supernatural publication (d) Posthuman publication Q.419. Requiring exceptional skill or caution in performance or handling (a) Blunt (b) Abstract (c) Sustainable (d) Tricky Q.420. An act of exchanging information (a) Touch (b) Hold (c) Collaboration (d) Communication Q.421. To go away suddenly and secretly in order to escape from somewhere (a) Abscond (b) Vanish (c) Excavate (d) Extradite Q.422. Many people fought to put an end to slavery during the civil war. (a) abolish (b) absorb (c) abide (d) abduct Q.423. Study of sound and sound waves (a) Botany (b) Physics (c) Demography (d) Acoustics Q.424. The action of formally accusing a public official of a serious offence (a) Impeachment (b) Condemnation (c) Summon (d) Allegation Q.425. A number which is used to divide C (c) Remainder (d) Divisor Q.426. A person who loves or collects books (a) Anglophile (b) Heliophile (c) Paedophile (d) Bibliophile Q.427. Group of bees (a) Gaggle (b) Shoal (c) Swarm (d) Pack Q.428. He simply continued to say something in order to convey information in a calm voice. (a) dictate (b) teach (c) speak (d) spell Q.429. A thing which happens every two years (a) Century (b) Annual (c) Biennial (d) Bi-monthly Q.430. A person who is known for his hatred towards the entire mankind. (a) Insolvent (b) Philogynist (c) Mercenary (d) Misanthrope Q.431. A poem of lamentation on the death of someone loved and admired. (a) Soliloquy (b) Elegy (c) Tragedy (d) Epitaph Q.432. Killing of one's own father (a) Matricide (b) Filicide (c) Patricide (d) Suicide Q.433. She proposed to write the life history of the famous poet. (a) novel (b) biography (c) mythology (d) autobiography Q.434. Raymond has opted the study of religion as his major subject in graduation. (a) Psephology (b) Philology (c) Theology (d) Psychology Q.435. An examination of a body after death (a) Post room (b) Post death (c) Post partum (d) Post mortem Q.436. Hundreds of people were removed from a place by the government recently due to a war-like situation. (a) assassinated (b) evacuated (c) invaded (d) terminated Q.437. A person living in solitude like a saint for religious practices. (a) Hermit (b) Cretin (c) Heir (d) Heretic Q.438. One who lends money to others at a very high rate of interest. (a) Curator (b) Bankrupt (c) Usurer (d) Numismatist Q.439. I suppose dancing that well would xams_Pdfss (c) practice (d) perception Q.440. A small shop that sells fashionable clothes (a) Boutique (b) Store (c) Tailoring (d) Couture Q.441. Pause indecisively (a) Hibernate (b) Hesitate (c) Hoist (d) Hobble Q.442. Endless period of time (a) Eternity (b) Longevity (c) Impurity (d) Frailty Q.443. Pandemics have often been caused by a disease that spreads by physical touch or contact. (a) are contagious (b) are vigorous (c) are robust (d) are fastidious Q.444. A person who regards the whole world as his country (a) Cosmopolitan (b) Pacifist (c) Contemporary (d) Celibate Solutions :-",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -34167,7 +34167,7 @@ const ENG_RAW = [
     "Supernatural publication",
     "Posthuman publication",
     "b",
-    "**Posthumous publication** — a book published after author’s death | **Predecessor publication** — a publication or written work that came before another publication | **Supernatural publication** — a piece of writing that involves occurrences that are beyond the scope of natural laws, e science, or the ordinary understanding of the physical world | **Posthuman publication** — a written work about what happens when humans and r technology merge, making us different from how we are now",
+    "**Posthumous publication** — a book published after author’s death | **Predecessor publication** — a publication or written work that came before another publication | **Supernatural publication** — a piece of writing that involves occurrences that are beyond the scope of natural laws,  science, or the ordinary understanding of the physical world | **Posthuman publication** — a written work about what happens when humans and r technology merge, making us different from how we are now",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -35664,7 +35664,7 @@ const ENG_RAW = [
     "Egotist",
     "Aristocrat",
     "a",
-    "**Fatalist** — a person who believes that all events are e predetermined or subject to fate | **Creduelous** — easily believing or accepting things, often without questioning or droubting | **Egotist** — a person who is excessively self-centered, often boastful | **Aristocrat** — a member of the upper class or nobility",
+    "**Fatalist** — a person who believes that all events are  predetermined or subject to fate | **Creduelous** — easily believing or accepting things, often without questioning or droubting | **Egotist** — a person who is excessively self-centered, often boastful | **Aristocrat** — a member of the upper class or nobility",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -35966,7 +35966,7 @@ const ENG_RAW = [
     "One Word Substitution"
   ],
   [
-    "A secret plan, made to do something e(usually wrong)",
+    "A secret plan, made to do something (usually wrong)",
     "Accelerate",
     "Lacerate",
     "Procrastinate",
@@ -36225,7 +36225,7 @@ const ENG_RAW = [
     "Bibliography",
     "Biography",
     "a",
-    "**Preface** — Author's explanatory remarks at the beginning of a book | **Foreword** — An introduction or comments written by someone other than the author e at the beginning of a book | **Bribliography** — A list of sources (books, articles, etc.) used for research or reference | **Biography** — A written life story of someone's life, often written by another person",
+    "**Preface** — Author's explanatory remarks at the beginning of a book | **Foreword** — An introduction or comments written by someone other than the author  at the beginning of a book | **Bribliography** — A list of sources (books, articles, etc.) used for research or reference | **Biography** — A written life story of someone's life, often written by another person",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -36434,7 +36434,7 @@ const ENG_RAW = [
     "Gregarious",
     "Venial",
     "c",
-    "**Gregarious** — Tending to e associate with others of one’s kind | **Predantic** — Concerned with minor details or rules | **Pungent** — having a sharply strong taste or smell | **Venial** — Easy to forgive",
+    "**Gregarious** — Tending to  associate with others of one’s kind | **Predantic** — Concerned with minor details or rules | **Pungent** — having a sharply strong taste or smell | **Venial** — Easy to forgive",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -36830,7 +36830,7 @@ const ENG_RAW = [
     "Souvenir",
     "Regalia",
     "d",
-    "**Hurricane** — A violent wind that has a circular movement | **Drought** — A prolonged period of abnormally low rainfall leading to water e scarcity and dry conditions | **Dreluge** — A severe flood or overwhelming amount of water | **Tsunami** — A series of ocean waves caused by an underwater disturbance, often resulting from an earthquake or volcanic activity",
+    "**Hurricane** — A violent wind that has a circular movement | **Drought** — A prolonged period of abnormally low rainfall leading to water  scarcity and dry conditions | **Dreluge** — A severe flood or overwhelming amount of water | **Tsunami** — A series of ocean waves caused by an underwater disturbance, often resulting from an earthquake or volcanic activity",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -36929,7 +36929,7 @@ const ENG_RAW = [
     "Dissuade",
     "Surreal",
     "b",
-    "**Disgruntled** — Disappointed and annoyed about something | **Contented** — Satisfied and happy with one's situation | **Dissuade** — Persuade someone not to do something | **Surreal** — Strange or dream-like. eduquity-based pattern (ebp) Questions (617 to 681) Q.617. A specialist of kidney (a) Obstetrician (b) Nephrologist (c) Pathologist (d) Primatologist Q.618. One who does not know reading or writing (a) Scholar (b) Illiterate (c) Erudite (d) Fastidious Q.619. Recovering from an illness or medical treatment. (a) Bohemian (b) Connoisseur (c) Convalescent (d) Cosmopolitan Q.620. One who cures eye disease. (a) Biologist (b) Phonologist (c) Prologist (d) Ophthalmologist Q.621. A person who is never happy with what he has (a) Miser (b) Heresy (c) Malcontent (d) Malleable Q.622. A person who has escaped from xams_Pdfss (c) Fugitive (d) Farce Q.623. Affecting all or most people, places, things, etc. (a) Particular (b) Pertain (c) Genre (d) General Q.624. Overly concerned with minute details or formalisms (a) Blasphemy (b) Rhapsodic (c) Bohemian (d) Pedantic Q.625. A publication containing astronomical or meteorological information (a) Allegory (b) Bane (c) Conscription (d) Almanac Q.626. A substance for killing algae (a) Algaecide (b) Prepuce (c) Fungicide (d) Ruthenium Q.627. A person who is interested in material gains and is hostile to art/culture (a) Perfectionist (b) Sage (c) Philistine (d) Egghead Q.628. Give off gas bubbles (a) Buoyant (b) Effervescent (c) Flat (d) Effuse m Q.629. One who is against religion. (a) Poacher (b) Lunatic (c) Bandit (d) Heretic e Q.630. Rhythmic flow of sounds or e words. (ra) Credence (b) Crescents (c) Cadence (d) Copious Q.631. Fear of heights. (a) Agoraphobia (b) Claustrophobia (c) Acrophobia (d) Homophobia Q.632. A person who attacks or criticizes cherished beliefs or institutions. (a) Iconoclast (b) Impregnable (c) Immoral (d) Insolvent Q.633. The origin or birth of a thing (a) Genesis (b) Culmination (c) Coda (d) Quietus Q.634. A religions war (a) Inscription (b) Colonialism (c) Colloquial (d) Crusade Q.635. Lion like characteristics (a) Leonine (b) Feline (c) Porcine (d) Lionize Q.636. A game that results neither in victory nor in defeat (a) Void (b) Cynic (c) Draw (d) Fawn (a) Pious (b) Sacramental (c) Holy (d) Sacrilege Q.638. Travelling from place to place (a) Recluse (b) Arcane (c) Reverent (d) Itinerant Q.639. A lover of good food (a) Esoteric (b) Chauvinist (c) Gourmand (d) Ergophile Q.640. Study of body functions (a) Genealogy (b) Physiology (c) Psychology (d) Astrology Q.641. A leader who sways his followers by his oratory (a) Fugitive (b) Narcissist (c) Impostor (d) Demagogue  Q.642. A fall of water from a great  height. a(a) River (b) Stream (c) Typhoon (d) Cascade Q.643. Exaggerated claims, not meant to be taken seriously (a) Hyperpyrexia (b) Hyperbole (c) Hypergamy (d) Hyperreal Q.644. Photographers who follow celebrities to get their pictures to sell them (a) Paparazzi (b) Reporter (c) Editor (d) Interviewer Q.645. The science and art of growing vegetables, fruits and flowers (a) Herpetology (b) Horticulture (c) Haplology (d) Herding Q.646. A piece of a living tissue or plant that is transplanted surgically (a) Gratis (b) Gourmet (c) Gracious (d) Graft Q.647. Giving the worrying impression that something bad is going to happen (a) Desolate (b) Suspicious (c) Ominous (d) Bleak Q.648. A shortened version of a larger work (a) Summary (b) Précis (c) Shorts (d) Abridgement Q.649. Having or showing an excessively high opinion of one's appearance, abilities, or worth (a) Superior (b) Vain (c) Otiose (d) Domineering Q.650. A loud appeal or demand (a) Protest (b) Entourage (c) Clamour (d) Gambit C (c) Lexicography (d) Philosophy Q.652. Sharp and direct (a) Acerbic (b) Zoonic (c) Anodyne (d) Acidic Q.653. The act of washing oneself (a) Ablutions (b) Solutions (c) Steaming (d) Bathing Q.654. Rearing of silk worms is called horticulture. (a) pisciculture (b) agriculture (c) sericulture (d) apiculture Q.655. The act of killing one's mother (a) Regicide (b) Homicide (c) Uxoricide (d) Matricide Q.656. Existing in a land from the earliest times or from before the arrival of colonists (a) Native (b) Ancient (c) Aboriginal (d) Original Q.657. Holding on to something or keeping an opinion with determination (a) Gracious (b) Tenacious (c) Obnoxious (d) Loquacious Q.658. Select the option that can be used as a one-word substitute for the given group of words/phrase. Fail to notice; ignore; condone (an offence etc.) (a) Overlong (b) Overlie (c) Overly (d) Overlook Q.659. The action of damaging the good reputation of someone (a) Delegate (b) Degeneration (c) Defamation (d) Defection Q.660. An exaggerated statement not to be taken seriously or literally (a) Hypertext (b) Hyperbole (c) Hypocrisy (d) Hippocrates Q.661. Cancel or do away with (a law or agreement) (a) Abrogate (b) Cancellation (c) Ultimation (d) Prorogation Q.662. A battle or anything involving or causing much bloodshed (a) Autocracy (b) Sanguinary (c) Ineffable (d) Redtapism Q.663. to give up completely or agree to forgo, especially in favour of another (a) Waive (b) Forfeit (c) Surrender (d) Cosign Q.664. A poll taken of voters leaving the voting place that is usually used for predicting the winners. xams_Pdfss Q.665. A list or collection of books or informative graphics (a) Bale (b) Hamlet (c) Gallery (d) Catalogue Q.666. Showing astute powers of judgment; clever and judicious (a) Shriek (b) Shrift (c) Shrewd (d) Shrike Q.667. Profitable, yielding financial gain (a) Ludicrous (b) Lucrative (c) Luddite (d) Lugger Q.668. Cause to continue; keep up; preserve (a state of affairs, an activity etc) (a) maintop (b) mainly (c) maintain (d) mainstay Q.669. Taking heed or care; being conscious (a) Mindful (b) Mindless (c) Mindset (d) Mind-read Q.670. Honour given for some achievement. (a) Placard (b) Laurel (c) Party (d) Gift Q.671. Killing of a person by another (a) Homicide m(b) Democide (c) Genocide (d) Euthanasia Q.672. Treat with a vaccine, usually by e injection to promote immunity against a disease e (a) Innuendo (b) Inoculate (rc) Innumerate (d) Innovate Q.673. None of the countries involved in war were ready to broach the issue of retreat. (a) turn down thoughtlessly (b) bring up for discussion (c) underestimate the worth of (d) disregard contemptuously Q.674. Seeing the danger of a group governed by old people, Ratan planned to recruit young people for his project. (a) adhocracy (b) plutocracy (c) gerontocracy (d) autocracy Q.675. Take hold of forcibly or suddenly (a) Seize (b) Liberate (c) Release (d) Relinquish Q.676. Try hard to do or achieve something (a) Endanger (b) Hardworking (c) Endeavour (d) Indent Q.677. The Bishop criticised the Government for its having no sympathy (a) merciful (b) callous (c) tender (d) compassionate Q.678. Hatred (a) Malleable (b) Malevolence (c) Magnanimous (d) Malapropos Q.679. a large single detached house with single or double story (a) Suite (b) Apartment (c) Bungalow (d) Penthouse Q.680. one who speaks for others (a) spokesperson (b) orator (c) verbose (d) talkative Q.681. A doctor who specializes in heart diseases (a) Urologist (b) Cardiologist (c) Nephrologist (d) Dermatologist   Solutions :- a",
+    "**Disgruntled** — Disappointed and annoyed about something | **Contented** — Satisfied and happy with one's situation | **Dissuade** — Persuade someone not to do something | **Surreal** — Strange or dream-like.",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -37171,7 +37171,7 @@ const ENG_RAW = [
     "Hypergamy",
     "Hyperreal",
     "b",
-    "**Hyperbole** — Exaggerated claims, not meant to be taken seriously | **Hyperpyrexia** — When your body temperature exceeds 106°F (41.1°C) due to a fever | **Hypergamy** — practice of marrying above one's social status or class | **Hyperreal** — exaggerated in comparison to reality",
+    "**Hyperbole** — Exaggerated claims, not meant to be taken seriously | **Hyperpyrexia** — When your body temperature exceeds 106° (41.1°C) due to a fever | **Hypergamy** — practice of marrying above one's social status or class | **Hyperreal** — exaggerated in comparison to reality",
     "One Word Substitution",
     "One Word Substitution"
   ],
@@ -37435,7 +37435,7 @@ const ENG_RAW = [
     "Genocide",
     "Euthanasia",
     "a",
-    "**Homicide** — Killing of a person by another | **Democide** — The murder of any person or people by a government | **Genocide** — The deliberate killing of a large number of people from a particular m nation or ethnic group with the aim of destroying that nation or group | **Euthanasia** — The painless killing of a e patient suffering from an incurable and painful disease. e",
+    "**Homicide** — Killing of a person by another | **Democide** — The murder of any person or people by a government | **Genocide** — The deliberate killing of a large number of people from a particular m nation or ethnic group with the aim of destroying that nation or group | **Euthanasia** — The painless killing of a  patient suffering from an incurable and painful disease. ",
     "One Word Substitution",
     "One Word Substitution"
   ],
